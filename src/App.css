@@ -39,13 +39,6 @@ body{
 
 	}
 
-	#intro {
-		background: url(pics/night.gif) !important;
-		background-repeat: no-repeat !important;
-		background-repeat: no-repeat !important;
-		background-position: top !important;
-	}
-
 	#aboutMe {
 		background: black;
 
@@ -99,7 +92,7 @@ nav {
 /*intro---------------------------------*/
 #intro {
 	height: 100vh;
-	background: url(pics/morning.gif);
+	background: url(pics/coding.jpg);
 	background-repeat: no-repeat;
 	background-repeat: no-repeat;
 	background-position: top;
