@@ -1,0 +1,282 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	font-family: "Merriweather", serif;
+}
+/*dark mode----------------------------*/
+.dark_mode {
+	background: black !important;
+
+	hr {
+		border-color: white;
+	}
+
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6,
+	p {
+		color: white !important;
+	}
+
+	nav {
+		a {
+			color: white;
+		}
+
+		button {
+			.bi::before {
+				color: yellow;
+			}
+
+		}
+
+	}
+
+	#intro {
+		background: url(pics/night.gif) !important;
+		background-repeat: no-repeat !important;
+		background-repeat: no-repeat !important;
+		background-position: top !important;
+	}
+
+	#aboutMe {
+		background: black;
+
+		ul {
+			color: white;
+		}
+
+		& .bi::before {
+			color: white;
+		}
+
+	}
+
+	#viewcv {
+		a button {
+			background: white !important;
+			border: 1px solid white !important;
+
+			&:hover {
+				background: black !important;
+			}
+
+		}
+
+	}
+
+	.bi::before {
+		color: white;
+	}
+
+	.my_card {
+		box-shadow: 0px 0px 2px 0px white;
+	}
+
+}
+
+/*navbar---------------------------------*/
+nav {
+	a {
+		color: black;
+		text-decoration: none;
+	}
+
+	button {
+		border: none;
+		background: none;
+	}
+
+}
+
+/*intro---------------------------------*/
+#intro {
+	height: 100vh;
+	background: url(pics/morning.gif);
+	background-repeat: no-repeat;
+	background-repeat: no-repeat;
+	background-position: top;
+
+	& h1 {
+		font-size: 3.5rem;
+		color: black;
+	}
+
+	& p {
+		font-size: 0.8rem;
+	}
+
+	& a {
+		transition: all 0.3s;
+
+		&:hover {
+			transform: scale(1.2);
+		}
+
+	}
+
+}
+
+/* my cards--------------------------*/
+.my_card {
+	width: 100%;
+	height: 100%;
+	box-sizing: border-box;
+	box-shadow: 0px 0px 2px 0px black;
+	text-align: center;
+
+	& img {
+		width: 4rem;
+		aspect-ratio: 1;
+		margin-bottom: 5px;
+		border-radius: 50%;
+	}
+
+	& p {
+		color: #21525b;
+		font-size: 0.8rem;
+	}
+
+	& h6 {
+		color: black;
+		font-size: 1.2rem !important;
+	}
+
+}
+
+/*about me---------------------------------------------*/
+#aboutMe {
+	padding: 1rem;
+
+	ul {
+		list-style-type: square;
+		padding-left: 0 !important;
+
+		li {
+			margin-bottom: 1rem;
+		}
+
+	}
+
+}
+
+.techStack {
+	border: 0.5px dashed;
+	padding: 0.3rem;
+	margin: 0.2rem;
+	font-size: 0.8rem;
+}
+
+#viewcv {
+	a button {
+		border: 1px solid black;
+		border-radius: 0;
+		transition: all 0.2s;
+		font-size: 0.7rem;
+		width: 100%;
+
+		&:hover {
+			background: black;
+			color: white;
+		}
+
+	}
+
+}
+
+#me {
+	width: 70%;
+	clip-path: polygon(0% 15%, 15% 15%, 15% 0%, 85% 0%, 85% 15%, 100% 15%, 100% 85%, 85% 85%, 85% 100%, 15% 100%, 15% 85%, 0% 85%);
+}
+
+/*demo------------------------------*/
+.siteImg {
+	text-align: center;
+
+	img {
+		width: 70%;
+		transition: all 0.5s;
+
+		&:hover {
+			transform: scale(1.1);
+		}
+
+	}
+
+	#mobile {
+		width: 40%;
+
+		&:hover {
+			transform: scale(1.1);
+		}
+
+	}
+
+}
+
+/*footer------------------------------*/
+#footer {
+	& ul li>a {
+		margin-left: 0.5rem;
+		text-decoration: none;
+		color: black;
+		cursor: pointer;
+	}
+
+	& h1,
+	p {
+		color: black;
+	}
+
+}
+
+.bi::before {
+	transform: scale(2);
+	margin: 1rem;
+	color: black;
+}
+
+@media screen and (max-width:780px) {
+	nav {
+		font-size: 0.5rem;
+
+		.bi::before {
+			transform: scale(3);
+		}
+
+	}
+
+	#intro h1 {
+		font-size: calc(1rem + 1vw);
+	}
+
+	#abouts p {
+		font-size: 15px;
+
+		& span {
+			font-size: 0.9rem;
+		}
+
+	}
+
+	.my_card {
+		width: 80%;
+		aspect-ratio: 1/0.5;
+		margin: auto;
+	}
+
+	.siteImg {
+		img {
+			width: 100%;
+		}
+
+	}
+
+}
