@@ -1,12 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Bangers&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
 * {
 	margin: 0;
 	padding: 0;
 }
 
-body{
+body {
 	font-family: "Merriweather", serif;
 }
+
 /*dark mode----------------------------*/
 .dark_mode {
 	background: black !important;
@@ -95,7 +97,8 @@ nav {
 	background: url(pics/coding.jpg);
 	background-repeat: no-repeat;
 	background-repeat: no-repeat;
-	background-position: top;
+	background-position: center;
+	background-size: 50%;
 
 	& h1 {
 		font-size: 3.5rem;
@@ -244,6 +247,10 @@ nav {
 			transform: scale(3);
 		}
 
+	}
+
+	#intro {
+		height: 50vh;
 	}
 
 	#intro h1 {
