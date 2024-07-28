@@ -28,10 +28,7 @@ body {
 	}
 
 	nav {
-		a {
-			color: white;
-		}
-
+		box-shadow:0px 0px 5px 0px #636363b5;
 		button {
 			.bi::before {
 				color: yellow;
@@ -58,11 +55,10 @@ body {
 		a button {
 			background: black !important;
 			border: 1px solid white !important;
-			color:white;
 
 			&:hover {
 				background: white !important;
-				color:black;
+				color:black !important;
 			}
 
 		}
@@ -81,8 +77,8 @@ body {
 
 /*navbar---------------------------------*/
 nav {
+	box-shadow:0px 0px 5px 0px #0000001c;
 	a {
-		color: black;
 		text-decoration: none;
 	}
 

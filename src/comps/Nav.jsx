@@ -1,5 +1,5 @@
 import React from 'react';
-import {Link} from 'react-router-dom'
+import {NavLink} from 'react-router-dom'
 
 function Nav() {
 	const mode=()=> {
@@ -12,9 +12,9 @@ function Nav() {
       <div className="container-fluid">
         <div>
         <ul className='d-flex list-unstyled align-items-center justify-content-end gap-3'>
-          <li><h5><Link to='/'>INTRO</Link></h5></li>
-          <li><h5><Link to='/skill'>ABOUT</Link></h5></li>
-          <li><h5><Link to='/project'>PROJECTS</Link></h5></li>
+          <li><h5><NavLink to='/' style={({isActive})=>({color:isActive?'#8169df':'#00BCD4'})}>INTRO</NavLink></h5></li>
+          <li><h5><NavLink to='/skill' style={({isActive})=>({color:isActive?'#8169df':'#00BCD4'})}>ABOUT</NavLink></h5></li>
+          <li><h5><NavLink to='/project' style={({isActive})=>({color:isActive?'#8169df':'#00BCD4'})}>PROJECTS</NavLink></h5></li>
           <li><button onClick={mode}><i className="bi bi-moon-stars"></i></button></li>
         </ul>
         </div>
