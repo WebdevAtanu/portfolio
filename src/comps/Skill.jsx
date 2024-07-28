@@ -38,7 +38,7 @@ function Skill() {
                 </table>
 
                 <div className="text-center" id="viewcv">
-                  <a href="cv.pdf" download target="_blank"><button className="btn mb-2 mt-2">View CV</button></a>
+                  <a href="https://drive.google.com/file/d/1Ea-pk7Gaz7_SYssFhPCSwYFBUvxK4zJ4/view?usp=drive_link" target="_blank"><button className="btn mb-2 mt-2">View CV</button></a>
                 </div>
 
               </div>
