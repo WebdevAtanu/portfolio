@@ -1,134 +1,43 @@
-import React from 'react'
+import React from 'react';
+import Desktop from './Desktop';
+import Mobile from './Mobile';
 
 function Project() {
 	return (
 	<section>
       <div className="container">
-        <div className="row mt-4">
-          <div className="col-md-6 order-md-1">
-            <div className="container siteImg">
-              <a href="https://rkdemosite.netlify.app/" target="_blank"><img src="pics/site/landing.png" alt=""/></a>
-            </div>
-          </div>
-          <div className="col-md-6 d-flex align-items-center order-md-2">
-            <div className="container demos">
-              <p>Created this landing page from a company's website, in which I gave an interview.</p>
-              <p>TechStack: <span className="techStack">#Bootstrap</span><span className="techStack">#AOS</span><span className="techStack">#Swiper.js</span></p>
-            </div>
-          </div>
-        </div>
-        <hr/>
-        <div className="row mt-4">
-          <div className="col-md-6 order-md-2">
-            <div className="container siteImg">
-              <a href="https://customtemplate.netlify.app/" target="_blank"><img src="pics/site/template.png" alt=""/></a>
-            </div>
-          </div>
-          <div className="col-md-6 d-flex align-items-center order-md-1">
-            <div className="container demos">
-              <p>A template browser where user can download the sorce code. <em>Note-</em> All the codes should include bootstrap cdn to work.</p>
-              <p>TechStack: <span className="techStack">#Bootstrap</span><span className="techStack">#Canva</span></p>
-            </div>
-          </div>
-        </div>
-        <hr/>
-        <div className="row mt-4">
-          <div className="col-md-6 order-md-1">
-            <div className="container siteImg">
-              <a href="https://vkohli18.netlify.app/" target="_blank"><img src="pics/site/virat.png" alt=""/></a>
-            </div>
-          </div>
-          <div className="col-md-6 d-flex align-items-center order-md-2">
-            <div className="container demos">
-              <p>A tribute page for the Indian cricketer Virat Kohli.</p>
-              <p>TechStack: <span className="techStack">#Bootstrap</span><span className="techStack">#GSAP</span><span className="techStack">#Swiper.js</span></p>
-            </div>
-          </div>
-        </div>
-        <hr/>
-        <div className="row mt-4">
-          <div className="col-md-6 order-md-2">
-            <div className="container siteImg">
-              <a href="https://bengalibook.netlify.app/" target="_blank"><img src="pics/site/ebook.png" alt=""/></a>
-            </div>
-          </div>
-          <div className="col-md-6 d-flex align-items-center order-md-1">
-            <div className="container demos">
-              <p>It's a digial e-book reader webpage. Here user can read or download bengali books from various authors. Also created a selection list of authors.</p>
-              <p>TechStack: <span className="techStack">#Bootstrap</span><span className="techStack">#Javascript</span><span className="techStack">#Swiper.js</span></p>
-            </div>
-          </div>
-        </div>
-        <hr/>
-        <div className="row mt-4">
-          <div className="col-md-6 order-md-1">
-            <div className="container siteImg">
-              <a href="https://oh-kolkata.vercel.app/" target="_blank"><img src="pics/site/kolkata.png" alt=""/></a>
-            </div>
-          </div>
-          <div className="col-md-6 d-flex align-items-center order-md-2">
-            <div className="container demos">
-              <p>A tour guide of my city, Kolkata. Here user can browse the famous places to visit and know about our culture.</p>
-              <p>TechStack: <span className="techStack">#Bootstrap</span><span className="techStack">#React</span></p>
-            </div>
-          </div>
-        </div>
-        <hr/>
-        <div className="row mt-4">
-          <div className="col-md-6 order-md-2">
-            <div className="container siteImg">
-              <a href="https://mock-api-ecommerce.netlify.app/" target="_blank"><img src="pics/site/mockAPI.png" alt=""/></a>
-            </div>
-          </div>
-          <div className="col-md-6 d-flex align-items-center order-md-1">
-            <div className="container demos">
-              <p>A mock e-commerce book shop using fetch API. Also Implemented a search and a cart functionality.</p>
-              <p>TechStack: <span className="techStack">#Bootstrap</span><span className="techStack">#SwiperJS</span><span className="techStack">#MockAPI</span></p>
-            </div>
-          </div>
-        </div>
-        <hr/>
-        <div className="row mt-4">
-          <div className="col-md-6 order-md-1">
-            <div className="container siteImg">
-              <a href="https://gamerzz.netlify.app/" target="_blank"><img src="pics/site/gamerz.png" alt=""/></a>
-            </div>
-          </div>
-          <div className="col-md-6 d-flex align-items-center order-md-2">
-            <div className="container demos">
-              <p>A game information page and the good sides of gaming.</p>
-              <p>TechStack: <span className="techStack">#TailwindCSS</span><span className="techStack">#SwiperJS</span></p>
-            </div>
-          </div>
-        </div>
-        <hr/>
-        <div className="row mt-4">
-          <div className="col-md-6 order-md-2">
-            <div className="container siteImg">
-              <a href="https://react-passgen.netlify.app/" target="_blank"><img src="pics/site/password.png" alt="" id='mobile'/></a>
-            </div>
-          </div>
-          <div className="col-md-6 d-flex align-items-center order-md-1">
-            <div className="container demos">
-              <p>A random password generator using react hooks.</p>
-              <p>TechStack: <span className="techStack">#React</span><span className="techStack">#React Hooks</span></p>
-            </div>
-          </div>
-        </div>
-        <hr/>
-        <div className="row mt-4">
-          <div className="col-md-6 order-md-1">
-            <div className="container siteImg">
-              <a href="https://web-note-kappa.vercel.app/" target="_blank"><img src="pics/site/note.png" alt="" id='mobile'/></a>
-            </div>
-          </div>
-          <div className="col-md-6 d-flex align-items-center order-md-2">
-            <div className="container demos">
-              <p>A note taking app using react router.</p>
-              <p>TechStack: <span className="techStack">#React</span><span className="techStack">#React Hooks</span><span className="techStack">#React Router Dom</span></p>
-            </div>
-          </div>
-        </div>
+        <Desktop href="https://rkdemosite.netlify.app/" src="pics/site/landing.png" p="Created this landing page from a company's website, in which I gave an interview." tech={<><span className="techStack">#Bootstrap</span><span className="techStack">#AOS</span><span className="techStack">#Swiper.js</span></>} class1='col-md-6 order-md-1'
+        class2='col-md-6 d-flex align-items-center order-md-2'/>
+
+        <Desktop href="https://customtemplate.netlify.app/" src="pics/site/template.png" p="A template browser where user can download the sorce code. Note- All the codes should include bootstrap cdn to work." tech={<><span className="techStack">#Bootstrap</span><span className="techStack">#Canva</span></>} class1='col-md-6 order-md-2' class2='col-md-6 d-flex align-items-center order-md-1'/>
+
+        <Desktop href="https://vkohli18.netlify.app/" src="pics/site/virat.png" p="A tribute page for the Indian cricketer Virat Kohli." tech={<><span className="techStack">#Bootstrap</span><span className="techStack">#GSAP</span><span className="techStack">#Swiper.js</span></>} class1='col-md-6 order-md-1'
+        class2='col-md-6 d-flex align-items-center order-md-2'/>
+
+        <Desktop href="https://bengalibook.netlify.app/" src="pics/site/ebook.png" p="It's a digial e-book reader webpage. Here user can read or download bengali books from various authors. Also created a selection list of authors." tech={<><span className="techStack">#Bootstrap</span><span className="techStack">#Javascript</span><span className="techStack">#Swiper.js</span></>} class1='col-md-6 order-md-2'
+        class2='col-md-6 d-flex align-items-center order-md-1'/>
+
+        <Desktop href="https://oh-kolkata.vercel.app/" src="pics/site/kolkata.png" p="A tour guide of my city, Kolkata. Here user can browse the famous places to visit and know about our culture." tech={<><span className="techStack">#Bootstrap</span><span className="techStack">#React</span></>} class1='col-md-6 order-md-1'
+        class2='col-md-6 d-flex align-items-center order-md-2'/>
+
+        <Desktop href="https://mock-api-ecommerce.netlify.app/" src="pics/site/mockAPI.png" p="A mock e-commerce book shop using fetch API. Also Implemented a search and a cart functionality." tech={<><span className="techStack">#Bootstrap</span><span className="techStack">#SwiperJS</span><span className="techStack">#MockAPI</span></>} class1='col-md-6 order-md-2'
+        class2='col-md-6 d-flex align-items-center order-md-1'/>
+
+        <Desktop href="https://gamerzz.netlify.app/" src="pics/site/gamerz.png" p="A game information page and the good sides of gaming." tech={<><span className="techStack">#TailwindCSS</span><span className="techStack">#SwiperJS</span></>} class1='col-md-6 order-md-1'
+        class2='col-md-6 d-flex align-items-center order-md-2'/>
+
+        <Desktop href="https://react-dashboard-three-red.vercel.app/" src="pics/site/money.png" p="Expense tracker dashboard where user can signup and login themselves." tech={<><span className="techStack">#TailwindCSS</span><span className="techStack">#ReactJS</span><span className="techStack">#Chart JS</span></>} class1='col-md-6 order-md-2'
+        class2='col-md-6 d-flex align-items-center order-md-1'/>
+
+        <Desktop href="https://traveller-one.vercel.app/" src="pics/site/travel.png" p="Travel blog around the world." tech={<><span className="techStack">#TailwindCSS</span><span className="techStack">#React JS</span><span className="techStack">#React Router</span></>} class1='col-md-6 order-md-1'
+        class2='col-md-6 d-flex align-items-center order-md-2'/>
+
+        <Mobile href="https://react-passgen.netlify.app/" src="pics/site/password.png" p="A random password generator using react hooks." tech={<><span className="techStack">#React</span><span className="techStack">#React Hooks</span></>} class1='col-md-6 order-md-2'
+        class2='col-md-6 d-flex align-items-center order-md-1'/>
+
+        <Mobile href="https://web-note-kappa.vercel.app/" src="pics/site/note.png" p="A note taking app using react router." tech={<><span className="techStack">#React</span><span className="techStack">#React Hooks</span><span className="techStack">#React Router Dom</span></>} class1='col-md-6 order-md-1'
+        class2='col-md-6 d-flex align-items-center order-md-2'/>
+
       </div>
     </section>
 	)

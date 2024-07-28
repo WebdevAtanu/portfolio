@@ -8,15 +8,35 @@ function Skill() {
         <div className="container-fluid">
           <div className="row">
             <div className="col-md-6">
-              <div className="container-fluid" id="abouts">
+              <div className="container-fluid mb-4" id="abouts">
                 <ul>
                   <li>A passionate web developer with a focus on creating seamless user experiences and innovative solutions.</li>
                   <li>Specializing in front-end development, with a passion for creating user-friendly, responsive, scalable and visually appealing web applications.</li>
                   <li>Constantly learning and adapting to new technologies to stay ahead in the ever-evolving digital landscape.</li>
+                  <li>My Techstack includes-</li>
                 </ul>
-                <p><span className="techStack">#CSS</span><span className="techStack">#Javascript</span><span className="techStack">#Bootstrap</span><span className="techStack">#TailwindCSS</span></p>
-                <p><span className="techStack">#jQuery</span><span className="techStack">#Node.js</span><span className="techStack">#Express.js</span><span className="techStack">#React.js</span><span className="techStack">#EJS</span></p>
-                <p><span className="techStack">#SQL</span><span className="techStack">#MongoDB</span><span className="techStack">#Git</span><span className="techStack">#GitHub</span></p>
+                <table>
+                  <tbody>
+                    <tr>
+                      <td><p className="techStack">#CSS</p></td>
+                      <td><p className="techStack">#Javascript</p></td>
+                      <td><p className="techStack">#Bootstrap</p></td>
+                      <td><p className="techStack">#TailwindCSS</p></td>
+                    </tr>
+                    <tr>
+                      <td><p className="techStack">#jQuery</p></td>
+                      <td><p className="techStack">#React.js</p></td>
+                      <td><p className="techStack">#Node.js</p></td>
+                      <td><p className="techStack">#Express.js</p></td>
+                    </tr>
+                    <tr>
+                      <td><p className="techStack">#MongoDB</p></td>
+                      <td><p className="techStack">#SQL</p></td>
+                      <td><p className="techStack">#GitHub</p></td>
+                    </tr>
+                  </tbody>
+                </table>
+
                 <div className="text-center" id="viewcv">
                   <a href="cv.pdf" download target="_blank"><button className="btn mb-2 mt-2">View CV</button></a>
                 </div>

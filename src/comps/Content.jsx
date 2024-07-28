@@ -10,7 +10,7 @@ function Content() {
             <div className="d-flex justify-content-center align-items-center flex-column p-1 my_card">
               <img src="pics/do/front.jpg" alt=""/>
               <h6>Front-End</h6>
-              <p className="m-0">Building front-end with libraries as well as pure HTML and CSS.</p>
+              <p className="m-0">Front-end with libraries as well as pure HTML, CSS and Javascript.</p>
             </div>
           </div>
           <div className="col-md-3">
@@ -24,7 +24,7 @@ function Content() {
             <div className="d-flex justify-content-center align-items-center flex-column p-1 my_card">
               <img src="pics/do/back.jpg" alt=""/>
               <h6>Back-end</h6>
-              <p className="m-0">Familiar with PHP, Node.js and APIs.</p>
+              <p className="m-0">Familiar with PHP, Node.js, Express and APIs.</p>
             </div>
           </div>
           <div className="col-md-3">
