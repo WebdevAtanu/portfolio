@@ -28,24 +28,21 @@ body {
 	}
 
 	nav {
-		box-shadow:0px 0px 5px 0px #636363b5;
-		button {
-			.bi::before {
-				color: yellow;
-			}
+		box-shadow: 0px 0px 5px 0px #636363b5;
+		background: black;
 
+		a {
+			color: white;
+		}
+
+		.active {
+			border-color: white;
 		}
 
 	}
 
 	#aboutMe {
-		background: black;
-
 		ul {
-			color: white;
-		}
-
-		& .bi::before {
 			color: white;
 		}
 
@@ -55,10 +52,11 @@ body {
 		a button {
 			background: black !important;
 			border: 1px solid white !important;
+			color: white;
 
 			&:hover {
 				background: white !important;
-				color:black !important;
+				color: black !important;
 			}
 
 		}
@@ -70,16 +68,40 @@ body {
 	}
 
 	.my_card {
-		border:1px solid white;
+		border: 1px solid white;
+	}
+
+	.overlay {
+		background: #ffffff1f;
 	}
 
 }
 
 /*navbar---------------------------------*/
 nav {
-	box-shadow:0px 0px 5px 0px #0000001c;
+	box-shadow: 0px 0px 5px 0px #0000001c;
+	background: white;
+	position: sticky;
+	top: 0;
+	z-index: 5;
+
+	.bi::before {
+		transform: scale(1.8);
+	}
+
 	a {
 		text-decoration: none;
+		color: black;
+		border-bottom: 1px solid transparent;
+	}
+
+	.active {
+		border-color: black;
+		animation: border 1s ease forwards;
+	}
+
+	.notactive {
+		color: #514d4d;
 	}
 
 	button {
@@ -91,16 +113,17 @@ nav {
 
 /*intro---------------------------------*/
 #intro {
-	height:100%;
+	height: 100%;
+
 	& h1 {
 		font-size: 3.5rem;
 		color: black;
 	}
 
 	& p {
-		width:50%;
-		display:inline-block;
-		text-align:justify;
+		width: 50%;
+		display: inline-block;
+		text-align: justify;
 	}
 
 	& a {
@@ -119,7 +142,7 @@ nav {
 	width: 100%;
 	height: 100%;
 	box-sizing: border-box;
-	border:1px solid black;
+	border: 1px solid black;
 	text-align: center;
 
 	& img {
@@ -154,88 +177,101 @@ nav {
 
 	}
 
+	table {
+		tr td {
+			padding: 0.1rem;
+		}
 
-table{
-	tr td{
-		padding:0.1rem;
 	}
-}
 
+	#viewcv {
+		a button {
+			border: 1px solid black;
+			border-radius: 0;
+			transition: all 0.2s;
+			font-size: 0.7rem;
+			width: 100%;
 
+			&:hover {
+				background: black;
+				color: white;
+			}
 
-#viewcv {
-	a button {
-		border: 1px solid black;
-		border-radius: 0;
-		transition: all 0.2s;
-		font-size: 0.7rem;
-		width: 100%;
+		}
+
+	}
+
+	#me {
+		width: 70%;
+		transition: all 0.3s;
 
 		&:hover {
-			background: black;
-			color: white;
+			transform: translate3d(-15px, -15px, 0px);
+			box-shadow: 15px 15px 0px 0px #0d495b;
 		}
 
 	}
 
 }
 
-#me {
-	width: 70%;
-	
-	transition:all 0.3s;
-	&:hover{
-		        transform: translate3d(-15px, -15px, 0px);
-		        box-shadow: 15px 15px 0px 0px #0d495b;
-	}
-}
-}
 .techStack {
-    padding: 0.2rem;
-    margin-left:0.2rem;
-    font-size: 0.8rem;
-    background: #b1abab30;
-    text-align: center;
+	padding: 0.2rem;
+	margin-left: 0.2rem;
+	font-size: 0.8rem;
+	background: #b1abab30;
+	text-align: center;
 }
 
 /*demo------------------------------*/
+.overlay {
+	position: absolute;
+	height: 100%;
+	width: 70%;
+	left: 15%;
+	background: #00000014;
+	z-index: 2;
+	border-radius: 1rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	opacity: 0;
+	transition: all 0.5s;
+
+	&:hover {
+		opacity: 1;
+	}
+
+	& svg {
+		color: white;
+		background: #68b4ff;
+		border-radius: 50%;
+		padding: 0.5rem;
+		transition: all 0.5s;
+
+		&:hover {
+			padding: 0.3rem;
+		}
+
+	}
+
+}
+
 .siteImg {
 	text-align: center;
 
 	img {
 		width: 70%;
 		transition: all 0.5s;
-
-		&:hover {
-			transform: scale(1.1);
-		}
-
 	}
 
 	#mobile {
 		width: 40%;
-		margin-bottom:0.5rem;
+		margin-bottom: 0.5rem;
 
 		&:hover {
 			transform: scale(1.1);
 		}
 
-	}
-
-}
-
-/*footer------------------------------*/
-#footer {
-	& ul li>a {
-		margin-left: 0.5rem;
-		text-decoration: none;
-		color: black;
-		cursor: pointer;
-	}
-
-	& h1,
-	p {
-		color: black;
 	}
 
 }
@@ -248,8 +284,8 @@ table{
 
 @media screen and (max-width:780px) {
 	nav {
-		a{
-			font-size:0.8rem;
+		a {
+			font-size: 0.8rem;
 		}
 
 		.bi::before {
@@ -260,22 +296,23 @@ table{
 
 	#intro {
 		height: 100%;
-		p{
-			width:100%;
+
+		p {
+			width: 100%;
 		}
+
 	}
 
 	#intro h1 {
 		font-size: calc(1.8rem + 1vw);
 	}
 
-	#aboutme{
-		p{	
-		font-size: 15px;
+	#aboutme {
+		p {
+			font-size: 15px;
 		}
-}
 
-	
+	}
 
 	.my_card {
 		width: 80%;
