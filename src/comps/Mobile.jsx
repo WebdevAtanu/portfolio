@@ -12,7 +12,7 @@ function Desktop(props) {
           <div className={props.class2}>
             <div className="container demos">
               <p>{props.p} </p>
-              <p>TechStack: {props.tech}</p>
+              <p>TechStack Used: {props.tech}</p>
             </div>
           </div>
         </div>
