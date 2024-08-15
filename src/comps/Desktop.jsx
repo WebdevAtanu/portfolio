@@ -19,7 +19,6 @@ function Desktop(props) {
             </div>
           </div>
         </div>
-        <hr/>
         </>
 	)
 }
