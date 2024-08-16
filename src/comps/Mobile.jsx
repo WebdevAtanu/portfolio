@@ -11,6 +11,7 @@ function Desktop(props) {
           </div>
           <div className={props.class2}>
             <div className="container demos">
+              <h5 className='my-2'>{props.h5}</h5>
               <p>{props.p} </p>
               <p>TechStack Used: {props.tech}</p>
             </div>

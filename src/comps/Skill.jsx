@@ -31,6 +31,7 @@ function Skill() {
                     </tr>
                     <tr>
                       <td><p className="techStack">#MongoDB</p></td>
+                      <td><p className="techStack">#PHP</p></td>
                       <td><p className="techStack">#SQL</p></td>
                       <td><p className="techStack">#GitHub</p></td>
                     </tr>
@@ -38,7 +39,7 @@ function Skill() {
                 </table>
 
                 <div className="text-center" id="viewcv">
-                  <a href="https://drive.google.com/file/d/1agobaCPDZFRcCTDpbsa8AsZcwYo1B-dz/view?usp=drive_link" target="_blank"><button className="btn mb-2 mt-2">View CV</button></a>
+                  <a href="CV.pdf" target="_blank" download><button className="btn mb-2 mt-2">View CV</button></a>
                 </div>
 
               </div>

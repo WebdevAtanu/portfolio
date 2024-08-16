@@ -11,7 +11,7 @@ body {
 
 /*dark mode----------------------------*/
 .dark_mode {
-	animation:bgchange 0.3s linear forwards;
+	animation: bgchange 0.3s linear forwards;
 
 	hr {
 		border-color: white;
@@ -64,7 +64,7 @@ body {
 	}
 
 	.bi::before {
-		color: white;
+		color: white !important;
 	}
 
 	.my_card {
@@ -78,12 +78,14 @@ body {
 }
 
 @keyframes bgchange {
-	from{
-		background:white;
+	from {
+		background: white;
 	}
-	to{
-		background:black;
+
+	to {
+		background: black;
 	}
+
 }
 
 /*navbar---------------------------------*/
@@ -96,6 +98,7 @@ nav {
 
 	.bi::before {
 		transform: scale(1.8);
+		margin: 1rem;
 	}
 
 	a {
@@ -123,6 +126,12 @@ nav {
 /*intro---------------------------------*/
 #intro {
 	height: 100%;
+
+	.bi::before {
+		transform: scale(1.5);
+		margin: 0.5rem;
+		color: black;
+	}
 
 	& h1 {
 		font-size: 3.5rem;
@@ -232,24 +241,34 @@ nav {
 }
 
 /*demo------------------------------*/
+
 /*=========splide=========*/
 .splide__arrows {
-    position: absolute;
-    bottom: 0; /* Adjust the distance from the bottom */
-    left: 50%;
-    transform: translateX(-50%);
-    width: 50%;
-    display: flex;
-    justify-content: space-between;
+	position: absolute;
+	bottom: 0; /* Adjust the distance from the bottom */
+	left: 50%;
+	transform: translateX(-50%);
+	width: 50%;
+	display: flex;
+	justify-content: space-between;
 }
+
 .splide__arrow {
-    color: #fff; /* Customize arrow color */
-    padding: 0 !important; /* Adjust padding */
-    border-radius: 0 !important; /* Optional: Make arrows round */
+	color: #fff; /* Customize arrow color */
+	padding: 0 !important; /* Adjust padding */
+	border-radius: 0 !important; /* Optional: Make arrows round */
 }
-.splide__pagination__page.is-active{
-	background:#F44336 !important;
+
+.splide__pagination__page.is-active {
+	background: #03A9F4 !important;
 }
+
+h4 {
+	text-align: center;
+	background: #03a9f480;
+	padding: 0.5rem;
+}
+
 .overlay {
 	position: absolute;
 	height: 100%;
@@ -301,12 +320,6 @@ nav {
 
 	}
 
-}
-
-.bi::before {
-	transform: scale(2);
-	margin: 1rem;
-	color: black;
 }
 
 @media screen and (max-width:780px) {
