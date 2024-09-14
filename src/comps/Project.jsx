@@ -42,7 +42,7 @@ return (
     </SplideSlide>
     </Splide>
   </div>
-  <hr className='mt-5'/>
+  <hr className='mt-2'/>
   <div className="container-fluid">
     <Splide
     options={{
@@ -92,7 +92,7 @@ return (
     </SplideSlide>
     </Splide>
   </div>
-  <hr className='mt-5'/>
+  <hr className='mt-2'/>
   <div className="container-fluid">
     <Splide
     options={{
@@ -118,7 +118,7 @@ return (
     </SplideSlide>
     </Splide>
   </div>
-  <hr className='mt-5'/>
+  <hr className='mt-2'/>
 </section>
 )
 }

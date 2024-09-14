@@ -2,7 +2,6 @@ import React from 'react'
 
 function Desktop(props) {
 	return (
-		<>
 		<div className="row mt-4">
           <div className={props.class1}>
             <div className="container siteImg position-relative">
@@ -19,8 +18,7 @@ function Desktop(props) {
               <p>TechStack Used: {props.tech}</p>
             </div>
           </div>
-        </div>
-        </>
+    </div>
 	)
 }
 

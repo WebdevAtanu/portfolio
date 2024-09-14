@@ -48,21 +48,6 @@ body {
 
 	}
 
-	#viewcv {
-		a button {
-			background: black !important;
-			border: 1px solid white !important;
-			color: white;
-
-			&:hover {
-				background: white !important;
-				color: black !important;
-			}
-
-		}
-
-	}
-
 	.bi::before {
 		color: white !important;
 	}
@@ -109,7 +94,6 @@ nav {
 
 	.active {
 		border-color: black;
-		animation: border 1s ease forwards;
 	}
 
 	.notactive {
@@ -117,8 +101,7 @@ nav {
 	}
 
 	button {
-		border: none;
-		background: none;
+		all: unset;
 	}
 
 }
@@ -128,7 +111,7 @@ nav {
 	height: 100%;
 
 	.bi::before {
-		transform: scale(1.5);
+		transform: scale(1.8);
 		margin: 0.5rem;
 		color: black;
 	}
@@ -142,15 +125,6 @@ nav {
 		width: 50%;
 		display: inline-block;
 		text-align: justify;
-	}
-
-	& a {
-		transition: all 0.3s;
-
-		&:hover {
-			transform: scale(1.2);
-		}
-
 	}
 
 }
@@ -175,10 +149,6 @@ nav {
 		font-size: 0.8rem;
 	}
 
-	& h6 {
-		color: black;
-	}
-
 }
 
 /*about me---------------------------------------------*/
@@ -186,7 +156,7 @@ nav {
 	padding: 1rem;
 
 	ul {
-		list-style-type: square;
+		list-style: none;
 		padding-left: 0 !important;
 
 		li {
@@ -195,27 +165,13 @@ nav {
 
 	}
 
-	table {
-		tr td {
-			padding: 0.1rem;
-		}
-
-	}
-
 	#viewcv {
 		a button {
-			border: 1px solid black;
-			border-radius: 0;
-			transition: all 0.2s;
+			background: #0d495b;
+			color: white;
+			border-radius: 1rem;
 			font-size: 0.7rem;
-			padding-left:1.5rem;
-			padding-right:1.5rem;
-
-			&:hover {
-				background: black;
-				color: white;
-			}
-
+			width: 30%;
 		}
 
 	}
@@ -233,41 +189,28 @@ nav {
 
 }
 
+table {
+	width: 100%;
+}
+
 .techStack {
 	padding: 0.2rem;
-	margin-left: 0.2rem;
+	margin-right: 0.5rem;
 	font-size: 0.8rem;
 	background: #b1abab30;
 	text-align: center;
+	border-radius: 2px;
 }
 
 /*demo------------------------------*/
 
 /*=========splide=========*/
 .splide__arrows {
-	position: absolute;
-	bottom: 0; /* Adjust the distance from the bottom */
-	left: 50%;
-	transform: translateX(-50%);
-	width: 50%;
-	display: flex;
-	justify-content: space-between;
-}
-
-.splide__arrow {
-	color: #fff; /* Customize arrow color */
-	padding: 0 !important; /* Adjust padding */
-	border-radius: 0 !important; /* Optional: Make arrows round */
+	display: none;
 }
 
 .splide__pagination__page.is-active {
 	background: #0959b7 !important;
-}
-
-h4 {
-	text-align: center;
-	background: #03a9f480;
-	padding: 0.5rem;
 }
 
 .overlay {
@@ -275,7 +218,7 @@ h4 {
 	height: 100%;
 	width: 70%;
 	left: 15%;
-	background: #00000014;
+	background: #00000020;
 	z-index: 2;
 	border-radius: 1rem;
 	display: flex;
@@ -308,17 +251,11 @@ h4 {
 
 	img {
 		width: 70%;
-		transition: all 0.5s;
 	}
 
 	#mobile {
 		width: 40%;
 		margin-bottom: 0.5rem;
-
-		&:hover {
-			transform: scale(1.1);
-		}
-
 	}
 
 }
@@ -336,8 +273,6 @@ h4 {
 	}
 
 	#intro {
-		height: 100%;
-
 		p {
 			width: 100%;
 		}
@@ -345,12 +280,12 @@ h4 {
 	}
 
 	#intro h1 {
-		font-size: 2.2rem;
+		font-size: 2rem;
 	}
 
 	#aboutme {
 		p {
-			font-size: 15px;
+			font-size: 1rem;
 		}
 
 	}
@@ -358,14 +293,6 @@ h4 {
 	.my_card {
 		width: 100%;
 		aspect-ratio: 1/0.5;
-		margin: auto;
-	}
-
-	.siteImg {
-		img {
-			width: 70%;
-		}
-
 	}
 
 }

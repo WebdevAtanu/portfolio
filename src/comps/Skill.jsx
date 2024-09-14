@@ -16,22 +16,22 @@ return (
             <table>
               <tbody>
                 <tr>
-                  <td><p className="techStack">#CSS</p></td>
-                  <td><p className="techStack">#Javascript</p></td>
-                  <td><p className="techStack">#Bootstrap</p></td>
-                  <td><p className="techStack">#TailwindCSS</p></td>
+                  <td><p className="techStack">CSS</p></td>
+                  <td><p className="techStack">Javascript</p></td>
+                  <td><p className="techStack">Bootstrap</p></td>
+                  <td><p className="techStack">TailwindCSS</p></td>
                 </tr>
                 <tr>
-                  <td><p className="techStack">#jQuery</p></td>
-                  <td><p className="techStack">#React.js</p></td>
-                  <td><p className="techStack">#Node.js</p></td>
-                  <td><p className="techStack">#Express.js</p></td>
+                  <td><p className="techStack">jQuery</p></td>
+                  <td><p className="techStack">React.js</p></td>
+                  <td><p className="techStack">Node.js</p></td>
+                  <td><p className="techStack">Express.js</p></td>
                 </tr>
                 <tr>
-                  <td><p className="techStack">#MongoDB</p></td>
-                  <td><p className="techStack">#PHP</p></td>
-                  <td><p className="techStack">#SQL</p></td>
-                  <td><p className="techStack">#GitHub</p></td>
+                  <td><p className="techStack">MongoDB</p></td>
+                  <td><p className="techStack">PHP</p></td>
+                  <td><p className="techStack">SQL</p></td>
+                  <td><p className="techStack">GitHub</p></td>
                 </tr>
               </tbody>
             </table>

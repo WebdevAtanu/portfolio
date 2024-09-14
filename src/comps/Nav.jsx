@@ -14,9 +14,9 @@ function Nav() {
       <div className="container-fluid">
         <div>
         <ul className='d-flex list-unstyled align-items-center justify-content-end gap-3'>
-          <li><h5><NavLink to='/' className={({isActive})=>(isActive? 'active':'notactive')}>INTRO</NavLink></h5></li>
-          <li><h5><NavLink to='/skill' className={({isActive})=>(isActive? 'active':'notactive')}>ABOUT</NavLink></h5></li>
-          <li><h5><NavLink to='/project' className={({isActive})=>(isActive? 'active':'notactive')}>PROJECTS</NavLink></h5></li>
+          <li><h5><NavLink to='/' className={({isActive})=>(isActive? 'active':'notactive')}>Intro</NavLink></h5></li>
+          <li><h5><NavLink to='/skill' className={({isActive})=>(isActive? 'active':'notactive')}>About</NavLink></h5></li>
+          <li><h5><NavLink to='/project' className={({isActive})=>(isActive? 'active':'notactive')}>Projects</NavLink></h5></li>
           <li><button onClick={mode}>{flag?<i className="bi bi-sun"></i>:<i className="bi bi-moon-stars"></i>}</button></li>
         </ul>
         </div>
