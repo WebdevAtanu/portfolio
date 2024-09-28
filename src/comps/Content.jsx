@@ -2,7 +2,7 @@ import React from 'react'
 function Content() {
 return (
 <>
-  <h3 className="text-center mb-3">Things I do</h3>
+  <h5 className="text-center mb-3">Things I do</h5>
   <div className="container mt-2 d-flex align-items-center justify-content-center">
     <div className="row g-3">
       <div className="col-md-6">

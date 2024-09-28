@@ -7,7 +7,7 @@ return (
     <div className="container g-0 mt-3" id="intro">
       <h6 className="mb-0">Hey there, I'm</h6>
       <h1 className="m-0">Atanu Mondal</h1>
-      <h6 className='mb-4'>Front-end developer</h6>
+      <h6 className='mb-4'>Web application developer</h6>
       <div className='d-flex gap-5 justify-content-between'>
         <p>I am currently expanding my skill set by learning MERN stack to contribute to innovative projects.
           Trying to build a strong foundation in component-based architecture, state management, modern
