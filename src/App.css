@@ -167,9 +167,9 @@ nav {
 
 	#viewcv {
 		a button {
-			background: #0d495b;
+			background: #003140;
 			color: white;
-			border-radius: 1rem;
+			border-radius: 5px;
 			font-size: 0.7rem;
 			width: 30%;
 		}
@@ -179,12 +179,6 @@ nav {
 	#me {
 		width: 70%;
 		transition: all 0.3s;
-
-		&:hover {
-			transform: translate3d(-15px, -15px, 0px);
-			box-shadow: 15px 15px 0px 0px #0d495b;
-		}
-
 	}
 
 }
