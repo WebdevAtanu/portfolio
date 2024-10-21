@@ -1,6 +1,5 @@
 import React from 'react';
 import Desktop from './Desktop';
-import Projectcard from './Projectcard';
 function Project() {
 return (
     <div>
