@@ -1,27 +1,19 @@
-import React,{useState} from 'react';
-import {NavLink} from 'react-router-dom'
+import Intro from './Intro';
+import Project from './Project';
+import Skill from './Skill';
 
 function Nav() {
-  const [flag,setFlag]=useState(false);
-	const mode=()=> {
-    setFlag(!flag);
-    let docBody = document.body;
-    docBody.classList.toggle("dark_mode");
-	}
-
 	return (
-	 <nav>
-      <div className="container-fluid">
-        <div>
-        <ul className='d-flex list-unstyled align-items-center justify-content-end gap-3'>
-          <li><h5><NavLink to='/' className={({isActive})=>(isActive? 'active':'notactive')}>Intro</NavLink></h5></li>
-          <li><h5><NavLink to='/skill' className={({isActive})=>(isActive? 'active':'notactive')}>About</NavLink></h5></li>
-          <li><h5><NavLink to='/project' className={({isActive})=>(isActive? 'active':'notactive')}>Projects</NavLink></h5></li>
-          <li><button onClick={mode}>{flag?<i className="bi bi-sun"></i>:<i className="bi bi-moon-stars"></i>}</button></li>
-        </ul>
+    <div role="tablist" className="tabs tabs-lifted">
+      <input type="radio" name="my_tabs_2" role="tab" className="tab" aria-label="Intro" defaultChecked/>
+      <div role="tabpanel" className="tab-content bg-base-100 border-base-300 rounded-box p-6">
+        <Intro/>
+      </div>
+      <input type="radio" name="my_tabs_2" role="tab" className="tab" aria-label="Projects" />
+      <div role="tabpanel" className="tab-content bg-base-100 border-base-300 rounded-box p-6">
+        <Project/>
         </div>
       </div>
-    </nav>
 	)
 }
 

@@ -1,49 +1,61 @@
 import React from 'react'
 function Content() {
 return (
-<>
-  <h5 className="text-center mb-3">Things I do</h5>
-  <div className="container mt-2 d-flex align-items-center justify-content-center">
-    <div className="row g-3">
-      <div className="col-md-6">
-        <div className="row">
-          <div className="col-6">
-            <div className="d-flex justify-content-center align-items-center flex-column p-1 my_card">
-              <img src="pics/do/front.jpg" alt=""/>
-              <h6>Front-End</h6>
-              <p className="m-0">I code front-end with libraries as well as pure HTML, CSS and JavaScript.</p>
-            </div>
-          </div>
-          <div className="col-6">
-            <div className="d-flex justify-content-center align-items-center flex-column p-1 my_card">
-              <img src="pics/do/cms.jpg" alt=""/>
-              <h6>Wordpress</h6>
-              <p className="m-0">I can work with wordpress content management system.</p>
-            </div>
+  <div className="mt-5">
+    <p className='underline underline-offset-4 mb-3 text-xl'>Things i do</p>
+    <div className="grid grid-cols-1 md:grid-cols-4 gap-3">
+      <div className="card bg-base-100 w-full border border-black flex flex-col justify-between">
+        <figure>
+          <img src="pics/do/front.jpg" alt="image" className='w-full aspect-video'/>
+        </figure>
+        <div className="p-3">
+          <h2 className="card-title">Front-End</h2>
+          <p>Proficient in frontend development with experience in React to create responsive user interfaces, ensuring a seamless experience across devices and browsers.</p>
+          <div className="card-actions justify-end mt-5">
+            <div className="badge badge-outline">React.js</div>
           </div>
         </div>
       </div>
-      <div className="col-md-6">
-        <div className="row">
-          <div className="col-6">
-            <div className="d-flex justify-content-center align-items-center flex-column p-1 my_card">
-              <img src="pics/do/back.jpg" alt=""/>
-              <h6>Back-end</h6>
-              <p className="m-0">I'm familiar with PHP, Node.js, Express and APIs.</p>
-            </div>
+      <div className="card bg-base-100 w-full border border-black flex flex-col justify-between">
+        <figure>
+          <img src="pics/do/cms.jpg" alt="image" className='w-full aspect-video object-cover'/>
+        </figure>
+        <div className="p-3">
+          <h2 className="card-title">CMS</h2>
+          <p>Proficient in content management systems, implementing themes and plugins, optimizing site performance to create user-friendly and responsive websites.</p>
+          <div className="card-actions justify-end mt-5">
+            <div className="badge badge-outline">Wordpress</div>
           </div>
-          <div className="col-6">
-            <div className="d-flex justify-content-center align-items-center flex-column p-1 my_card">
-              <img src="pics/do/db.jpg" alt=""/>
-              <h6>DB Query</h6>
-              <p className="m-0">Used to with MongoDB and MySQL queries.</p>
-            </div>
+        </div>
+      </div>
+      <div className="card bg-base-100 w-full border border-black flex flex-col justify-between">
+        <figure>
+          <img src="pics/do/back.jpg" alt="image" className='w-full aspect-video object-cover'/>
+        </figure>
+        <div className="p-3">
+          <h2 className="card-title">Back-End</h2>
+          <p>Proficient in building backend APIs using Node.js and Express, with a focus on scalability and performance.</p>
+          <div className="card-actions justify-end mt-5">
+            <div className="badge badge-outline">Node.js</div>
+            <div className="badge badge-outline">Express.js</div>
+          </div>
+        </div>
+      </div>
+      <div className="card bg-base-100 w-full border border-black flex flex-col justify-between">
+        <figure>
+          <img src="pics/do/db.jpg" alt="image" className='w-full aspect-video object-cover'/>
+        </figure>
+        <div className="p-3">
+          <h2 className="card-title">Database</h2>
+          <p>Proficient in database management, ensuring data integrity and performance optimization in relational and NoSQL databases.</p>
+          <div className="card-actions justify-end mt-5">
+            <div className="badge badge-outline">MongoDB</div>
+            <div className="badge badge-outline">MySQL</div>
           </div>
         </div>
       </div>
     </div>
   </div>
-</>
 )
 }
 export default Content
