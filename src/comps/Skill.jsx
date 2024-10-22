@@ -1,16 +1,15 @@
 import React from 'react'
 function Skill() {
 return (
-    <div className="grid md:grid-cols-2 mt-5">
+    <div className="grid md:grid-cols-2 mt-10">
       <div>
-        <p className='underline underline-offset-4 mb-3 text-xl'>Summary</p>
+        <p className='underline underline-offset-4 mb-3'>Summary</p>
         <div className="mb-4">
-          <ul className='list-none pl-0'>
-            <li className='mb-2'>A passionate web developer with a focus on creating seamless user experiences and innovative solutions.</li>
-            <li className='mb-2'>Specializing in front-end development, with a passion for creating user-friendly, responsive, scalable and visually appealing web applications.</li>
-            <li className='mb-2'>Constantly learning and adapting to new technologies to stay ahead in the ever-evolving digital landscape.</li>
-          </ul>
-          <p className='underline underline-offset-4 mb-3 text-xl'>My skills</p>
+          <p className='text-sm'>I am currently expanding my skill set by learning MERN stack to contribute to innovative projects. Trying
+            to build a strong foundation in component-based architecture, state management, modern JavaScript
+            techniques and Node.js backend technology. Eager to grow and develop in a collaborative team
+            environment.</p>
+          <p className='underline underline-offset-4 mb-3 mt-5'>My skills</p>
           <table className='w-full mt-3'>
             <tbody>
               <tr>
@@ -36,7 +35,7 @@ return (
         </div>
       </div>
       <div className="flex justify-center items-center">
-        <img src="pics/dev.gif" alt=""className='w-full'/>
+        <img src="pics/dev.gif" alt=""className='w-1/2'/>
       </div>
     </div>
 )
