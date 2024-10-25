@@ -18,10 +18,10 @@ return (
     </div>
     <div className="flex flex-col gap-2 justify-between">
       
-      <div className="flex gap-3 mb-3 items-center">
+      <div className="flex gap-6 mb-3 items-center">
         <a href="CV.pdf" target="_blank" download><button className="border bg-slate-800 hover:bg-slate-900 px-4 py-2 rounded text-white text-sm">View CV</button></a>
-        <a className='scale-[1.5] hover:text-blue-900 duration-150' href="https://www.linkedin.com/in/atanu-mondal-b98707255/" target="_blank"><i className="bi bi-linkedin"></i></a>
-        <a className='scale-[1.5] hover:text-black duration-150' href="https://github.com/WebdevAtanu" target="_blank"><i className="bi bi-github"></i></a>
+        <a className='scale-[1.8] hover:text-blue-900 duration-150' href="https://www.linkedin.com/in/atanu-mondal-b98707255/" target="_blank"><i className="bi bi-linkedin"></i></a>
+        <a className='scale-[1.8] hover:text-black duration-150' href="https://github.com/WebdevAtanu" target="_blank"><i className="bi bi-github"></i></a>
       </div>
       <p>I'm a Front-end developer with a solid foundation in backend technologies. Proficient in creating engaging and responsive user interfaces using HTML, CSS, and JavaScript frameworks like React. Leverage backend knowledge in Node.js and Express to seamlessly integrate APIs and enhance application functionality. Experienced in working with databases to ensure smooth data management and flow. Passionate about delivering high-quality, user-friendly solutions while continuously learning and adapting to new technologies. Adept at collaborating in team environments to bring innovative ideas to life.</p>
     </div>

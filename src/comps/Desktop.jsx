@@ -10,7 +10,7 @@ function Desktop(props) {
         <h5 className='text-xl'>{props.h5}</h5>
         <p>{props.p}</p>
         <p className='text-sm'>TechStack Used: {props.tech}</p>
-        <a href={props.href} className='text-blue-600 text-sm underline underline-offset-4 hover:text-blue-800'>Live Link  <i className="bi bi-box-arrow-up-right"></i></a>
+        <a href={props.href} target='_blank' className='text-blue-600 text-sm underline underline-offset-4 hover:text-blue-800'>Live Link  <i className="bi bi-box-arrow-up-right"></i></a>
       </div>
     </div>
 	)
