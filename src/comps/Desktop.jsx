@@ -13,10 +13,13 @@ function Desktop(props) {
         <div>
           <h5 className='text-xl mb-2'>{props.h5}</h5>
           <p>{props.p}</p>
+          <p className='text-sm mt-2'>TechStack Used: {props.tech}</p>
         </div>
         <div>
-          <p className='text-sm'>TechStack Used: {props.tech}</p>
-          <a href={props.href} target='_blank' className='text-blue-600 text-sm underline underline-offset-4 hover:text-blue-800'>Live Link  <i className="bi bi-box-arrow-up-right"></i></a>
+          <div className="flex gap-5">
+          <a href={props.href} target='_blank' className='underline underline-offset-4 hover:text-blue-800'><i className="bi bi-browser-chrome"></i> Live Link</a>
+          <a href={props.github} target='_blank' className='underline underline-offset-4 hover:text-blue-800'><i className="bi bi-github"></i> GitHub Link</a> 
+          </div>
         </div>
       </div>
     </div>
