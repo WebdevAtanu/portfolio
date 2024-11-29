@@ -4,6 +4,10 @@ function Project() {
 return (
     <div>
     <div className="">
+        <Desktop href="https://shopper-ecommerce.onrender.com/" github="https://github.com/WebdevAtanu/shopper-ecommerce" src="pics/site/shopper.png" h5='Shopper' p="Developed a MERN stack-based shopping app, utilizing ShadCN for a modern design system. The app offering a seamless shopping experience. ShadCN's pre-built components and utility-first design made it easy to implement a responsive interface, while the MERN stack ensures efficient handling of data, authentication, and real-time updates." tech={<><span className="techStack">#MERN</span><span className="techStack">#ShadCN</span></>}/>
+      </div>
+
+    <div className="">
         <Desktop href="https://blog-appwrite-pi.vercel.app/" github="https://github.com/WebdevAtanu/blog-appwrite" src="pics/site/blog.png" h5='Techdown Blog' p="Developed a dynamic and responsive blog site using React, styled with DaisyUI for a sleek, modern design. Integrated Appwrite as the backend to handle user authentication, content management, and real-time updates, ensuring a seamless and scalable user experience." tech={<><span className="techStack">#Appwrite</span><span className="techStack">#React.js</span></>}/>
       </div>
 
