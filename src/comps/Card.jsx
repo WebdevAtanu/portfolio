@@ -1,8 +1,9 @@
-import React from 'react'
+import React from 'react';
+import { motion } from "framer-motion";
 
 function Card(props) {
 	return (
-		<div className="card bg-base-100 w-full border border-gray-500 flex flex-col gap-3 justify-between p-3">
+		<motion.div initial={{ y: 100 }} whileInView={{ y: 0 }} viewport={{ once: true }} className="card bg-base-100 w-full border border-gray-500 flex flex-col gap-3 justify-between p-3">
 			<div className='flex flex-col gap-3'>
 				<figure>
 					<img src={props.image} alt="image" className='w-full aspect-video'/>
@@ -19,7 +20,7 @@ function Card(props) {
 				props.badge2?<div className="badge badge-outline">{props.badge2}</div>:null
 				}
 			</div>
-		</div>
+		</motion.div>
 	)
 }
 

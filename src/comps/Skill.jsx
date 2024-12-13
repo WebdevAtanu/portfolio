@@ -1,16 +1,17 @@
 import React from 'react'
+import { motion } from "framer-motion";
 function Skill() {
 return (
     <div className="grid md:grid-cols-2 mt-10">
       <div>
         <p className='underline underline-offset-4 mb-3'>Summary</p>
         <div className="mb-4">
-          <p className='text-sm'>I am currently expanding my skill set by learning MERN stack to contribute to innovative projects. Trying
+          <motion.p initial={{ x: -200 }} whileInView={{ x: 0 }} viewport={{ once: true }} className='text-sm'>I am currently expanding my skill set by learning MERN stack to contribute to innovative projects. Trying
             to build a strong foundation in component-based architecture, state management, modern JavaScript
             techniques and Node.js backend technology. Eager to grow and develop in a collaborative team
-            environment.</p>
+            environment.</motion.p>
           <p className='underline underline-offset-4 mb-3 mt-5'>My skills</p>
-          <table className='w-full mt-3'>
+          <motion.table initial={{ scale: 0 }} whileInView={{ scale: 1 }} viewport={{ once: true }} className='w-full mt-3'>
             <tbody>
               <tr>
                 <td><p className="bg-gray-100 text-sm p-1 mr-1 mb-1 text-center rounded">HTML</p></td>
@@ -31,12 +32,12 @@ return (
                 <td><p className="bg-gray-100 text-sm p-1 mr-1 mb-1 text-center rounded">Next.js</p></td>
               </tr>
             </tbody>
-          </table>
+          </motion.table>
         </div>
       </div>
-      <div className="flex justify-center items-center">
+      <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }} className="flex justify-center items-center">
         <img src="pics/dev.gif" alt=""className='w-1/2'/>
-      </div>
+      </motion.div>
     </div>
 )
 }

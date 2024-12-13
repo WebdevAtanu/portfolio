@@ -1,6 +1,7 @@
 import React from 'react';
 import Content from './Content';
 import Skill from './Skill';
+import { motion } from "framer-motion";
 function Intro() {
 return (
 <>
@@ -36,7 +37,7 @@ return (
   <button>close</button>
 </form>
 </dialog>
-<div className="flex gap-3 mb-3 items-center">
+<motion.div initial={{ x: -200 }} animate={{ x: 0 }} className="flex gap-3 mb-3 items-center">
   <div className="avatar cursor-pointer" onClick={()=>document.getElementById('my_image').showModal()}>
     <div className="ring-offset-base-100 w-24 rounded-full ring ring-offset-2">
       <img src="pics/me.jpg" />
@@ -46,8 +47,8 @@ return (
     <h6 className="text-sm text-gray-500">Hey there, I'm</h6>
     <h1 className="m-0 text-3xl">Atanu Mondal</h1>
   </div>
-</div>
-<p>I'm a Front-end developer with a solid foundation in backend technologies. Proficient in creating engaging and responsive user interfaces using HTML, CSS, and JavaScript frameworks like React. Leverage backend knowledge in Node.js and Express to seamlessly integrate APIs and enhance application functionality. Experienced in working with databases to ensure smooth data management and flow. Passionate about delivering high-quality, user-friendly solutions while continuously learning and adapting to new technologies. Adept at collaborating in team environments to bring innovative ideas to life.</p>
+</motion.div>
+<motion.p initial={{ x: 200 }} animate={{ x: 0 }}>I'm a Front-end developer with a solid foundation in backend technologies. Proficient in creating engaging and responsive user interfaces using HTML, CSS, and JavaScript frameworks like React. Leverage backend knowledge in Node.js and Express to seamlessly integrate APIs and enhance application functionality. Experienced in working with databases to ensure smooth data management and flow. Passionate about delivering high-quality, user-friendly solutions while continuously learning and adapting to new technologies. Adept at collaborating in team environments to bring innovative ideas to life.</motion.p>
 <Content/>
 <Skill/>
 </>
