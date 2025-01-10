@@ -11,7 +11,7 @@ import { RiNextjsFill } from "react-icons/ri";
 
 function Skill() {
 return (
-  <section id='skill'></section>
+  <section id='skill'>
     <div className="mt-10">
       <div>
         <div className="mb-4">
@@ -58,6 +58,7 @@ return (
         </div>
       </div>
     </div>
+    </section>
 )
 }
 export default Skill
