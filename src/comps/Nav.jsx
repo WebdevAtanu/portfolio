@@ -16,7 +16,7 @@ function Nav() {
         </ul>
       </div>
     </div>
-    <div className="md:hidden fixed bottom-3 right-3 z-10">
+    <div className="md:hidden fixed bottom-5 right-8 z-10">
       <div className="dropdown dropdown-top flex flex-col items-center">
         <div tabIndex={0} role="button" className="btn rounded-xl text-2xl bg-blue-900"><i className="bi bi-list"></i></div>
         <ul tabIndex={0} className="dropdown-content z-[1] flex flex-col items-center bg-blue-900 rounded-lg">
