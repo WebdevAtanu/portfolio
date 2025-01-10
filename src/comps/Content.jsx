@@ -2,7 +2,7 @@ import React from 'react'
 import Card from './Card'
 function Content() {
 return (
-    <div className="mt-10">
+    <div className="mt-10" id='do'>
       <p className='text-center mb-5 mt-10 text-xl tracking-wider' id='bolder'>Things I Do</p>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
         <Card image='pics/logo.png' title='Front-End' desc='Proficient in frontend development with experience in React to create responsive user interfaces, ensuring a seamless experience across devices and browsers.' badge1='React.js' badge2='Tailwind'/>
