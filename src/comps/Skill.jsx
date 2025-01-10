@@ -1,43 +1,62 @@
 import React from 'react'
 import { motion } from "framer-motion";
+import { RiJavascriptFill } from "react-icons/ri";
+import { FaReact } from "react-icons/fa";
+import { RiTailwindCssFill } from "react-icons/ri";
+import { FaNodeJs } from "react-icons/fa6";
+import { SiExpress } from "react-icons/si";
+import { DiMongodb } from "react-icons/di";
+import { SiMysql } from "react-icons/si";
+import { RiNextjsFill } from "react-icons/ri";
+
 function Skill() {
 return (
-    <div className="grid md:grid-cols-2 mt-10">
+  <section id='skill'></section>
+    <div className="mt-10">
       <div>
-        <p className='underline underline-offset-4 mb-3'>Summary</p>
         <div className="mb-4">
-          <motion.p initial={{ x: -200 }} whileInView={{ x: 0 }} viewport={{ once: true }} className='text-sm'>I am currently expanding my skill set by learning MERN stack to contribute to innovative projects. Trying
-            to build a strong foundation in component-based architecture, state management, modern JavaScript
-            techniques and Node.js backend technology. Eager to grow and develop in a collaborative team
-            environment.</motion.p>
-          <p className='underline underline-offset-4 mb-3 mt-5'>My skills</p>
-          <motion.table initial={{ scale: 0 }} whileInView={{ scale: 1 }} viewport={{ once: true }} className='w-full mt-3'>
-            <tbody>
-              <tr>
-                <td><p className="bg-gray-100 text-sm p-1 mr-1 mb-1 text-center rounded">HTML</p></td>
-                <td><p className="bg-gray-100 text-sm p-1 mr-1 mb-1 text-center rounded">CSS</p></td>
-                <td><p className="bg-gray-100 text-sm p-1 mr-1 mb-1 text-center rounded">Javascript</p></td>
-                <td><p className="bg-gray-100 text-sm p-1 mr-1 mb-1 text-center rounded">Bootstrap</p></td>
-              </tr>
-              <tr>
-                <td><p className="bg-gray-100 text-sm p-1 mr-1 mb-1 text-center rounded">React.js</p></td>
-                <td><p className="bg-gray-100 text-sm p-1 mr-1 mb-1 text-center rounded">TailwindCSS</p></td>
-                <td><p className="bg-gray-100 text-sm p-1 mr-1 mb-1 text-center rounded">Node.js</p></td>
-                <td><p className="bg-gray-100 text-sm p-1 mr-1 mb-1 text-center rounded">Express.js</p></td>
-              </tr>
-              <tr>
-                <td><p className="bg-gray-100 text-sm p-1 mr-1 mb-1 text-center rounded">MongoDB</p></td>
-                <td><p className="bg-gray-100 text-sm p-1 mr-1 mb-1 text-center rounded">Mysql</p></td>
-                <td><p className="bg-gray-100 text-sm p-1 mr-1 mb-1 text-center rounded">Typescript</p></td>
-                <td><p className="bg-gray-100 text-sm p-1 mr-1 mb-1 text-center rounded">Next.js</p></td>
-              </tr>
-            </tbody>
-          </motion.table>
+          <p className='text-center mb-5 mt-10 text-xl tracking-wider' id='bolder'>My Skillsets</p>
+          <motion.div initial={{ scale: 0 }} whileInView={{ scale: 1 }} transition={{
+            duration: 1,
+            ease: "easeInOut"
+            }} viewport={{ once: true }} className='mt-3 px-3 py-12 bg-[#0c1425]' id='skills'>
+            <div className='grid grid-cols-2 md:grid-cols-4 gap-10'>
+              <div className="flex flex-col items-center text-2xl">
+                <RiJavascriptFill className='text-yellow-500'/>
+                <p>Javascript</p>
+              </div>
+              <div className="flex flex-col items-center text-2xl">
+                <FaReact className='text-blue-600'/>
+                <p>React.js</p>
+              </div>
+              <div className="flex flex-col items-center text-2xl">
+                <RiTailwindCssFill className='text-sky-500'/>
+                <p>TailwindCSS</p>
+              </div>
+              <div className="flex flex-col items-center text-2xl">
+                <FaNodeJs className='text-green-700'/>
+                <p>Node.js</p>
+              </div>
+              <div className="flex flex-col items-center text-2xl">
+                <SiExpress />
+                <p>Express.js</p>
+              </div>
+              <div className="flex flex-col items-center text-2xl">
+                <DiMongodb className='text-green-500'/>
+                <p>MongoDB</p>
+              </div>
+              <div className="flex flex-col items-center text-2xl">
+                <SiMysql className='text-blue-500'/>
+                <p>Mysql</p>
+              </div>
+              <div className="flex flex-col items-center text-2xl">
+                <RiNextjsFill/>
+                <p>Next.js</p>
+              </div>
+            </div>
+          </motion.div>
         </div>
       </div>
-      <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }} className="flex justify-center items-center">
-        <img src="pics/dev.gif" alt=""className='w-1/2'/>
-      </motion.div>
     </div>
 )
 }

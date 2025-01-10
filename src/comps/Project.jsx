@@ -2,7 +2,8 @@ import React from 'react';
 import Desktop from './Desktop';
 function Project() {
 return (
-    <div>
+    <section id='project'>
+    <p className='text-center mb-5 mt-10 text-xl tracking-wider' id='bolder'>Projects</p>
     <div className="">
         <Desktop href="https://shopper-ecommerce.onrender.com/" github="https://github.com/WebdevAtanu/shopper-ecommerce" img1="pics/site/shopper/home.jpeg" img2="pics/site/shopper/cart.jpeg" img3="pics/site/shopper/dashboard.jpeg" h5='Shopper' p="Developed a MERN stack-based shopping app, utilizing ShadCN for a modern design system. The app offering a seamless shopping experience. ShadCN's pre-built components and utility-first design made it easy to implement a responsive interface, while the MERN stack ensures efficient handling of data, authentication, and real-time updates." tech={<><span className="techStack">#MERN</span><span className="techStack">#ShadCN</span></>}/>
       </div>
@@ -38,7 +39,7 @@ return (
       <div className="">
         <Desktop href="https://customtemplate.netlify.app/" github="https://github.com/WebdevAtanu/template-bootstrap" img1="pics/site/template.jpeg" h5='Bootstrap Templates' p="Created a responsive website template browser using Bootstrap, with designs sourced from Canva. The platform allows users to browse and explore a variety of pre-designed website templates, offering a clean and modern interface." tech={<><span className="techStack">#Bootstrap</span><span className="techStack">#Canva</span></>}/>
       </div>
-    </div>
+    </section>
 )
 }
 export default Project
