@@ -31,3 +31,12 @@ body {
 	padding: 1px 5px;
 	border-radius: 0.5rem;
 }
+
+.highlight {
+	background: #c8cbd0;
+	padding: 0 3px;
+	color: #0c1425;
+	border-radius: 2px;
+	margin: 0 1px;
+	font-size: 15px;
+}

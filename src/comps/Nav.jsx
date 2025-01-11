@@ -19,11 +19,11 @@ function Nav() {
     <div className="md:hidden fixed bottom-5 right-8 z-10">
       <div className="dropdown dropdown-top flex flex-col items-center">
         <div tabIndex={0} role="button" className="btn rounded-xl text-2xl bg-blue-900"><i className="bi bi-list"></i></div>
-        <ul tabIndex={0} className="dropdown-content z-[1] flex flex-col items-center bg-blue-900 rounded-lg">
-          <Link to="intro" smooth={true} className='my-3 w-full text-center cursor-pointer px-2 py-1 my-3 hover:bg-blue-800 hover:text-[#f70853]'><li>Intro</li></Link>
-          <Link to="skill" smooth={true} className='my-3 w-full text-center cursor-pointer px-2 py-1 my-3 hover:bg-blue-800 hover:text-[#f70853]'><li>Skills</li></Link>
-          <Link to="do" smooth={true} className='my-3 w-full text-center cursor-pointer px-2 py-1 my-3 hover:bg-blue-800 hover:text-[#f70853]'><li>I do</li></Link>
-          <Link to="project" smooth={true} className='my-3 w-full text-center cursor-pointer px-2 py-1 my-3 hover:bg-blue-800 hover:text-[#f70853]'><li>Projects</li></Link>
+        <ul tabIndex={0} className="dropdown-content z-[1] flex flex-col items-center bg-blue-900 rounded-lg px-5">
+          <Link to="intro" smooth={true} className='my-3 w-full text-center cursor-pointer px-2 py-1 my-3 hover:text-[#f70853]'><li>Intro</li></Link>
+          <Link to="do" smooth={true} className='my-3 w-full text-center cursor-pointer px-2 py-1 my-3 hover:text-[#f70853]'><li>I do</li></Link>
+          <Link to="skill" smooth={true} className='my-3 w-full text-center cursor-pointer px-2 py-1 my-3 hover:text-[#f70853]'><li>Skills</li></Link>
+          <Link to="project" smooth={true} className='my-3 w-full text-center cursor-pointer px-2 py-1 my-3 hover:text-[#f70853]'><li>Projects</li></Link>
         </ul>
       </div>
     </div>

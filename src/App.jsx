@@ -1,6 +1,6 @@
 import Nav from './comps/Nav';
 import Intro from './comps/Intro';
-import Content from './comps/Content';
+import Do from './comps/Do';
 import Skill from './comps/Skill';
 import Project from './comps/Project';
 import Footer from './comps/Footer';
@@ -12,7 +12,7 @@ function App() {
     <Nav/>
     <div className='container m-auto p-5'>
       <Intro/>
-      <Content/>
+      <Do/>
       <Skill/>
       <Project/>
       <Footer/>

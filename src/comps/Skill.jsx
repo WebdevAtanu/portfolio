@@ -8,56 +8,67 @@ import { SiExpress } from "react-icons/si";
 import { DiMongodb } from "react-icons/di";
 import { SiMysql } from "react-icons/si";
 import { RiNextjsFill } from "react-icons/ri";
+import { SiAppwrite } from "react-icons/si";
 
 function Skill() {
+
+const parentVariant = {
+  hidden: {
+    opacity: 0,
+  },
+  visible: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.2, // Delay between child animations
+    },
+  },
+};
+
+const childVariant = {
+  hidden: {
+    opacity: 0,
+    y: 20, // Moves the child down
+  },
+  visible: {
+    opacity: 1,
+    y: 0, // Moves the child back to position
+    transition: {
+      duration: 0.5,
+    },
+  },
+};
+
+function Skills(props) {
+  return (
+    <motion.div variants={childVariant} className="flex flex-col items-center justify-center bg-[#0c1425] py-3 rounded-lg">
+                <props.logo className={props.class}/>
+                <p>{props.text}</p>
+              </motion.div>
+  )
+}
+
 return (
-  <section id='skill'>
-    <div className="mt-10">
+  <section id='skill' className='md:h-screen'>
       <div>
         <div className="mb-4">
-          <p className='text-center mb-5 mt-10 text-xl tracking-wider' id='bolder'>My Skillsets</p>
-          <motion.div initial={{ scale: 0 }} whileInView={{ scale: 1 }} transition={{
-            duration: 1,
-            ease: "easeInOut"
-            }} viewport={{ once: true }} className='mt-3 px-3 py-12 bg-[#0c1425]' id='skills'>
-            <div className='grid grid-cols-2 md:grid-cols-4 gap-10'>
-              <div className="flex flex-col items-center text-2xl">
-                <RiJavascriptFill className='text-yellow-500'/>
-                <p>Javascript</p>
-              </div>
-              <div className="flex flex-col items-center text-2xl">
-                <FaReact className='text-blue-600'/>
-                <p>React.js</p>
-              </div>
-              <div className="flex flex-col items-center text-2xl">
-                <RiTailwindCssFill className='text-sky-500'/>
-                <p>TailwindCSS</p>
-              </div>
-              <div className="flex flex-col items-center text-2xl">
-                <FaNodeJs className='text-green-700'/>
-                <p>Node.js</p>
-              </div>
-              <div className="flex flex-col items-center text-2xl">
-                <SiExpress />
-                <p>Express.js</p>
-              </div>
-              <div className="flex flex-col items-center text-2xl">
-                <DiMongodb className='text-green-500'/>
-                <p>MongoDB</p>
-              </div>
-              <div className="flex flex-col items-center text-2xl">
-                <SiMysql className='text-blue-500'/>
-                <p>Mysql</p>
-              </div>
-              <div className="flex flex-col items-center text-2xl">
-                <RiNextjsFill/>
-                <p>Next.js</p>
-              </div>
-            </div>
-          </motion.div>
+          <p className='text-center md:pt-20 mt-10 text-2xl tracking-wider' id='bolder'>My Skillsets</p>
+          <div className='mt-3 px-3 py-6' id='skills'>
+            <motion.div variants={parentVariant}
+      initial="hidden" whileInView="visible"
+      viewport={{ once: true, amount: 0.2 }} className='grid grid-cols-2 md:grid-cols-4 gap-10'>
+              <Skills logo={RiJavascriptFill} text='Javascript' class='text-yellow-500 text-2xl'/>
+              <Skills logo={FaReact} text='React.js' class='text-blue-600 text-2xl'/>
+              <Skills logo={RiTailwindCssFill} text='TailwindCSS' class='text-sky-500 text-2xl'/>
+              <Skills logo={FaNodeJs} text='Node.js' class='text-green-700 text-2xl'/>
+              <Skills logo={SiExpress} text='Express' class='text-2xl'/>
+              <Skills logo={DiMongodb} text='MongoDB' class='text-green-500 text-2xl'/>
+              <Skills logo={SiMysql} text='Mysql' class='text-blue-500 text-2xl'/>
+              <Skills logo={SiAppwrite} text='Appwrite' class='text-pink-500 text-2xl'/>
+              <Skills logo={RiNextjsFill} text='Next.js' class='text-2xl'/>
+            </motion.div>
+          </div>
         </div>
       </div>
-    </div>
     </section>
 )
 }
