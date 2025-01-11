@@ -1,30 +1,31 @@
 import React from 'react'
 import { motion } from "framer-motion";
 
+function Do() {
 const parentVariant = {
-  hidden: {
-    opacity: 0,
-  },
-  visible: {
-    opacity: 1,
-    transition: {
-      staggerChildren: 0.2, // Delay between child animations
+    hidden: {
+        opacity: 0,
     },
-  },
+    visible: {
+        opacity: 1,
+        transition: {
+            staggerChildren: 0.2, // Delay between child animations
+        },
+    },
 };
 
 const childVariant = {
-  hidden: {
-    opacity: 0,
-    y: 20, // Moves the child down
-  },
-  visible: {
-    opacity: 1,
-    y: 0, // Moves the child back to position
-    transition: {
-      duration: 0.5,
+    hidden: {
+        opacity: 0,
+        y: 20, // Moves the child down
     },
-  },
+    visible: {
+        opacity: 1,
+        y: 0, // Moves the child back to position
+        transition: {
+            duration: 0.5,
+        },
+    },
 };
 
 function Card(props) {
@@ -45,7 +46,6 @@ function Card(props) {
   )
 }
 
-function Do() {
 return (
     <div className="md:pt-20 pt-10 md:h-screen" id='do'>
       <p className='text-center mb-5 text-2xl tracking-wider' id='bolder'>Things I Do</p>

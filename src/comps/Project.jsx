@@ -2,6 +2,7 @@ import React from 'react';
 import { motion } from "framer-motion";
 import Slider from './Slider'
 
+function Project() {
 const parentVariant = {
   hidden: {
     opacity: 0,
@@ -47,7 +48,6 @@ function Desktop(props) {
     )
 }
 
-function Project() {
 return (
     <section id='project' className='md:pt-20'>
     <p className='text-center mb-10 text-2xl tracking-wider' id='bolder'>Projects</p>
