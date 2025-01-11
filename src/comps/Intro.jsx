@@ -42,7 +42,7 @@ return (
   <div className="flex flex-col gap-5">
     <div className="flex gap-3 items-center">
       <div className="avatar cursor-pointer" onClick={()=>document.getElementById('my_image').showModal()}>
-        <div className="ring-offset-base-100 w-20 rounded-full ring ring-offset-2">
+        <div className="ring-offset-base-100 w-20 md:w-32 rounded-full ring ring-offset-2">
           <img src="pics/me.jpg" />
         </div>
       </div>
@@ -51,7 +51,7 @@ return (
         <h1 className="m-0 text-3xl tracking-wide" id='bolder'>Atanu Mondal</h1>
       </div>
     </div>
-    <p className='text-sm md:text-lg leading-6'>I'm a Front-end developer with a solid foundation in backend technologies. Proficient in creating engaging and responsive user interfaces using <span className='badge rounded-none bg-[#0c1425]'>HTML</span> <span className='badge rounded-none bg-[#0c1425]'>CSS</span> and <span className='badge rounded-none bg-[#0c1425]'>JavaScript</span> frameworks like <span className='badge rounded-none bg-[#0c1425]'>React</span>. Leverage backend knowledge in <span className='badge rounded-none bg-[#0c1425]'>Node.js</span> and <span className='badge rounded-none bg-[#0c1425]'>Express</span> to seamlessly integrate APIs and enhance application functionality. Experienced in working with databases such as <span className='badge rounded-none bg-[#0c1425]'>MongoDB</span> and <span className='badge rounded-none bg-[#0c1425]'>MySQL</span> to ensure smooth data management and flow.</p>
+    <p className='text-sm md:text-lg leading-6'>I'm a Front-end developer with a solid foundation in backend technologies. Proficient in creating engaging and responsive user interfaces using HTML CSS and JavaScript frameworks like React. Leverage backend knowledge in Node.js and Express to seamlessly integrate APIs and enhance application functionality. Experienced in working with databases such as MongoDB and MySQL to ensure smooth data management and flow.</p>
   </div>
   <img src="pics/dev.png" alt="" className="hidden lg:block w-1/4"/>
 </div>

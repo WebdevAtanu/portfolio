@@ -4,44 +4,44 @@ import Slider from './Slider'
 
 function Project() {
 const parentVariant = {
-  hidden: {
-    opacity: 0,
-  },
-  visible: {
-    opacity: 1,
-    transition: {
-      staggerChildren: 0.2, // Delay between child animations
+    hidden: {
+        opacity: 0,
     },
-  },
+    visible: {
+        opacity: 1,
+        transition: {
+            staggerChildren: 0.1,
+        },
+    },
 };
 
 const childVariant = {
-  hidden: {
-    opacity: 0,
-    y: 20, // Moves the child down
-  },
-  visible: {
-    opacity: 1,
-    y: 0, // Moves the child back to position
-    transition: {
-      duration: 0.5,
+    hidden: {
+        opacity: 0,
+        y: 20,
     },
-  },
+    visible: {
+        opacity: 1,
+        y: 0,
+        transition: {
+            duration: 0.5,
+        },
+    },
 };
 
 function Desktop(props) {
     return (
-    <motion.div variants={childVariant} className='bg-[#0c1425] p-5 rounded-xl flex flex-col gap-5'>
+    <motion.div variants={childVariant} className='bg-[#091327] p-5 rounded-xl flex flex-col gap-5'>
       <h5 className='mb-2 tracking-wider' id='bolder'>{props.h5}</h5>
       <div className="w-full m-auto text-white">
         <Slider image1={props.img1&&props.img1} image2={props.img2&&props.img2} image3={props.img3&&props.img3}/>
       </div>
-      <div className='flex flex-col h-full gap-4'>
+      <div className='flex flex-col h-full gap-4 text-sm'>
         <p>{props.p}</p>
-        <p className='text-sm'>TechStack Used : {props.tech}</p>
+        <p>TechStack Used : {props.tech}</p>
       </div>
       <div className="flex justify-end gap-3 mt-3">
-        <a href={props.href} target='_blank' className='bg-blue-800 p-1 rounded hover:bg-blue-900 text-sm'><i className="bi bi-browser-chrome"></i> Live</a>
+        <a href={props.href} target='_blank' className='bg-blue-800 p-1 rounded hover:bg-blue-900 text-sm'><i className="bi bi-browser-chrome animate-pulse"></i> Live</a>
         <a href={props.github} target='_blank' className='bg-blue-800 p-1 rounded hover:bg-blue-900 text-sm'><i className="bi bi-github"></i> GitHub</a>
       </div>
     </motion.div>
@@ -49,11 +49,11 @@ function Desktop(props) {
 }
 
 return (
-    <section id='project' className='md:pt-20'>
-    <p className='text-center mb-10 text-2xl tracking-wider' id='bolder'>Projects</p>
+    <section id='project' className='md:pt-20 mt-16'>
+    <p className='text-center mb-10 text-2xl tracking-wider text-[#f70853]' id='bolder'>Projects</p>
     <motion.div variants={parentVariant}
       initial="hidden" whileInView="visible"
-      viewport={{ once: true}} className="grid grid-cols-1 md:grid-cols-2 gap-5">
+      viewport={{ once: true}} className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
         <Desktop href="https://shopper-ecommerce.onrender.com/" github="https://github.com/WebdevAtanu/shopper-ecommerce" img1="pics/site/shopper/home.jpeg" img2="pics/site/shopper/cart.jpeg" img3="pics/site/shopper/dashboard.jpeg" h5='Shopper' p="Developed a MERN stack-based shopping app, utilizing ShadCN for a modern design system. The app offering a seamless shopping experience. ShadCN's pre-built components and utility-first design made it easy to implement a responsive interface, while the MERN stack ensures efficient handling of data, authentication, and real-time updates." tech={<><span className="techStack">#MERN</span><span className="techStack">#ShadCN</span></>}/>
 
         <Desktop href="https://blog-appwrite-pi.vercel.app/" github="https://github.com/WebdevAtanu/blog-appwrite" img1="pics/site/blog/home.jpeg" img2="pics/site/blog/login.jpeg" img3="pics/site/blog/dash.jpeg" h5='Techdown Blog' p="Developed a dynamic and responsive blog site using React, styled with DaisyUI for a sleek, modern design. Integrated Appwrite as the backend to handle user authentication, content management, and real-time updates, ensuring a seamless and scalable user experience." tech={<><span className="techStack">#Appwrite</span><span className="techStack">#React.js</span></>}/>
