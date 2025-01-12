@@ -43,7 +43,7 @@ return (
     <p className='text-sm md:text-lg leading-6'>I'm a web developer specializing in MERN stack & modern web solutions. Proficient in creating engaging and responsive user interfaces using HTML, CSS and JavaScript frameworks like React. Leverage backend knowledge in Node.js and Express to seamlessly integrate APIs and enhance application functionality. Experienced in working with databases such as MongoDB and MySQL to ensure smooth data management and flow.</p>
     <p className="text-sm md:text-lg">Explore my portfolio to see the projects I’ve worked on.</p>
   </div>
-  <img src="pics/dev.png" alt="" className="w-1/2 m-auto md:w-1/4"/>
+  <img src="pics/dev.png" alt="" className="w-2/3 m-auto md:w-1/4"/>
 </div>
 </motion.div>
 </section>
