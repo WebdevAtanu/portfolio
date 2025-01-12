@@ -31,7 +31,7 @@ const childVariant = {
 function Card(props) {
   return (
     <motion.div variants={childVariant}>
-      <div className="card bg-[#091327] w-full h-full flex flex-col justify-between p-3 drop-shadow-sm">
+      <div className="card bg-[#091327] w-full h-full flex flex-col justify-between px-4 py-6 drop-shadow-sm">
         <div className='flex flex-col gap-5'>
           <figure>
             <img src={props.image} alt="image" className='w-1/3 rounded-full'/>

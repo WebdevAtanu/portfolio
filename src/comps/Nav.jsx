@@ -18,7 +18,7 @@ function Nav() {
     </div>
     <div className="md:hidden fixed top-5 right-8 z-10">
       <div className="dropdown dropdown-bottom flex flex-col items-center">
-        <div tabIndex={0} role="button" className="btn py-1 text-2xl bg-[#091327]"><i className="bi bi-list"></i></div>
+        <div tabIndex={0} role="button" className="btn py-1 text-2xl bg-blue-800 hover:bg-blue-900"><i className="bi bi-list"></i></div>
         <ul tabIndex={0} className="dropdown-content z-[1] flex flex-col items-center bg-[#091327] rounded-lg px-5">
           <Link to="intro" smooth={true} className='my-3 w-full text-center cursor-pointer px-2 py-1 my-3 hover:text-[#f70853]'><li>Intro</li></Link>
           <Link to="do" smooth={true} className='my-3 w-full text-center cursor-pointer px-2 py-1 my-3 hover:text-[#f70853]'><li>I do</li></Link>

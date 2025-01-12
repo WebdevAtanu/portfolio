@@ -49,7 +49,7 @@ function Skills(props) {
 }
 
 return (
-  <section id='skill' className=''>
+  <section id='skill' className='lg:h-screen'>
       <div>
         <div className="mb-4">
           <p className='text-center md:pt-20 mt-16 text-2xl tracking-wider text-[#f70853]' id='bolder'>My Skillsets</p>
@@ -63,7 +63,7 @@ return (
               <Skills logo={SiExpress} text='Express' class='text-2xl'/>
               <Skills logo={DiMongodb} text='MongoDB' class='text-green-500 text-2xl'/>
               <Skills logo={SiMysql} text='Mysql' class='text-blue-500 text-2xl'/>
-              <Skills logo={SiAppwrite} text='Appwrite' class='text-pink-500 text-2xl'/>
+              <Skills logo={SiAppwrite} text='Appwrite' class='text-pink-600 text-2xl'/>
               <Skills logo={RiNextjsFill} text='Next.js' class='text-2xl'/>
             </motion.div>
           </div>
