@@ -17,14 +17,20 @@ function Nav() {
       </div>
     </div>
     <div className="md:hidden fixed top-5 right-8 z-10">
-      <div className="dropdown dropdown-bottom flex flex-col items-center">
-        <div tabIndex={0} role="button" className="btn py-1 text-2xl bg-blue-800 hover:bg-blue-900"><i className="bi bi-list"></i></div>
-        <ul tabIndex={0} className="dropdown-content z-[1] flex flex-col items-center bg-[#091327] rounded-lg px-5">
-          <Link to="intro" smooth={true} className='my-3 w-full text-center cursor-pointer px-2 py-1 my-3 hover:text-[#f70853]'><li>Intro</li></Link>
-          <Link to="do" smooth={true} className='my-3 w-full text-center cursor-pointer px-2 py-1 my-3 hover:text-[#f70853]'><li>I do</li></Link>
-          <Link to="skill" smooth={true} className='my-3 w-full text-center cursor-pointer px-2 py-1 my-3 hover:text-[#f70853]'><li>Skills</li></Link>
-          <Link to="project" smooth={true} className='my-3 w-full text-center cursor-pointer px-2 py-1 my-3 hover:text-[#f70853]'><li>Projects</li></Link>
-        </ul>
+      <div className="drawer drawer-end">
+        <input id="my-drawer-4" type="checkbox" className="drawer-toggle" />
+        <div className="drawer-content">
+          <label htmlFor="my-drawer-4" className="drawer-button btn text-2xl bg-blue-800 hover:bg-blue-900"><i className="bi bi-list"></i></label>
+        </div>
+        <div className="drawer-side">
+          <label htmlFor="my-drawer-4" aria-label="close sidebar" className="drawer-overlay"></label>
+          <ul className="menu bg-base-200 text-base-content min-h-full w-1/3 p-4">
+            <Link to="intro" smooth={true} className='cursor-pointer my-3 hover:text-[#f70853]'><li>Intro</li></Link>
+            <Link to="do" smooth={true} className='cursor-pointer my-3 hover:text-[#f70853]'><li>I do</li></Link>
+            <Link to="skill" smooth={true} className='cursor-pointer my-3 hover:text-[#f70853]'><li>Skills</li></Link>
+            <Link to="project" smooth={true} className='cursor-pointer my-3 hover:text-[#f70853]'><li>Projects</li></Link>
+          </ul>
+        </div>
       </div>
     </div>
     </>

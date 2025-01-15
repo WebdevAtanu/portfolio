@@ -18,7 +18,7 @@ return (
       <div>
         <h6 className="text-sm">Hey there, I'm</h6>
         <h1 className="m-0 text-3xl tracking-wide" id='bolder'>Atanu Mondal</h1>
-            <div className="w-full mt-2 grid grid-cols-3 gap-2">
+            <div className="w-full mt-2 flex gap-2">
           <a href="CV.pdf" target="_blank">
             <div className="flex items-center gap-1 justify-center text-xs p-1 rounded bg-blue-800 hover:bg-blue-900">
               <i className="bi bi-file-earmark-person-fill"></i>
@@ -26,15 +26,13 @@ return (
             </div>
           </a>
           <a href="https://www.linkedin.com/in/atanu-mondal-b98707255/" target="_blank">
-            <div className="flex items-center gap-1 justify-center text-xs p-1 rounded bg-blue-800 hover:bg-blue-900">
+            <div className="px-2 rounded bg-blue-800 hover:bg-blue-900">
               <i className="bi bi-linkedin"></i>
-              <p>LinkedIn</p>
             </div>
           </a>
           <a href="https://github.com/WebdevAtanu" target="_blank">
-            <div className="flex items-center gap-1 justify-center text-xs p-1 rounded bg-blue-800 hover:bg-blue-900">
+            <div className="px-2 rounded bg-blue-800 hover:bg-blue-900">
               <i className="bi bi-github"></i>
-              <p>GitHub</p>
             </div>
           </a>
         </div>
