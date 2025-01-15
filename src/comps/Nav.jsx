@@ -20,15 +20,15 @@ function Nav() {
       <div className="drawer drawer-end">
         <input id="my-drawer-4" type="checkbox" className="drawer-toggle" />
         <div className="drawer-content">
-          <label htmlFor="my-drawer-4" className="drawer-button btn text-2xl bg-blue-800 hover:bg-blue-900"><i className="bi bi-list"></i></label>
+          <label htmlFor="my-drawer-4" className="drawer-button px-2 rounded text-2xl bg-blue-800 hover:bg-blue-900"><i className="bi bi-list"></i></label>
         </div>
         <div className="drawer-side">
           <label htmlFor="my-drawer-4" aria-label="close sidebar" className="drawer-overlay"></label>
-          <ul className="menu bg-base-200 text-base-content min-h-full w-1/3 p-4">
-            <Link to="intro" smooth={true} className='cursor-pointer my-3 hover:text-[#f70853]'><li>Intro</li></Link>
-            <Link to="do" smooth={true} className='cursor-pointer my-3 hover:text-[#f70853]'><li>I do</li></Link>
-            <Link to="skill" smooth={true} className='cursor-pointer my-3 hover:text-[#f70853]'><li>Skills</li></Link>
-            <Link to="project" smooth={true} className='cursor-pointer my-3 hover:text-[#f70853]'><li>Projects</li></Link>
+          <ul className="flex flex-col items-center bg-base-200 text-base-content min-h-full w-1/2">
+            <Link to="intro" smooth={true} className='cursor-pointer my-3 hover:text-[#f70853] p-1'><li>Intro</li></Link>
+            <Link to="do" smooth={true} className='cursor-pointer my-3 hover:text-[#f70853] p-1'><li>I do</li></Link>
+            <Link to="skill" smooth={true} className='cursor-pointer my-3 hover:text-[#f70853] p-1'><li>Skills</li></Link>
+            <Link to="project" smooth={true} className='cursor-pointer my-3 hover:text-[#f70853] p-1'><li>Projects</li></Link>
           </ul>
         </div>
       </div>
