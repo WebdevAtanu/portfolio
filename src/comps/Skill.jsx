@@ -52,19 +52,19 @@ return (
   <section id='skill' className='lg:h-screen'>
       <div>
         <div className="mb-4">
-          <p className='text-center md:pt-20 mt-16 text-2xl tracking-wider text-[#f70853]' id='bolder'>My Skillsets</p>
+          <p className='text-center mt-16 text-2xl tracking-wider text-[#f70853]' id='bolder'>My Skillsets</p>
           <div className='mt-3 px-3 py-6' id='skills'>
             <motion.div variants={parentVariant} initial="hidden" whileInView="visible"
             viewport={{ once: true, amount: 0.2 }} className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10'>
-              <Skills logo={RiJavascriptFill} text='Javascript' class='text-yellow-500 text-2xl'/>
-              <Skills logo={FaReact} text='React.js' class='text-blue-600 text-2xl'/>
-              <Skills logo={RiTailwindCssFill} text='TailwindCSS' class='text-sky-500 text-2xl'/>
-              <Skills logo={FaNodeJs} text='Node.js' class='text-green-700 text-2xl'/>
-              <Skills logo={SiExpress} text='Express' class='text-2xl'/>
-              <Skills logo={DiMongodb} text='MongoDB' class='text-green-500 text-2xl'/>
-              <Skills logo={SiMysql} text='Mysql' class='text-blue-500 text-2xl'/>
-              <Skills logo={SiAppwrite} text='Appwrite' class='text-pink-600 text-2xl'/>
-              <Skills logo={RiNextjsFill} text='Next.js' class='text-2xl'/>
+              <Skills logo={RiJavascriptFill} text='Javascript' class='text-yellow-500 text-xl'/>
+              <Skills logo={FaReact} text='React.js' class='text-blue-600 text-xl'/>
+              <Skills logo={RiTailwindCssFill} text='TailwindCSS' class='text-sky-500 text-xl'/>
+              <Skills logo={FaNodeJs} text='Node.js' class='text-green-700 text-xl'/>
+              <Skills logo={SiExpress} text='Express' class='text-xl'/>
+              <Skills logo={DiMongodb} text='MongoDB' class='text-green-500 text-xl'/>
+              <Skills logo={SiMysql} text='Mysql' class='text-blue-500 text-xl'/>
+              <Skills logo={SiAppwrite} text='Appwrite' class='text-pink-600 text-xl'/>
+              <Skills logo={RiNextjsFill} text='Next.js' class='text-xl'/>
             </motion.div>
           </div>
         </div>

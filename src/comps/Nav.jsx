@@ -1,18 +1,32 @@
+import {useState} from 'react';
 import Intro from './Intro';
 import Project from './Project';
 import Skill from './Skill';
 import { Link } from "react-scroll";
 
 function Nav() {
+  const [flag,setFlag]=useState(false);
+  var previousPosition = window.pageYOffset || document.documentElement.scrollTop;
+
+    window.onscroll = function() {
+        var currentPosition = window.pageYOffset || document.documentElement.scrollTop;
+
+        if (previousPosition > currentPosition) {
+            setFlag(true);
+        } else {
+            setFlag(false);
+        }
+        previousPosition = currentPosition;
+    };
 	return (
     <>
-    <div className="hidden md:block shadow sticky top-0 z-50 bg-[#091327] text-white">
+    <div className={`hidden md:block shadow sticky z-50 bg-[#091327] text-white ${flag?'top-0':'top-[-5rem]'}`}>
       <div className="container m-auto">
-        <ul className='flex justify-end gap-5 p-5'>
-          <li><Link to="intro" smooth={true} className='hover:text-[#f70853] cursor-pointer'>Intro</Link></li>
-          <li><Link to="do" smooth={true} className='hover:text-[#f70853] cursor-pointer'>I do</Link></li>
-          <li><Link to="skill" smooth={true} className='hover:text-[#f70853] cursor-pointer'>Skills</Link></li>
-          <li><Link to="project" smooth={true} className='hover:text-[#f70853] cursor-pointer'>Projects</Link></li>
+        <ul className='flex justify-end gap-5 p-5 text-sm'>
+          <li><Link to="intro" activeStyle={{'color':'#f70853'}} spy={true} smooth={true} className='hover:text-[#f70853] cursor-pointer'>Intro</Link></li>
+          <li><Link to="do" activeStyle={{'color':'#f70853'}} spy={true} smooth={true} className='hover:text-[#f70853] cursor-pointer'>I do</Link></li>
+          <li><Link to="skill" activeStyle={{'color':'#f70853'}} spy={true} smooth={true} className='hover:text-[#f70853] cursor-pointer'>Skills</Link></li>
+          <li><Link to="project" activeStyle={{'color':'#f70853'}} spy={true} smooth={true} className='hover:text-[#f70853] cursor-pointer'>Projects</Link></li>
         </ul>
       </div>
     </div>
@@ -25,10 +39,10 @@ function Nav() {
         <div className="drawer-side">
           <label htmlFor="my-drawer-4" aria-label="close sidebar" className="drawer-overlay"></label>
           <ul className="flex flex-col items-center bg-base-200 text-base-content min-h-full w-1/2">
-            <Link to="intro" smooth={true} className='cursor-pointer my-3 hover:text-[#f70853] p-1'><li>Intro</li></Link>
-            <Link to="do" smooth={true} className='cursor-pointer my-3 hover:text-[#f70853] p-1'><li>I do</li></Link>
-            <Link to="skill" smooth={true} className='cursor-pointer my-3 hover:text-[#f70853] p-1'><li>Skills</li></Link>
-            <Link to="project" smooth={true} className='cursor-pointer my-3 hover:text-[#f70853] p-1'><li>Projects</li></Link>
+            <Link to="intro" activeStyle={{'color':'#f70853'}} spy={true} smooth={true} className='cursor-pointer my-3 hover:text-[#f70853] p-1'><li>Intro</li></Link>
+            <Link to="do" activeStyle={{'color':'#f70853'}} spy={true} smooth={true} className='cursor-pointer my-3 hover:text-[#f70853] p-1'><li>I do</li></Link>
+            <Link to="skill" activeStyle={{'color':'#f70853'}} spy={true} smooth={true} className='cursor-pointer my-3 hover:text-[#f70853] p-1'><li>Skills</li></Link>
+            <Link to="project" activeStyle={{'color':'#f70853'}} spy={true} smooth={true} className='cursor-pointer my-3 hover:text-[#f70853] p-1'><li>Projects</li></Link>
           </ul>
         </div>
       </div>
