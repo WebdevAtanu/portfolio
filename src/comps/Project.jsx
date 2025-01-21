@@ -49,11 +49,11 @@ function Desktop(props) {
 }
 
 return (
-    <section id='project' className='mt-16'>
+    <section id='project' className='pt-5'>
     <p className='text-center mb-10 text-2xl tracking-wider text-[#f70853]' id='bolder'>Projects</p>
     <motion.div variants={parentVariant}
       initial="hidden" whileInView="visible"
-      viewport={{ once: true}} className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-5">
+      viewport={{ once: true}} className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-5 mb-10">
         <Desktop href="https://shopper-ecommerce.onrender.com/" github="https://github.com/WebdevAtanu/shopper-ecommerce" img1="pics/site/shopper/home.jpeg" img2="pics/site/shopper/cart.jpeg" img3="pics/site/shopper/dashboard.jpeg" h5='Shopper' p="Developed a MERN stack-based shopping app, utilizing ShadCN for a modern design system. The app offering a seamless shopping experience. ShadCN's pre-built components and utility-first design made it easy to implement a responsive interface, while the MERN stack ensures efficient handling of data, authentication, and real-time updates." tech={<><span className="techStack">#MERN</span><span className="techStack">#ShadCN</span></>}/>
 
         <Desktop href="https://blog-appwrite-pi.vercel.app/" github="https://github.com/WebdevAtanu/blog-appwrite" img1="pics/site/blog/home.jpeg" img2="pics/site/blog/login.jpeg" img3="pics/site/blog/dash.jpeg" h5='Techdown Blog' p="Developed a dynamic and responsive blog site using React, styled with DaisyUI for a sleek, modern design. Integrated Appwrite as the backend to handle user authentication, content management, and real-time updates, ensuring a seamless and scalable user experience." tech={<><span className="techStack">#Appwrite</span><span className="techStack">#React.js</span></>}/>

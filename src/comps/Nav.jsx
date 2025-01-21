@@ -27,6 +27,7 @@ function Nav() {
           <li><Link to="do" activeStyle={{'color':'#f70853'}} spy={true} smooth={true} className='hover:text-[#f70853] cursor-pointer'>I do</Link></li>
           <li><Link to="skill" activeStyle={{'color':'#f70853'}} spy={true} smooth={true} className='hover:text-[#f70853] cursor-pointer'>Skills</Link></li>
           <li><Link to="project" activeStyle={{'color':'#f70853'}} spy={true} smooth={true} className='hover:text-[#f70853] cursor-pointer'>Projects</Link></li>
+          <li><Link to="github" activeStyle={{'color':'#f70853'}} spy={true} smooth={true} className='hover:text-[#f70853] cursor-pointer'>Github stats</Link></li>
         </ul>
       </div>
     </div>
@@ -43,6 +44,7 @@ function Nav() {
             <Link to="do" activeStyle={{'color':'#f70853'}} spy={true} smooth={true} className='cursor-pointer my-3 hover:text-[#f70853] p-1'><li>I do</li></Link>
             <Link to="skill" activeStyle={{'color':'#f70853'}} spy={true} smooth={true} className='cursor-pointer my-3 hover:text-[#f70853] p-1'><li>Skills</li></Link>
             <Link to="project" activeStyle={{'color':'#f70853'}} spy={true} smooth={true} className='cursor-pointer my-3 hover:text-[#f70853] p-1'><li>Projects</li></Link>
+            <Link to="github" activeStyle={{'color':'#f70853'}} spy={true} smooth={true} className='cursor-pointer my-3 hover:text-[#f70853] p-1'><li>Github stats</li></Link>
           </ul>
         </div>
       </div>

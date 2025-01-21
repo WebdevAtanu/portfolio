@@ -4,6 +4,7 @@ import Do from './comps/Do';
 import Skill from './comps/Skill';
 import Project from './comps/Project';
 import Footer from './comps/Footer';
+import Github from './comps/Github';
 import './App.css';
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
       <Do/>
       <Skill/>
       <Project/>
+      <Github/>
       <Footer/>
     </div>
     </>

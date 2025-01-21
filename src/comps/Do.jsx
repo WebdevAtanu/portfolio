@@ -47,7 +47,7 @@ function Card(props) {
 }
 
 return (
-    <div className="mt-16 md:h-auto lg:h-screen" id='do'>
+    <div className="pt-5 md:h-auto lg:h-screen" id='do'>
       <p className='text-center mb-5 text-2xl tracking-wider text-[#f70853]' id='bolder'>Things I Do</p>
       <motion.div variants={parentVariant}
       initial="hidden" whileInView="visible"

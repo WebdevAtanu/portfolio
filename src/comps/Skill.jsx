@@ -40,31 +40,35 @@ const childVariant = {
 function Skills(props) {
   return (
     <motion.div variants={childVariant} className='flex justify-center hover:animate-pulse'>
-    <div className="flex flex-col items-center justify-center md:w-1/2 w-full aspect-square bg-[#091327] rounded-lg p-3">
-      <props.logo className={props.class}/>
-      <p>{props.text}</p>
-      </div>
+    <div className="md:w-2/3 w-full flex items-center justify-center aspect-square rounded-lg">
+    <div className="radial-progress" style={{ "--value": props.value, "--size": "6rem", "--thickness": "3px"  }} role="progressbar">
+        <div className="flex flex-col justify-center items-center">
+            <props.logo className={`${props.class} text-lg`}/>
+            <p className='text-xs'>{props.text}</p>
+        </div>
+    </div>
+    </div>
     </motion.div>
   )
 }
 
 return (
-  <section id='skill' className='lg:h-screen'>
+  <section id='skill' className='pt-5'>
       <div>
         <div className="mb-4">
-          <p className='text-center mt-16 text-2xl tracking-wider text-[#f70853]' id='bolder'>My Skillsets</p>
+          <p className='text-center text-2xl tracking-wider text-[#f70853]' id='bolder'>My Skillsets</p>
           <div className='mt-3 px-3 py-6' id='skills'>
             <motion.div variants={parentVariant} initial="hidden" whileInView="visible"
-            viewport={{ once: true, amount: 0.2 }} className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10'>
-              <Skills logo={RiJavascriptFill} text='Javascript' class='text-yellow-500 text-xl'/>
-              <Skills logo={FaReact} text='React.js' class='text-blue-600 text-xl'/>
-              <Skills logo={RiTailwindCssFill} text='TailwindCSS' class='text-sky-500 text-xl'/>
-              <Skills logo={FaNodeJs} text='Node.js' class='text-green-700 text-xl'/>
-              <Skills logo={SiExpress} text='Express' class='text-xl'/>
-              <Skills logo={DiMongodb} text='MongoDB' class='text-green-500 text-xl'/>
-              <Skills logo={SiMysql} text='Mysql' class='text-blue-500 text-xl'/>
-              <Skills logo={SiAppwrite} text='Appwrite' class='text-pink-600 text-xl'/>
-              <Skills logo={RiNextjsFill} text='Next.js' class='text-xl'/>
+            viewport={{ once: true, amount: 0.2 }} className='bg-[#091327] grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10'>
+              <Skills logo={RiJavascriptFill} text='Javascript' class='text-yellow-500' value='70'/>
+              <Skills logo={FaReact} text='React.js' class='text-blue-600' value='85'/>
+              <Skills logo={RiTailwindCssFill} text='TailwindCSS' class='text-sky-500' value='90'/>
+              <Skills logo={FaNodeJs} text='Node.js' class='text-green-700' value='60'/>
+              <Skills logo={SiExpress} text='Express' class='text-xl' value='75'/>
+              <Skills logo={DiMongodb} text='MongoDB' class='text-green-500 text-xl' value='60'/>
+              <Skills logo={SiMysql} text='Mysql' class='text-blue-500' value='55'/>
+              <Skills logo={SiAppwrite} text='Appwrite' class='text-pink-600' value='60'/>
+              <Skills logo={RiNextjsFill} text='Next.js' class='' value='50'/>
             </motion.div>
           </div>
         </div>
