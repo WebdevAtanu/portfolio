@@ -17,23 +17,19 @@ return (
       </div>
       <div>
         <h6 className="text-sm">Hey there, I'm</h6>
-        <h1 className="m-0 text-3xl tracking-wide" id='bolder'>Atanu Mondal</h1>
+        <h1 className="mb-3 text-3xl tracking-wide" id='bolder'>Atanu Mondal</h1>
             <div className="w-full mt-2 flex gap-2">
           <a href="CV.pdf" target="_blank">
-            <div className="flex items-center gap-1 justify-center text-xs p-1 rounded bg-blue-800 hover:bg-blue-900">
+            <div className="flex items-center gap-1 justify-center text-sm p-1 rounded bg-blue-800 hover:bg-blue-900">
               <i className="bi bi-file-earmark-person-fill"></i>
               <p>Resume</p>
             </div>
           </a>
           <a href="https://www.linkedin.com/in/atanu-mondal-b98707255/" target="_blank">
-            <div className="px-2 rounded bg-blue-800 hover:bg-blue-900">
-              <i className="bi bi-linkedin"></i>
-            </div>
+              <i className="bi bi-linkedin mx-1 text-lg"></i>
           </a>
           <a href="https://github.com/WebdevAtanu" target="_blank">
-            <div className="px-2 rounded bg-blue-800 hover:bg-blue-900">
-              <i className="bi bi-github"></i>
-            </div>
+              <i className="bi bi-github mx-1 text-lg"></i>
           </a>
         </div>
       </div>
