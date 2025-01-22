@@ -44,12 +44,12 @@ function Nav() {
         </div>
         <div className="drawer-side">
           <label htmlFor="my-drawer-4" aria-label="close sidebar" className="drawer-overlay"></label>
-          <ul className="flex flex-col bg-base-200 text-base-content min-h-full w-1/2">
-            <Link to="intro" activeStyle={{'color':'#f70853', 'background':'black'}} spy={true} smooth={true} className='cursor-pointer my-1 hover:text-[#f70853] pr-10 pl-3 py-1 hover:bg-black'><li className='flex items-center justify-between'><span>Intro</span><FaUserSecret /></li></Link>
-            <Link to="do" activeStyle={{'color':'#f70853', 'background':'black'}} spy={true} smooth={true} className='cursor-pointer my-1 hover:text-[#f70853] pr-10 pl-3 py-1 hover:bg-black'><li className='flex items-center justify-between'><span>I do</span><BsPersonWorkspace /></li></Link>
-            <Link to="skill" activeStyle={{'color':'#f70853', 'background':'black'}} spy={true} smooth={true} className='cursor-pointer my-1 hover:text-[#f70853] pr-10 pl-3 py-1 hover:bg-black'><li className='flex items-center justify-between'><span>Skills</span><GrWorkshop /></li></Link>
-            <Link to="project" activeStyle={{'color':'#f70853', 'background':'black'}} spy={true} smooth={true} className='cursor-pointer my-1 hover:text-[#f70853] pr-10 pl-3 py-1 hover:bg-black'><li className='flex items-center justify-between'><span>Projects</span><GoProjectSymlink /></li></Link>
-            <Link to="github" activeStyle={{'color':'#f70853', 'background':'black'}} spy={true} smooth={true} className='cursor-pointer my-1 hover:text-[#f70853] pr-10 pl-3 py-1 hover:bg-black'><li className='flex items-center justify-between'><span>Github stats</span><FiGithub /></li></Link>
+          <ul className="flex flex-col bg-base-200 text-base-content min-h-full w-1/2 pt-4">
+            <Link to="intro" activeStyle={{'color':'#f70853', 'background':'black'}} spy={true} smooth={true} className='cursor-pointer my-1 pr-6 pl-3 py-1'><li className='flex items-center justify-between'><span>Intro</span><FaUserSecret /></li></Link>
+            <Link to="do" activeStyle={{'color':'#f70853', 'background':'black'}} spy={true} smooth={true} className='cursor-pointer my-1 pr-6 pl-3 py-1'><li className='flex items-center justify-between'><span>I do</span><BsPersonWorkspace /></li></Link>
+            <Link to="skill" activeStyle={{'color':'#f70853', 'background':'black'}} spy={true} smooth={true} className='cursor-pointer my-1 pr-6 pl-3 py-1'><li className='flex items-center justify-between'><span>Skills</span><GrWorkshop /></li></Link>
+            <Link to="project" activeStyle={{'color':'#f70853', 'background':'black'}} spy={true} smooth={true} className='cursor-pointer my-1 pr-6 pl-3 py-1'><li className='flex items-center justify-between'><span>Projects</span><GoProjectSymlink /></li></Link>
+            <Link to="github" activeStyle={{'color':'#f70853', 'background':'black'}} spy={true} smooth={true} className='cursor-pointer my-1 pr-6 pl-3 py-1'><li className='flex items-center justify-between'><span>Github stats</span><FiGithub /></li></Link>
           </ul>
         </div>
       </div>

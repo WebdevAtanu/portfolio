@@ -9,7 +9,7 @@ function Github() {
     
     return (
 		<section id='github' className='pt-5 lg:h-screen'>
-		<p className='text-center mb-10 text-2xl tracking-wider text-[#f70853]' id='bolder'>Github stats</p>
+		<p className='text-center mb-10 text-2xl tracking-wider text-[#f70853]' id='bolder'>Github Stats</p>
   		<div className="grid grid-cols-1 md:grid-cols-3 gap-4">
 			<div className='flex md:flex-col gap-4 items-center bg-[#091327] p-5'>
 				<img src={data?.avatar_url} alt="" className='w-1/4 md:w-1/2 rounded-full'/>
