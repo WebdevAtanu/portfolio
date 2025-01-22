@@ -25,7 +25,7 @@ function Desktop(props) {
 
 return (
     <section id='project' className='pt-5'>
-    <p className='text-center mb-10 mt-10 md:mt-0 text-2xl tracking-wider text-[#f70853]' id='bolder'>Projects</p>
+    <p className='text-center mb-10 md:mt-10 md:mt-0 text-2xl tracking-wider text-[#f70853]' id='bolder'>Projects</p>
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-5 mb-10">
         <Desktop href="https://shopper-ecommerce.onrender.com/" github="https://github.com/WebdevAtanu/shopper-ecommerce" img1="pics/site/shopper/home.jpeg" img2="pics/site/shopper/cart.jpeg" img3="pics/site/shopper/dashboard.jpeg" h5='Shopper' p="Developed a MERN stack-based shopping app, utilizing ShadCN for a modern design system. The app offering a seamless shopping experience. ShadCN's pre-built components and utility-first design made it easy to implement a responsive interface, while the MERN stack ensures efficient handling of data, authentication, and real-time updates." tech={<><span className="techStack">#MERN</span><span className="techStack">#ShadCN</span></>}/>
 
