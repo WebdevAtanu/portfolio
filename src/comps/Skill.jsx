@@ -53,10 +53,10 @@ function Skills(props) {
 }
 
 return (
-  <section id='skill' className='pt-5 lg:h-screen'>
+  <section id='skill' className='pt-5 mb-10 lg:h-screen'>
       <div>
         <div className="mb-4">
-          <p className='text-center mb-10 md:mt-10 md:mt-0 text-2xl tracking-wider text-[#f70853]' id='bolder'>My Skillsets</p>
+          <p className='text-center mb-6 text-2xl tracking-wider text-[#f70853]' id='bolder'>My Skillsets</p>
           <div className='' id='skills'>
             <motion.div variants={parentVariant} initial="hidden" whileInView="visible"
             viewport={{ once: true, amount: 0.2 }} className='bg-[#091327] grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-10 py-12 px-4 rounded-2xl'>

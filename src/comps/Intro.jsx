@@ -1,8 +1,9 @@
 import React from 'react';
 import { motion } from "framer-motion";
+import { FaAngleDoubleDown } from "react-icons/fa";
 function Intro() {
 return (
-<section id='intro' className='pt-5 md:h-screen'>
+<section id='intro' className='pt-5 mb-10 md:h-screen flex flex-col justify-between'>
 <motion.div initial={{ y: -50, opacity: 0 }} animate={{ y: 0,opacity: 1 }} transition={{
     duration: 1,
     ease: "easeInOut"
@@ -40,6 +41,10 @@ return (
   <img src="pics/dev.png" alt="" className="w-full m-auto md:w-1/4"/>
 </div>
 </motion.div>
+<div className="mb-12 hidden md:flex flex-col gap-2 justify-center items-center text-sm">
+  <p>scroll down</p>
+  <FaAngleDoubleDown className='animate-bounce' />
+</div>
 </section>
 )
 }
