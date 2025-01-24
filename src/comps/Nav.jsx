@@ -42,7 +42,7 @@ function Nav() {
       <div className="drawer drawer-end">
         <input id="my-drawer-4" type="checkbox" className="drawer-toggle" />
         <div className="drawer-content">
-          <label htmlFor="my-drawer-4" className="drawer-button text-2xl text-[#9b24af]"><TbMenuDeep /></label>
+          <label htmlFor="my-drawer-4" className="drawer-button text-3xl text-[#9b24af]"><TbMenuDeep /></label>
         </div>
         <div className="drawer-side">
           <label htmlFor="my-drawer-4" aria-label="close sidebar" className="drawer-overlay"></label>
