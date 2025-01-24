@@ -4,7 +4,7 @@ import { FaAngleDoubleDown } from "react-icons/fa";
 import { MdOutlineFileDownload } from "react-icons/md";
 function Intro() {
 return (
-<section id='intro' className='pt-5 mb-10 md:h-screen'>
+<section id='intro' className='pt-5 mb-10 h-screen'>
 <motion.div initial={{ y: -50, opacity: 0 }} animate={{ y: 0,opacity: 1 }} transition={{
     duration: 1,
     ease: "easeInOut"
@@ -39,10 +39,10 @@ return (
     <p className='text-sm md:text-lg'>I'm a web developer specializing in MERN stack & modern web solutions. Proficient in creating engaging and responsive user interfaces using HTML, CSS and JavaScript frameworks like React. Leverage backend knowledge in Node.js and Express to seamlessly integrate APIs and enhance application functionality. Experienced in working with databases such as MongoDB and MySQL to ensure smooth data management and flow.</p>
     <p className="text-sm md:text-lg">Explore my portfolio to see the projects I’ve worked on.</p>
   </div>
-  <img src="pics/dev.png" alt="" className="w-full m-auto md:w-1/4"/>
+  <img src="pics/dev.png" alt="" className="hidden md:block w-full m-auto md:w-1/4"/>
 </div>
 </motion.div>
-<div className="mt-16 hidden md:flex flex-col gap-2 justify-center items-center text-sm">
+<div className="mt-16 flex flex-col gap-2 justify-center items-center text-sm">
   <p>scroll down</p>
   <FaAngleDoubleDown className='animate-bounce text-[#9b24af]' />
 </div>
