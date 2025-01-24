@@ -1,5 +1,6 @@
 import React,{useState,useEffect} from 'react'
 import { motion } from "framer-motion";
+import { FiGithub } from "react-icons/fi";
 
 function Github() {
 	const [data,setData]=useState();
@@ -9,7 +10,10 @@ function Github() {
     
     return (
 		<section id='github' className='pt-5 mb-10 lg:h-screen'>
-		<p className='text-center mb-6 text-2xl tracking-wider text-[#f70853]' id='bolder'>Github Stats</p>
+		<div className="flex gap-2 items-center text-2xl mb-6 text-[#9b24af]">
+        <p id='bolder'>Github Stats</p> 
+        <FiGithub />
+      </div>
   		<div className="grid grid-cols-1 md:grid-cols-3 gap-1">
 			<div className='flex md:flex-col gap-4 items-center bg-[#091327] rounded-xl p-5'>
 				<img src='pics/github.png' alt="" className='w-1/4 md:w-1/2 rounded-full'/>

@@ -1,5 +1,6 @@
 import React from 'react'
 import { motion } from "framer-motion";
+import { BsPersonWorkspace } from "react-icons/bs";
 
 function Do() {
 const parentVariant = {
@@ -48,7 +49,10 @@ function Card(props) {
 
 return (
     <div className="pt-5 mb-10 md:h-auto lg:h-screen" id='do'>
-      <p className='text-center mb-6 text-2xl tracking-wider text-[#f70853]' id='bolder'>Things I Do</p>
+      <div className="flex gap-2 items-center text-2xl mb-4 text-[#9b24af]">
+        <p id='bolder'>Working Field</p> 
+        <BsPersonWorkspace />
+      </div>
       <motion.div variants={parentVariant}
       initial="hidden" whileInView="visible"
       viewport={{ once: true, amount: 0.2 }} className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">

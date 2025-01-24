@@ -1,5 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Coiny&display=swap');
 
 * {
 	margin: 0;
@@ -7,7 +8,7 @@
 }
 
 body {
-	font-family: "Merriweather", serif;
+	font-family: "Lora", serif;
 	user-select: none;
 
 	img {
@@ -17,10 +18,19 @@ body {
 }
 
 #bolder {
-	font-family: "Anton", serif;
+	font-family: "Coiny", serif;
 }
 
 .techStack {
-	margin: 0 5px;
-	color:skyblue;
+	margin: 0 4px 0 0;
+	padding: 2px 1rem;
+	border-radius: 1rem;
+	font-size: 0.7rem;
+	color: black;
+	background: #9b24af;
+	font-family: "Roboto", serif;
+}
+
+#nav,#resume {
+	font-family: "Roboto", serif;
 }
