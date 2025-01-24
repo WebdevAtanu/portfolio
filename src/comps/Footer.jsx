@@ -9,7 +9,7 @@ function Footer() {
       ease: "easeInOut"
       }}>
       <div className="mt-6">
-      <div className="flex gap-2 items-center text-2xl mb-4 text-[#9b24af]">
+      <div className="flex gap-2 items-center text-2xl mb-4 text-pink-600">
         <p id='bolder'>Summary</p> 
         <FaPenAlt />
       </div>

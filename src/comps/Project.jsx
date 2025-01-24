@@ -11,7 +11,7 @@ function Desktop(props) {
     <motion.div initial={{ y: 50 }} whileInView={{ y: 0 }} viewport={{ once: true }} transition={{
     duration: 1,
     ease: "easeInOut"
-  }} className='bg-[#091327] hover:bg-[#071023] border border-[#9b24af] p-5 rounded-xl flex flex-col gap-5'>
+  }} className='bg-[#091327] hover:bg-[#071023] border border-pink-600 p-5 rounded-xl flex flex-col gap-5'>
       <div className="flex flex-col gap-2">
         <h5 className='text'>{props.h5}</h5>
         <p>{props.tech}</p>
@@ -22,8 +22,8 @@ function Desktop(props) {
       <div className='flex flex-col justify-between h-full gap-4'>
         <p className='text-sm'>{props.p}</p>
         <div className="flex gap-3 justify-end text-lg">
-        <a href={props.github} target='_blank' className='text-[#9b24af]'><FiGithub /></a>
-        <a href={props.href} target='_blank' className='text-[#9b24af]'><FaLink /></a>
+        <a href={props.github} target='_blank' className='text-pink-600'><FiGithub /></a>
+        <a href={props.href} target='_blank' className='text-pink-600'><FaLink /></a>
       </div>
       </div>
     </motion.div>
@@ -32,7 +32,7 @@ function Desktop(props) {
 
 return (
     <section id='project' className='pt-5'>
-      <div className="flex gap-2 items-center text-2xl mb-6 text-[#9b24af]">
+      <div className="flex gap-2 items-center text-2xl mb-6 text-pink-600">
         <p id='bolder'>Practice Projects</p> 
         <FaLightbulb />
       </div>

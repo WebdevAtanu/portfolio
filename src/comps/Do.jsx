@@ -32,7 +32,7 @@ const childVariant = {
 function Card(props) {
   return (
     <motion.div variants={childVariant}>
-      <div className="card bg-[#091327] border border border-[#9b24af] w-full h-full flex flex-col justify-between px-4 py-6 drop-shadow-sm">
+      <div className="card bg-[#091327] border border border-pink-600 w-full h-full flex flex-col justify-between px-4 py-6 drop-shadow-sm">
         <div className='flex flex-col gap-5'>
           <figure>
             <img src={props.image} alt="image" className='w-1/3 rounded-full'/>
@@ -49,7 +49,7 @@ function Card(props) {
 
 return (
     <div className="pt-5 mb-10 md:h-auto lg:h-screen" id='do'>
-      <div className="flex gap-2 items-center text-2xl mb-4 text-[#9b24af]">
+      <div className="flex gap-2 items-center text-2xl mb-4 text-pink-600">
         <p id='bolder'>Working Field</p> 
         <BsPersonWorkspace />
       </div>

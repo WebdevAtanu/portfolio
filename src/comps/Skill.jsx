@@ -41,7 +41,7 @@ const childVariant = {
 function Skills(props) {
   return (
     <motion.div variants={childVariant} className='flex justify-center'>
-    <div className="w-full bg-[#091327] border border-[#9b24af] flex items-center justify-center aspect-square rounded-lg">
+    <div className="w-full bg-[#091327] border border-pink-600 flex items-center justify-center aspect-square rounded-lg">
     <div className={`${props.class} radial-progress`} style={{ "--value": props.value, "--size": "7rem", "--thickness": "4px"  }} role="progressbar">
         <div className="flex flex-col justify-center items-center">
             <props.logo className={`${props.class} text-lg`}/>
@@ -56,7 +56,7 @@ function Skills(props) {
 return (
     <section id='skill' className='pt-5 mb-10 lg:h-screen'>
         <div className="mb-4">
-            <div className="flex gap-2 items-center text-2xl mb-6 text-[#9b24af]">
+            <div className="flex gap-2 items-center text-2xl mb-6 text-pink-600">
                <p id='bolder'>My Skillset</p> 
                <FaPenNib />
             </div>
