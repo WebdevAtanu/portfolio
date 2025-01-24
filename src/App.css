@@ -27,10 +27,10 @@ body {
 	border-radius: 1rem;
 	font-size: 0.7rem;
 	color: black;
-	background: #d81b60;
+	background: #3949ab;
 	font-family: "Roboto", serif;
 }
 
-#nav, #resume {
+.nav> li, #resume {
 	font-family: "Roboto", serif;
 }

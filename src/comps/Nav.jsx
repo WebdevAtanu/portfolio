@@ -25,16 +25,17 @@ function Nav() {
         }
         previousPosition = currentPosition;
     };
+
 	return (
-    <section id='nav'>
+    <>
     <div className={`hidden md:block shadow sticky z-50 bg-[#091327] text-white ${flag?'top-0':'top-[-5rem]'}`}>
       <div className="container m-auto">
-        <ul className='flex justify-center gap-5 p-3'>
-          <li><Link to="intro" activeStyle={{'color':'#9b24af','background':'#0f172a'}} spy={true} smooth={true} className='hover:text-pink-600 cursor-pointer hover:bg-[#0f172a] duration-100 py-1 px-3 rounded'>Intro</Link></li>
-          <li><Link to="do" activeStyle={{'color':'#9b24af','background':'#0f172a'}} spy={true} smooth={true} className='hover:text-pink-600 cursor-pointer hover:bg-[#0f172a] duration-100 py-1 px-3 rounded'>Working Field</Link></li>
-          <li><Link to="skill" activeStyle={{'color':'#9b24af','background':'#0f172a'}} spy={true} smooth={true} className='hover:text-pink-600 cursor-pointer hover:bg-[#0f172a] duration-100 py-1 px-3 rounded'>Skills</Link></li>
-          <li><Link to="project" activeStyle={{'color':'#9b24af','background':'#0f172a'}} spy={true} smooth={true} className='hover:text-pink-600 cursor-pointer hover:bg-[#0f172a] duration-100 py-1 px-3 rounded'>Practice Projects</Link></li>
-          <li><Link to="github" activeStyle={{'color':'#9b24af','background':'#0f172a'}} spy={true} smooth={true} className='hover:text-pink-600 cursor-pointer hover:bg-[#0f172a] duration-100 py-1 px-3 rounded'>Github stats</Link></li>
+        <ul className='flex justify-center gap-5 p-3 nav'>
+          <li><Link to="intro" activeStyle={{'color':'#3949ab','background':'#0f172a'}} spy={true} smooth={true} className='hover:text-indigo-600 cursor-pointer hover:bg-[#0f172a] duration-100 py-1 px-3 rounded'>Intro</Link></li>
+          <li><Link to="do" activeStyle={{'color':'#3949ab','background':'#0f172a'}} spy={true} smooth={true} className='hover:text-indigo-600 cursor-pointer hover:bg-[#0f172a] duration-100 py-1 px-3 rounded'>Working Field</Link></li>
+          <li><Link to="skill" activeStyle={{'color':'#3949ab','background':'#0f172a'}} spy={true} smooth={true} className='hover:text-indigo-600 cursor-pointer hover:bg-[#0f172a] duration-100 py-1 px-3 rounded'>Skills</Link></li>
+          <li><Link to="project" activeStyle={{'color':'#3949ab','background':'#0f172a'}} spy={true} smooth={true} className='hover:text-indigo-600 cursor-pointer hover:bg-[#0f172a] duration-100 py-1 px-3 rounded'>Practice Projects</Link></li>
+          <li><Link to="github" activeStyle={{'color':'#3949ab','background':'#0f172a'}} spy={true} smooth={true} className='hover:text-indigo-600 cursor-pointer hover:bg-[#0f172a] duration-100 py-1 px-3 rounded'>Github stats</Link></li>
         </ul>
       </div>
     </div>
@@ -42,21 +43,21 @@ function Nav() {
       <div className="drawer drawer-end">
         <input id="my-drawer-4" type="checkbox" className="drawer-toggle" />
         <div className="drawer-content">
-          <label htmlFor="my-drawer-4" className="drawer-button text-3xl text-pink-600"><TbMenuDeep /></label>
+          <label htmlFor="my-drawer-4" className="drawer-button text-3xl text-indigo-600"><TbMenuDeep /></label>
         </div>
         <div className="drawer-side">
           <label htmlFor="my-drawer-4" aria-label="close sidebar" className="drawer-overlay"></label>
-          <ul className="flex flex-col bg-[#091327] justify-center w-1/2 py-4">
-            <Link to="intro" activeStyle={{'color':'#9b24af', 'background':'#0f172a'}} spy={true} smooth={true} className='cursor-pointer my-1 pr-6 pl-6 py-1'><li className='flex items-center gap-4'><FaUserSecret /><span>Intro</span></li></Link>
-            <Link to="do" activeStyle={{'color':'#9b24af', 'background':'#0f172a'}} spy={true} smooth={true} className='cursor-pointer my-1 pr-6 pl-6 py-1'><li className='flex items-center gap-4'><BsPersonWorkspace /><span>Working Field</span></li></Link>
-            <Link to="skill" activeStyle={{'color':'#9b24af', 'background':'#0f172a'}} spy={true} smooth={true} className='cursor-pointer my-1 pr-6 pl-6 py-1'><li className='flex items-center gap-4'><FaPenNib /><span>Skills</span></li></Link>
-            <Link to="project" activeStyle={{'color':'#9b24af', 'background':'#0f172a'}} spy={true} smooth={true} className='cursor-pointer my-1 pr-6 pl-6 py-1'><li className='flex items-center gap-4'><FaLightbulb /><span>Practice Projects</span></li></Link>
-            <Link to="github" activeStyle={{'color':'#9b24af', 'background':'#0f172a'}} spy={true} smooth={true} className='cursor-pointer my-1 pr-6 pl-6 py-1'><li className='flex items-center gap-4'><FiGithub /><span>Github stats</span></li></Link>
+          <ul className="flex flex-col bg-[#091327] justify-center w-1/2 rounded-b-lg py-4 nav">
+            <li><Link to="intro" activeStyle={{'color':'#3949ab', 'background':'#0f172a'}} spy={true} smooth={true} className='cursor-pointer my-1 pr-6 pl-6 py-1 flex items-center gap-4'><FaUserSecret /><span>Intro</span></Link></li>
+            <li><Link to="do" activeStyle={{'color':'#3949ab', 'background':'#0f172a'}} spy={true} smooth={true} className='cursor-pointer my-1 pr-6 pl-6 py-1 flex items-center gap-4'><BsPersonWorkspace /><span>Working Field</span></Link></li>
+            <li><Link to="skill" activeStyle={{'color':'#3949ab', 'background':'#0f172a'}} spy={true} smooth={true} className='cursor-pointer my-1 pr-6 pl-6 py-1 flex items-center gap-4'><FaPenNib /><span>Skills</span></Link></li>
+            <li><Link to="project" activeStyle={{'color':'#3949ab', 'background':'#0f172a'}} spy={true} smooth={true} className='cursor-pointer my-1 pr-6 pl-6 py-1 flex items-center gap-4'><FaLightbulb /><span>Practice Projects</span></Link></li>
+            <li><Link to="github" activeStyle={{'color':'#3949ab', 'background':'#0f172a'}} spy={true} smooth={true} className='cursor-pointer my-1 pr-6 pl-6 py-1 flex items-center gap-4'><FiGithub /><span>Github stats</span></Link></li>
           </ul>
         </div>
       </div>
-    </div>
-    </section>
+      </div>
+    </>
 	)
 }
 
