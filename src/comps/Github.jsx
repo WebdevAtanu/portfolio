@@ -15,7 +15,7 @@ function Github() {
         <FiGithub />
       </div>
   		<div className="grid grid-cols-1 md:grid-cols-3 gap-1">
-			<div className='flex md:flex-col gap-4 items-center bg-[#091327] rounded-xl p-5'>
+			<div className='flex md:flex-col gap-4 items-center bg-[#091327] border border-[#9b24af] rounded-xl p-5'>
 				<img src='pics/github.png' alt="" className='w-1/4 md:w-1/2 rounded-full'/>
 				<ul className='md:text-center'>
 					<li>{data?.name}</li>
@@ -27,7 +27,7 @@ function Github() {
 					<li><a href={data?.html_url} target='_blank' className='link link-primary text-xs'>visit profile</a></li>
 				</ul>
 			</div>
-			<motion.div initial={{ y: 50 }} animate={{ y: 0 }} className="flex flex-col gap-4 items-center justify-center md:col-span-2 bg-[#091327] rounded-xl p-5">
+			<motion.div initial={{ y: 50 }} animate={{ y: 0 }} className="flex flex-col gap-4 items-center justify-center md:col-span-2 bg-[#091327] border border-[#9b24af] rounded-xl p-5">
 				<div className="shadow">
 					<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=WebdevAtanu&layout=compact&theme=catppuccin_mocha&hide_border=false" />
 				</div>

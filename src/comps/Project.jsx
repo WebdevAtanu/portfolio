@@ -11,7 +11,7 @@ function Desktop(props) {
     <motion.div initial={{ y: 50 }} whileInView={{ y: 0 }} viewport={{ once: true }} transition={{
     duration: 1,
     ease: "easeInOut"
-  }} className='bg-[#091327] hover:bg-[#071023] p-5 rounded-xl flex flex-col gap-5'>
+  }} className='bg-[#091327] hover:bg-[#071023] border border-[#9b24af] p-5 rounded-xl flex flex-col gap-5'>
       <div className="flex flex-col gap-2">
         <h5 className='text'>{props.h5}</h5>
         <p>{props.tech}</p>
