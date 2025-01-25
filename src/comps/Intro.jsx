@@ -27,7 +27,7 @@ return (
         <a href="CV.pdf" target="_blank">
           <div className="flex items-center gap-1 justify-center text-sm text-black px-4 py-1 rounded bg-indigo-600">
             <MdOutlineFileDownload />
-            <p id='resume'>Resume</p>
+            <p className='resume'>Resume</p>
           </div>
         </a>
         <a href="https://www.linkedin.com/in/atanu-mondal-b98707255/" target="_blank" className='flex items-center'>
@@ -39,7 +39,7 @@ return (
       </div>
       <p className="md:text-lg">Explore my portfolio to see the projects I’ve worked on.</p>
     </div>
-    <img src="pics/dev.png" alt="" className="hidden md:block w-full m-auto md:w-1/4"/>
+    <img src="pics/dev.png" alt="" className="hidden lg:block w-full m-auto md:w-1/4"/>
   </div>
 </motion.div>
 <div className="mt-16 flex flex-col gap-2 justify-center items-center text-sm">

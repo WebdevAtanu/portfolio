@@ -69,7 +69,7 @@ return (
               <Skills logo={SiExpress} text='Express' class='text-xl' value='75'/>
               <Skills logo={DiMongodb} text='MongoDB' class='text-green-500 text-xl' value='60'/>
               <Skills logo={SiMysql} text='Mysql' class='text-blue-500' value='55'/>
-              <Skills logo={SiAppwrite} text='Appwrite' class='text-indigo-600' value='60'/>
+              <Skills logo={SiAppwrite} text='Appwrite' class='text-pink-600' value='60'/>
               <Skills logo={RiNextjsFill} text='Next.js' class='' value='50'/>
             </motion.div>
         </div>
