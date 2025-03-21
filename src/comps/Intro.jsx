@@ -25,9 +25,9 @@ return (
       <p className='md:text-lg'>I'm a web developer specializing in MERN stack & modern web solutions. Proficient in creating engaging and responsive user interfaces using HTML, CSS and JavaScript frameworks like React. Leverage backend knowledge in Node.js and Express to seamlessly integrate APIs and enhance application functionality. Experienced in working with databases such as MongoDB and MySQL to ensure smooth data management and flow.</p>
       <div className="w-full flex gap-4">
         <a href="CV.pdf" target="_blank">
-          <div className="flex items-center gap-1 justify-center text-sm text-black px-4 py-1 rounded bg-indigo-600">
+          <div className="flex items-center gap-1 justify-center text-sm text-black px-4 py-1 rounded bg-indigo-600 font-bold">
             <MdOutlineFileDownload />
-            <p className='resume'>Resume</p>
+            <p>Resume</p>
           </div>
         </a>
         <a href="https://www.linkedin.com/in/atanu-mondal-b98707255/" target="_blank" className='flex items-center'>
@@ -44,7 +44,7 @@ return (
 </motion.div>
 <div className="mt-16 flex flex-col gap-2 justify-center items-center text-sm">
   <p>scroll down</p>
-  <FaAngleDoubleDown className='animate-bounce text-indigo-600' />
+  <FaAngleDoubleDown className='animate-bounce text-indigo-600 text-xl' />
 </div>
 </section>
 )

@@ -34,6 +34,7 @@ function Nav() {
           <li><Link to="intro" activeStyle={{'color':'#3949ab','background':'#0f172a'}} spy={true} smooth={true} className='hover:text-indigo-600 cursor-pointer hover:bg-[#0f172a] duration-100 py-1 px-3 rounded'>Intro</Link></li>
           <li><Link to="do" activeStyle={{'color':'#3949ab','background':'#0f172a'}} spy={true} smooth={true} className='hover:text-indigo-600 cursor-pointer hover:bg-[#0f172a] duration-100 py-1 px-3 rounded'>Working Field</Link></li>
           <li><Link to="skill" activeStyle={{'color':'#3949ab','background':'#0f172a'}} spy={true} smooth={true} className='hover:text-indigo-600 cursor-pointer hover:bg-[#0f172a] duration-100 py-1 px-3 rounded'>Skills</Link></li>
+          <li><Link to="work" activeStyle={{'color':'#3949ab','background':'#0f172a'}} spy={true} smooth={true} className='hover:text-indigo-600 cursor-pointer hover:bg-[#0f172a] duration-100 py-1 px-3 rounded'>Work Experience</Link></li>
           <li><Link to="project" activeStyle={{'color':'#3949ab','background':'#0f172a'}} spy={true} smooth={true} className='hover:text-indigo-600 cursor-pointer hover:bg-[#0f172a] duration-100 py-1 px-3 rounded'>Practice Projects</Link></li>
           <li><Link to="github" activeStyle={{'color':'#3949ab','background':'#0f172a'}} spy={true} smooth={true} className='hover:text-indigo-600 cursor-pointer hover:bg-[#0f172a] duration-100 py-1 px-3 rounded'>Github stats</Link></li>
         </ul>
@@ -51,6 +52,7 @@ function Nav() {
             <li><Link to="intro" activeStyle={{'color':'#3949ab', 'background':'#0f172a'}} spy={true} smooth={true} className='cursor-pointer my-1 pr-6 pl-6 py-1 flex items-center gap-4'><FaUserSecret /><span>Intro</span></Link></li>
             <li><Link to="do" activeStyle={{'color':'#3949ab', 'background':'#0f172a'}} spy={true} smooth={true} className='cursor-pointer my-1 pr-6 pl-6 py-1 flex items-center gap-4'><BsPersonWorkspace /><span>Working Field</span></Link></li>
             <li><Link to="skill" activeStyle={{'color':'#3949ab', 'background':'#0f172a'}} spy={true} smooth={true} className='cursor-pointer my-1 pr-6 pl-6 py-1 flex items-center gap-4'><FaPenNib /><span>Skills</span></Link></li>
+            <li><Link to="work" activeStyle={{'color':'#3949ab', 'background':'#0f172a'}} spy={true} smooth={true} className='cursor-pointer my-1 pr-6 pl-6 py-1 flex items-center gap-4'><FaPenNib /><span>Work Experience</span></Link></li>
             <li><Link to="project" activeStyle={{'color':'#3949ab', 'background':'#0f172a'}} spy={true} smooth={true} className='cursor-pointer my-1 pr-6 pl-6 py-1 flex items-center gap-4'><FaLightbulb /><span>Practice Projects</span></Link></li>
             <li><Link to="github" activeStyle={{'color':'#3949ab', 'background':'#0f172a'}} spy={true} smooth={true} className='cursor-pointer my-1 pr-6 pl-6 py-1 flex items-center gap-4'><FiGithub /><span>Github stats</span></Link></li>
           </ul>

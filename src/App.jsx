@@ -2,6 +2,7 @@ import Nav from './comps/Nav';
 import Intro from './comps/Intro';
 import Do from './comps/Do';
 import Skill from './comps/Skill';
+import Work from './comps/Work';
 import Project from './comps/Project';
 import Footer from './comps/Footer';
 import Github from './comps/Github';
@@ -15,6 +16,7 @@ function App() {
       <Intro/>
       <Do/>
       <Skill/>
+      {/* <Work/> */}
       <Project/>
       <Github/>
       <Footer/>
