@@ -1,28 +1,28 @@
-import Nav from './comps/Nav';
-import Intro from './comps/Intro';
-import Do from './comps/Do';
-import Skill from './comps/Skill';
-import Work from './comps/Work';
-import Project from './comps/Project';
-import Footer from './comps/Footer';
-import Github from './comps/Github';
-import './App.css';
+import Nav from "./comps/Nav";
+import Intro from "./comps/Intro";
+import Do from "./comps/Do";
+import Skill from "./comps/Skill";
+import Work from "./comps/Work";
+import Project from "./comps/Project";
+import Footer from "./comps/Footer";
+import Github from "./comps/Github";
+import "./App.css";
 
 function App() {
   return (
     <>
-    <Nav/>
-    <div className='container m-auto p-5'>
-      <Intro/>
-      <Do/>
-      <Skill/>
-      {/* <Work/> */}
-      <Project/>
-      <Github/>
-      <Footer/>
-    </div>
+      <Nav />
+      <div className="container m-auto p-5">
+        <Intro />
+        <Do />
+        <Skill />
+        <Work />
+        <Project />
+        <Github />
+        <Footer />
+      </div>
     </>
-  )
+  );
 }
 
-export default App
+export default App;

@@ -1,4 +1,3 @@
-import React from 'react';
 import { motion } from "framer-motion";
 import { FaAngleDoubleDown } from "react-icons/fa";
 import { MdOutlineFileDownload } from "react-icons/md";
@@ -22,19 +21,19 @@ return (
           <h1 className="mb-3 text-3xl tracking-wide">Atanu Mondal</h1>
         </div>
       </div>
-      <p className='md:text-lg'>I'm a web developer specializing in MERN stack & modern web solutions. Proficient in creating engaging and responsive user interfaces using HTML, CSS and JavaScript frameworks like React. Leverage backend knowledge in Node.js and Express to seamlessly integrate APIs and enhance application functionality. Experienced in working with databases such as MongoDB and MySQL to ensure smooth data management and flow.</p>
+      <p className='md:text-lg'>I'm a web developer specializing in the MERN stack, .NET Core, and modern web solutions. I excel at building dynamic, responsive user interfaces with React, HTML, and CSS, ensuring seamless user experiences. On the backend, I develop robust APIs and scalable applications using Node.js, Express, and .NET Core. With experience in both MongoDB and MSSQL, I ensure efficient data management and optimized performance for high-quality web applications.</p>
       <div className="w-full flex gap-4">
         <a href="CV.pdf" target="_blank">
-          <div className="flex items-center gap-1 justify-center text-sm text-black px-4 py-1 rounded bg-indigo-600 font-bold">
+          <div className="flex items-center gap-1 justify-center text-sm text-black px-4 py-1 rounded bg-indigo-600 hover:bg-indigo-700 font-bold duration-100">
             <MdOutlineFileDownload />
             <p>Resume</p>
           </div>
         </a>
         <a href="https://www.linkedin.com/in/atanu-mondal-b98707255/" target="_blank" className='flex items-center'>
-          <i className="bi bi-linkedin text-lg text-indigo-600"></i>
+          <i className="bi bi-linkedin text-lg text-indigo-600 hover:text-indigo-700 duration-100"></i>
         </a>
         <a href="https://github.com/WebdevAtanu" target="_blank" className='flex items-center'>
-          <i className="bi bi-github text-lg text-indigo-600"></i>
+          <i className="bi bi-github text-lg text-indigo-600 hover:text-indigo-700 duration-100"></i>
         </a>
       </div>
       <p className="md:text-lg">Explore my portfolio to see the projects I’ve worked on.</p>

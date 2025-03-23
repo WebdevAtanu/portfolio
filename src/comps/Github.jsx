@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import { FiGithub } from "react-icons/fi";
+import {  BsGithub } from "react-icons/bs";
 
 function Github() {
   const [data, setData] = useState(null);
@@ -16,7 +16,7 @@ function Github() {
       {/* Header */}
       <div className="flex items-center gap-3 text-2xl font-semibold mb-6 text-indigo-500">
         <p>GitHub Stats</p>
-        <FiGithub />
+        <BsGithub className="text-2xl" />
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -26,7 +26,7 @@ function Github() {
           whileInView={{ x: 0, opacity: 1 }}
           viewport={{ once: true }}
           transition={{ duration: 1, ease: "easeInOut" }}
-          className="flex flex-col items-center bg-gray-900 border border-indigo-600 rounded-xl p-6 shadow-lg hover:shadow-indigo-600 transition duration-300"
+          className="flex flex-col items-center bg-gray-900 border border-indigo-600 rounded-xl p-6"
         >
           <a href={data?.html_url} target="_blank" rel="noopener noreferrer" className="mb-4">
             <img
@@ -51,7 +51,7 @@ function Github() {
           whileInView={{ x: 0, opacity: 1 }}
           viewport={{ once: true }}
           transition={{ duration: 1, ease: "easeInOut" }}
-          className="flex flex-col items-center gap-4 md:col-span-2 bg-gray-900 border border-indigo-600 rounded-xl p-6 shadow-lg"
+          className="flex flex-col items-center gap-4 md:col-span-2 bg-gray-900 border border-indigo-600 rounded-xl p-6"
         >
           <div className="shadow-lg">
             <img
