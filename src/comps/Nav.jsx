@@ -4,7 +4,7 @@ import { FaUserSecret } from "react-icons/fa6";
 import { BsPersonWorkspace } from "react-icons/bs";
 import { FaPenNib } from "react-icons/fa";
 import { FaLightbulb } from "react-icons/fa";
-import { TbMenuDeep } from "react-icons/tb";
+import { MdOutlineMenuOpen } from "react-icons/md";
 import {  BsGithub } from "react-icons/bs";
 import { MdWork } from "react-icons/md";
 
@@ -111,7 +111,7 @@ function Nav() {
               htmlFor="my-drawer-4"
               className="drawer-button text-3xl text-indigo-600"
             >
-              <TbMenuDeep />
+              < MdOutlineMenuOpen  />
             </label>
           </div>
           <div className="drawer-side">
