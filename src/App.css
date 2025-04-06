@@ -1,32 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Coiny&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
 
-* {
-	margin: 0;
-	padding: 0;
-}
-
-body {
-	font-family: "Lora", serif;
-	user-select: none;
-
-	img {
-		pointer-events: none;
-	}
-
-}
-
-#bolder {
-	font-family: "Coiny", serif;
-}
-
-.techStack {
-	margin: 0 4px 0 0;
-	padding: 2px 1rem;
-	border-radius: 1rem;
-	font-size: 0.7rem;
-	color: black;
-	background: #3949ab;
-	font-family: "Roboto", serif;
+#menuText{
+    font-family: "Karla", sans-serif;   
 }

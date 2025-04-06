@@ -1,26 +1,25 @@
-import Nav from "./comps/Nav";
-import Intro from "./comps/Intro";
-import Do from "./comps/Do";
-import Skill from "./comps/Skill";
-import Work from "./comps/Work";
-import Project from "./comps/Project";
-import Footer from "./comps/Footer";
-import Github from "./comps/Github";
+import { useState } from "react";
+import AccountMenu from "./component/Menu";
+import Intro from "./component/Intro";
+import Field from "./component/Field";
+import Skill from "./component/Skill";
+import Work from "./component/Work";
+import Project from "./component/Project";
+import Github from "./component/Github";
+import Footer from "./component/Footer";
 import "./App.css";
 
 function App() {
   return (
     <>
-      <Nav />
-      <div className="container m-auto p-5">
-        <Intro />
-        <Do />
-        <Skill />
-        <Work />
-        <Project />
-        <Github />
-        <Footer />
-      </div>
+      <AccountMenu />
+      <Intro />
+      <Field />
+      <Skill />
+      <Work />
+      <Project/>
+      <Github/>
+      <Footer/>
     </>
   );
 }
