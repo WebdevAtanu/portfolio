@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
-import GitHubIcon from '@mui/icons-material/GitHub';
-import github from '../assets/github.png';
+import GitHubIcon from "@mui/icons-material/GitHub";
+import github from "../assets/github.png";
 
 function Github() {
   const [data, setData] = useState(null);
@@ -13,23 +13,31 @@ function Github() {
 
   return (
     <div className="container px-5 py-24 mx-auto">
-       <div className="flex flex-wrap w-full mb-20">
+      <div className="flex flex-wrap w-full mb-20">
         <div className="lg:w-1/2 w-full mb-6 lg:mb-0">
           <h1 className="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">
-          GitHub Activity
+            GitHub Activity
           </h1>
           <div className="h-1 w-20 bg-indigo-500 rounded"></div>
         </div>
         <p className="lg:w-1/2 w-full leading-relaxed text-gray-500">
-        Actively contributing to a variety of personal and collaborative projects on GitHub. My contributions reflect consistent learning and growth, with commits across frontend, backend, and full-stack repositories. I maintain clean, readable code and follow version control best practices, showcasing my dedication to continuous improvement and open-source collaboration.
+          Actively contributing to a variety of personal and collaborative
+          projects on GitHub. My contributions reflect consistent learning and
+          growth, with commits across frontend, backend, and full-stack
+          repositories. I maintain clean, readable code and follow version
+          control best practices, showcasing my dedication to continuous
+          improvement and open-source collaboration.
         </p>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-        <div
-          className="flex flex-col items-center border border-blue-600 rounded-xl p-6"
-        >
-          <a href={data?.html_url} target="_blank" rel="noopener noreferrer" className="mb-4">
+        <div className="flex flex-col items-center outline outline-gray-300 shadow rounded-xl p-6">
+          <a
+            href={data?.html_url}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mb-4"
+          >
             <img
               src={github}
               alt="GitHub"
@@ -46,9 +54,7 @@ function Github() {
           </ul>
         </div>
 
-        <div
-          className="flex flex-col items-center gap-4 md:col-span-2 border border-blue-600 rounded-xl p-6"
-        >
+        <div className="flex flex-col items-center gap-4 md:col-span-2 outline outline-gray-300 shadow rounded-xl p-6">
           <div className="shadow-lg">
             <img
               src="https://github-readme-stats.vercel.app/api/top-langs/?username=WebdevAtanu&layout=compact&theme=catppuccin_mocha&hide_border=false"

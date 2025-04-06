@@ -1,17 +1,25 @@
 import * as React from "react";
-import Accordion from "@mui/material/Accordion";
-import AccordionDetails from "@mui/material/AccordionDetails";
-import AccordionSummary from "@mui/material/AccordionSummary";
-import Typography from "@mui/material/Typography";
-import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
+import DataObjectIcon from '@mui/icons-material/DataObject';
+import StorageIcon from '@mui/icons-material/Storage';
+import IntegrationInstructionsIcon from '@mui/icons-material/IntegrationInstructions';
+
+function Card({title,content,icon}) {
+  return (
+    <div className="px-4 py-12 md:w-full flex outline outline-gray-200 shadow rounded">
+      <div className="w-12 h-12 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4 flex-shrink-0">{icon}</div>
+      <div className="flex-grow pl-6">
+        <h2 className="text-gray-900 text-lg title-font font-medium mb-2">
+          {title}
+        </h2>
+        <p className="leading-relaxed text-base">
+          {content}
+        </p>
+      </div>
+    </div>
+  );
+}
 
 export default function Work() {
-  const [expanded, setExpanded] = React.useState(false);
-
-  const handleChange = (panel) => (event, isExpanded) => {
-    setExpanded(isExpanded ? panel : false);
-  };
-
   return (
     <div className="container px-5 py-24 mx-auto">
       <div className="flex flex-wrap w-full mb-20">
@@ -29,78 +37,11 @@ export default function Work() {
           production-ready web applications.
         </p>
       </div>
-      <Accordion
-        expanded={expanded === "panel1"}
-        onChange={handleChange("panel1")}
-      >
-        <AccordionSummary
-          expandIcon={<ExpandMoreIcon />}
-          aria-controls="panel1bh-content"
-          id="panel1bh-header"
-        >
-          <Typography component="span" sx={{ width: "33%", flexShrink: 0 }}>
-            API Development
-          </Typography>
-          <Typography component="span" sx={{ color: "text.secondary" }}>
-            .NET Core and Node.js
-          </Typography>
-        </AccordionSummary>
-        <AccordionDetails>
-          <Typography>
-            Developed and maintained RESTful APIs using .NET Core to support
-            various web applications, ensuring high performance, scalability,
-            and secure data handling.
-          </Typography>
-        </AccordionDetails>
-      </Accordion>
-      <Accordion
-        expanded={expanded === "panel2"}
-        onChange={handleChange("panel2")}
-      >
-        <AccordionSummary
-          expandIcon={<ExpandMoreIcon />}
-          aria-controls="panel2bh-content"
-          id="panel2bh-header"
-        >
-          <Typography component="span" sx={{ width: "33%", flexShrink: 0 }}>
-            Database Design & Management
-          </Typography>
-          <Typography component="span" sx={{ color: "text.secondary" }}>
-            MSSQL, MySQL and MongoDB
-          </Typography>
-        </AccordionSummary>
-        <AccordionDetails>
-          <Typography>
-            Worked extensively with relational databases like SQL Server,
-            creating optimized schemas, writing complex queries, and managing
-            data migrations to maintain data integrity and performance.
-          </Typography>
-        </AccordionDetails>
-      </Accordion>
-      <Accordion
-        expanded={expanded === "panel3"}
-        onChange={handleChange("panel3")}
-      >
-        <AccordionSummary
-          expandIcon={<ExpandMoreIcon />}
-          aria-controls="panel3bh-content"
-          id="panel3bh-header"
-        >
-          <Typography component="span" sx={{ width: "33%", flexShrink: 0 }}>
-            Collaborating with Frontend Teams
-          </Typography>
-          <Typography component="span" sx={{ color: "text.secondary" }}>
-            API Integration
-          </Typography>
-        </AccordionSummary>
-        <AccordionDetails>
-          <Typography>
-            Collaborated with frontend developers to integrate APIs smoothly,
-            debug issues, and ensure consistent data flow between the backend
-            and user interface for a seamless user experience.
-          </Typography>
-        </AccordionDetails>
-      </Accordion>
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+        <Card title='API Development with .NET Core' content='Developed and maintained RESTful APIs using .NET Core to support various web applications, ensuring high performance, scalability, and secure data handling.' icon=<DataObjectIcon/>/>
+        <Card title='Database Design & Management' content='Worked extensively with relational databases like SQL Server, creating optimized schemas, writing complex queries, and managing data migrations to maintain data integrity and performance.' icon=<StorageIcon/>/>
+        <Card title='Collaborating with Frontend Teams' content='Collaborated with frontend developers to integrate APIs smoothly, debug issues, and ensure consistent data flow between the backend and user interface for a seamless user experience.' icon=<IntegrationInstructionsIcon/>/>
+      </div>
     </div>
   );
 }
