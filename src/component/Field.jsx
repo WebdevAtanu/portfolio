@@ -17,12 +17,12 @@ import logo from "../assets/logo.png";
 function Cards({ title, image, content }) {
   return (
     <Card className="w-full">
-      <CardHeader title={title} />
+      <h2 className="mb-2 text-lg p-2">{title}</h2>
       <CardMedia component="img" className="h-1/2" image={image} alt="image" />
       <CardContent>
-        <Typography variant="body2" sx={{ color: "text.secondary" }}>
+        <p className="text-gray-600">
           {content}
-        </Typography>
+        </p>
       </CardContent>
     </Card>
   );

@@ -11,7 +11,7 @@ function Card({title,content,icon}) {
         <h2 className="text-gray-900 text-lg title-font font-medium mb-2">
           {title}
         </h2>
-        <p className="leading-relaxed text-base">
+        <p className="leading-relaxed text-gray-600">
           {content}
         </p>
       </div>
@@ -21,7 +21,7 @@ function Card({title,content,icon}) {
 
 export default function Work() {
   return (
-    <div className="container px-5 py-24 mx-auto">
+    <div className="container px-5 py-24 mx-auto" id="work">
       <div className="flex flex-wrap w-full mb-20">
         <div className="lg:w-1/2 w-full mb-6 lg:mb-0">
           <h1 className="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">

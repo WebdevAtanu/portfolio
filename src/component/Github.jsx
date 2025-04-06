@@ -44,8 +44,8 @@ function Github() {
               className="w-20 h-20 rounded-full hover:scale-110 transition duration-300"
             />
           </a>
-          <ul className="text-center">
-            <li className="text-lg font-semibold">{data?.name}</li>
+          <ul className="text-center text-gray-800">
+            <li className="text-lg">{data?.name}</li>
             <li className="text-sm0">{data?.public_repos} Repositories</li>
             <div className="flex justify-center gap-4 text-sm mt-2">
               <li>{data?.followers} Followers</li>

@@ -49,22 +49,21 @@ function ProjectCard({ title, tech, image, content, description, live, git }) {
 
   return (
     <Card className="w-full">
-      <CardHeader title={title} subheader={tech} />
+      <h1 className="mb-1 text-lg px-2">{title}</h1>
+      <h4 className='mb-1 text-gray-500 px-2'>{tech}</h4>
       <CardMedia component="img" height="170" image={image} alt="cover" />
       <CardContent>
-        <Typography variant="body2" sx={{ color: "text.secondary" }}>
-          {content}
-        </Typography>
+          <h5 className='text-gray-600'>{content}</h5>
       </CardContent>
       <CardActions disableSpacing>
         <a href={live} target="_blank">
           <IconButton aria-label="live">
-            <GitHubIcon />
+            <GitHubIcon className="text-blue-500"/>
           </IconButton>
         </a>
-        <a href={git} target="_blank">
-          <IconButton aria-label="github">
-            <OpenInNewIcon />
+        <a href={git} target="_blank" >
+          <IconButton aria-label="github" >
+            <OpenInNewIcon className="text-blue-500"/>
           </IconButton>
         </a>
         <ExpandMore
@@ -78,7 +77,7 @@ function ProjectCard({ title, tech, image, content, description, live, git }) {
       </CardActions>
       <Collapse in={expanded} timeout="auto" unmountOnExit>
         <CardContent>
-          <Typography>{description}</Typography>
+          <p className="text-gray-600">{description}</p>
         </CardContent>
       </Collapse>
     </Card>
@@ -87,7 +86,7 @@ function ProjectCard({ title, tech, image, content, description, live, git }) {
 
 export default function Project() {
   return (
-    <div className="container px-5 py-24 mx-auto">
+    <div className="container px-5 py-24 mx-auto" id='project'>
       <div className="flex flex-wrap w-full mb-20">
         <div className="lg:w-1/2 w-full mb-6 lg:mb-0">
           <h1 className="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">

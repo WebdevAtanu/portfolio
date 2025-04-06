@@ -15,6 +15,7 @@ import Logout from "@mui/icons-material/Logout";
 import WorkIcon from "@mui/icons-material/Work";
 import CoPresentIcon from "@mui/icons-material/CoPresent";
 import WebIcon from "@mui/icons-material/Web";
+import CustomizedSwitches from "./Switch";
 
 export default function AccountMenu() {
   const [anchorEl, setAnchorEl] = React.useState(null);
@@ -29,7 +30,8 @@ export default function AccountMenu() {
     <div className={`bg-blue-600 p-2 flex justify-end shadow`}>
       <Box className="flex gap-5 items-center justify-center">
         <div className="hidden md:flex">
-          <Button href="#skills" sx={{ textTransform: "none" }}>
+          {/* <CustomizedSwitches/> */}
+          <Button href="#skill" sx={{ textTransform: "none" }}>
             <Typography
               className={`text-white hover:bg-white hover:text-blue-600 p-1 rounded transition cursor-pointer`}
               id="menuText"
@@ -37,7 +39,7 @@ export default function AccountMenu() {
               <CoPresentIcon fontSize="small" /> My Skills
             </Typography>
           </Button>
-          <Button href="#skills" sx={{ textTransform: "none" }}>
+          <Button href="#work" sx={{ textTransform: "none" }}>
             <Typography
               className={`text-white hover:bg-white hover:text-blue-600 p-1 rounded transition cursor-pointer`}
               id="menuText"
@@ -45,7 +47,7 @@ export default function AccountMenu() {
               <WorkIcon fontSize="small" /> Work Experience
             </Typography>
           </Button>
-          <Button href="#skills" sx={{ textTransform: "none" }}>
+          <Button href="#project" sx={{ textTransform: "none" }}>
             <Typography
               className={`text-white hover:bg-white hover:text-blue-600 p-1 rounded transition cursor-pointer`}
               id="menuText"
