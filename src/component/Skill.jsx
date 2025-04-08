@@ -12,6 +12,7 @@ import { AiOutlineDotNet } from "react-icons/ai";
 import LinearProgress from "@mui/material/LinearProgress";
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
+import { Element } from "react-scroll";
 
 function LinearProgressWithLabel(props) {
   return (
@@ -43,77 +44,84 @@ function Skills(props) {
 }
 function Skill() {
   return (
-    <section id="skill" className="pt-5 mb-10 lg:h-screen">
-      <div className="container px-5 py-24 mx-auto">
-        <div className="flex flex-wrap w-full mb-20">
-          <div className="lg:w-1/2 w-full mb-6 lg:mb-0">
-            <h1 className="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">
-              My Skills
-            </h1>
-            <div className="h-1 w-20 bg-indigo-500 rounded"></div>
+    <Element name="skill">
+      <section className="pt-5 mb-10 lg:h-screen">
+        <div className="container px-5 py-24 mx-auto">
+          <div className="flex flex-wrap w-full mb-20">
+            <div className="lg:w-1/2 w-full mb-6 lg:mb-0">
+              <h1 className="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">
+                My Skills
+              </h1>
+              <div className="h-1 w-20 bg-indigo-500 rounded"></div>
+            </div>
+            <p className="lg:w-1/2 w-full leading-relaxed text-gray-500">
+              Skilled in building full-stack web applications with a strong
+              focus on backend development using .NET Core and Node.js.
+              Experienced in creating dynamic UIs with React and Tailwind CSS.
+              Proficient in managing both SQL and NoSQL databases, ensuring
+              secure, scalable, and efficient systems.
+            </p>
           </div>
-          <p className="lg:w-1/2 w-full leading-relaxed text-gray-500">
-            Skilled in building full-stack web applications with a strong focus
-            on backend development using .NET Core and Node.js. Experienced in
-            creating dynamic UIs with React and Tailwind CSS. Proficient in
-            managing both SQL and NoSQL databases, ensuring secure, scalable,
-            and efficient systems.
-          </p>
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 rounded-2xl gap-4">
+            <Skills
+              logo={RiJavascriptFill}
+              text="Javascript"
+              class="text-yellow-500"
+              value="70"
+            />
+            <Skills
+              logo={FaReact}
+              text="React.js"
+              class="text-blue-600"
+              value="80"
+            />
+            <Skills
+              logo={RiTailwindCssFill}
+              text="TailwindCSS"
+              class="text-sky-500"
+              value="90"
+            />
+            <Skills
+              logo={FaNodeJs}
+              text="Node.js"
+              class="text-green-700"
+              value="65"
+            />
+            <Skills
+              logo={SiExpress}
+              text="Express"
+              class="text-xl"
+              value="75"
+            />
+            <Skills
+              logo={DiMongodb}
+              text="MongoDB"
+              class="text-green-500"
+              value="60"
+            />
+            <Skills
+              logo={SiMysql}
+              text="Mysql"
+              class="text-blue-500"
+              value="55"
+            />
+            <Skills
+              logo={SiAppwrite}
+              text="Appwrite"
+              class="text-pink-600"
+              value="60"
+            />
+            <Skills logo={RiNextjsFill} text="Next.js" class="" value="50" />
+            <Skills
+              logo={AiOutlineDotNet}
+              text=".NET Core"
+              class="text-violet-800"
+              value="30"
+            />
+          </div>
         </div>
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 rounded-2xl gap-4">
-          <Skills
-            logo={RiJavascriptFill}
-            text="Javascript"
-            class="text-yellow-500"
-            value="70"
-          />
-          <Skills
-            logo={FaReact}
-            text="React.js"
-            class="text-blue-600"
-            value="80"
-          />
-          <Skills
-            logo={RiTailwindCssFill}
-            text="TailwindCSS"
-            class="text-sky-500"
-            value="90"
-          />
-          <Skills
-            logo={FaNodeJs}
-            text="Node.js"
-            class="text-green-700"
-            value="65"
-          />
-          <Skills logo={SiExpress} text="Express" class="text-xl" value="75" />
-          <Skills
-            logo={DiMongodb}
-            text="MongoDB"
-            class="text-green-500"
-            value="60"
-          />
-          <Skills
-            logo={SiMysql}
-            text="Mysql"
-            class="text-blue-500"
-            value="55"
-          />
-          <Skills
-            logo={SiAppwrite}
-            text="Appwrite"
-            class="text-pink-600"
-            value="60"
-          />
-          <Skills logo={RiNextjsFill} text="Next.js" class="" value="50" />
-          <Skills
-            logo={AiOutlineDotNet}
-            text=".NET Core"
-            class="text-violet-800"
-            value="30"
-          />
-        </div>
-      </div>
-    </section>
+      </section>
+    </Element>
   );
 }
 export default Skill;

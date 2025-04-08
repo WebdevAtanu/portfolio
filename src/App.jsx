@@ -1,4 +1,3 @@
-import { useState } from "react";
 import AccountMenu from "./component/Menu";
 import Intro from "./component/Intro";
 import Field from "./component/Field";
@@ -17,9 +16,9 @@ function App() {
       <Field />
       <Skill />
       <Work />
-      <Project/>
-      <Github/>
-      <Footer/>
+      <Project />
+      <Github />
+      <Footer />
     </>
   );
 }
