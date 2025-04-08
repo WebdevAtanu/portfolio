@@ -7,6 +7,9 @@ import Project from "./component/Project";
 import Github from "./component/Github";
 import Footer from "./component/Footer";
 import "./App.css";
+import AOS from "aos";
+import "aos/dist/aos.css";
+AOS.init();
 
 function App() {
   return (

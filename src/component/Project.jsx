@@ -43,7 +43,7 @@ function ProjectCard({ title, tech, image, content, description, live, git }) {
   };
 
   return (
-    <Card className="w-full">
+    <Card className="w-full" data-aos="fade-up">
       <h1 className="mb-1 text-lg px-2">{title}</h1>
       <h4 className="mb-1 text-gray-500 px-2">{tech}</h4>
       <CardMedia component="img" height="170" image={image} alt="cover" />

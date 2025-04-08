@@ -11,8 +11,11 @@ import Tooltip from "@mui/material/Tooltip";
 import WorkIcon from "@mui/icons-material/Work";
 import CoPresentIcon from "@mui/icons-material/CoPresent";
 import WebIcon from "@mui/icons-material/Web";
+import LaptopMacIcon from "@mui/icons-material/LaptopMac";
 import CustomizedSwitches from "./Switch";
-import { Link, Element } from "react-scroll";
+import WidgetsIcon from "@mui/icons-material/Widgets";
+import { green, blue } from "@mui/material/colors";
+import { Link } from "react-scroll";
 
 export default function AccountMenu() {
   const [anchorEl, setAnchorEl] = React.useState(null);
@@ -24,7 +27,9 @@ export default function AccountMenu() {
     setAnchorEl(null);
   };
   return (
-    <div className={`bg-blue-600 p-2 flex justify-end shadow sticky top-0`}>
+    <div
+      className={`bg-blue-600 p-2 flex justify-end shadow sticky top-0 z-50`}
+    >
       <div className="hidden md:flex gap-4">
         <Link to="playground" smooth={true} duration={500}>
           <Typography
@@ -74,7 +79,9 @@ export default function AccountMenu() {
             aria-haspopup="true"
             aria-expanded={open ? "true" : undefined}
           >
-            <Avatar sx={{ width: 32, height: 32 }}>A</Avatar>
+            <Avatar sx={{ bgcolor: blue[500] }}>
+              <WidgetsIcon />
+            </Avatar>
           </IconButton>
         </Tooltip>
       </div>
@@ -118,7 +125,7 @@ export default function AccountMenu() {
         <Link to="playground" smooth={true} duration={500}>
           <MenuItem onClick={handleClose}>
             <ListItemIcon>
-              <CoPresentIcon fontSize="small" />
+              <LaptopMacIcon fontSize="small" />
             </ListItemIcon>
             My Playground
           </MenuItem>

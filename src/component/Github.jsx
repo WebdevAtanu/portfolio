@@ -55,14 +55,14 @@ function Github() {
         </div>
 
         <div className="flex flex-col items-center gap-4 md:col-span-2 outline outline-gray-300 shadow rounded-xl p-6">
-          <div className="shadow-lg">
+          <div className="shadow-lg" data-aos="flip-left">
             <img
               src="https://github-readme-stats.vercel.app/api/top-langs/?username=WebdevAtanu&layout=compact&theme=catppuccin_mocha&hide_border=false"
               alt="Top Languages"
               className=""
             />
           </div>
-          <div className="shadow-lg">
+          <div className="shadow-lg" data-aos="flip-right">
             <img
               src="https://github-readme-stats.vercel.app/api?username=WebdevAtanu&show_icons=true&include_all_commits=false&theme=dracula&hide_border=false"
               alt="GitHub Stats"

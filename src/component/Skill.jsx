@@ -31,7 +31,11 @@ function LinearProgressWithLabel(props) {
 
 function Skills(props) {
   return (
-    <Card variant="outlined">
+    <Card
+      variant="outlined"
+      data-aos="fade-up"
+      data-aos-anchor-placement="center-center"
+    >
       <div className="p-2">
         <div className="flex justify-between mb-2">
           <p className="text-lg">{props.text}</p>

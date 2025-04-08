@@ -2,14 +2,19 @@ import * as React from "react";
 import Card from "@mui/material/Card";
 import CardMedia from "@mui/material/CardMedia";
 import CardContent from "@mui/material/CardContent";
-import logo from "../assets/logo.png";
+import logo from "../assets/logo.jpg";
 import { Element } from "react-scroll";
 
 function Cards({ title, image, content }) {
   return (
-    <Card className="w-full">
-      <h2 className="mb-2 text-lg p-2">{title}</h2>
-      <CardMedia component="img" className="h-1/2" image={image} alt="image" />
+    <Card className="w-full" data-aos="zoom-in">
+      <h2 className="mb-4 text-lg p-2">{title}</h2>
+      <CardMedia
+        component="img"
+        className="h-1/3 mb-4"
+        image={image}
+        alt="image"
+      />
       <CardContent>
         <p className="text-gray-600">{content}</p>
       </CardContent>

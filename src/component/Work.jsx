@@ -6,7 +6,10 @@ import { Element } from "react-scroll";
 
 function Card({ title, content, icon }) {
   return (
-    <div className="px-4 py-12 md:w-full flex outline outline-gray-200 shadow rounded">
+    <div
+      className="px-4 py-12 md:w-full flex outline outline-gray-200 shadow rounded"
+      data-aos="zoom-in"
+    >
       <div className="w-12 h-12 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4 flex-shrink-0">
         {icon}
       </div>
