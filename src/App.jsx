@@ -10,18 +10,18 @@ import Footer from "./component/Footer";
 import "./App.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
-AOS.init();
 import { ThemeProvider, CssBaseline, Button } from '@mui/material';
 import { getTheme } from './component/theme';
 
+AOS.init();
 function App() {
-  const [mode, setMode] = useState('light');
+  // const [mode, setMode] = useState('light');
 
-  const theme = useMemo(() => getTheme(mode), [mode]);
+  // const theme = useMemo(() => getTheme(mode), [mode]);
 
-  const toggleMode = () => {
-    setMode((prevMode) => (prevMode === 'light' ? 'dark' : 'light'));
-  };
+  // const toggleMode = () => {
+  //   setMode((prevMode) => (prevMode === 'light' ? 'dark' : 'light'));
+  // };
   return (
     <>
     {/* <ThemeProvider theme={theme}> */}
