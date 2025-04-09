@@ -10,8 +10,8 @@ import Footer from "./component/Footer";
 import "./App.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { ThemeProvider, CssBaseline, Button } from '@mui/material';
-import { getTheme } from './component/theme';
+// import { ThemeProvider, CssBaseline, Button } from '@mui/material';
+// import { getTheme } from './component/theme';
 
 AOS.init();
 function App() {
