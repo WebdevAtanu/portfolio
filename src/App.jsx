@@ -1,4 +1,4 @@
-import React, { useState, useMemo } from 'react';
+import React, { useState, useMemo, createContext } from "react";
 import AccountMenu from "./component/Menu";
 import Intro from "./component/Intro";
 import Field from "./component/Field";
@@ -10,31 +10,35 @@ import Footer from "./component/Footer";
 import "./App.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
-// import { ThemeProvider, CssBaseline, Button } from '@mui/material';
-// import { getTheme } from './component/theme';
-
+import { ThemeProvider, CssBaseline, Button } from "@mui/material";
+import { getTheme } from "./component/Theme";
 AOS.init();
+
+export const themeContext = createContext(null);
+
 function App() {
-  // const [mode, setMode] = useState('light');
+  const [mode, setMode] = useState("light");
 
-  // const theme = useMemo(() => getTheme(mode), [mode]);
+  const theme = useMemo(() => getTheme(mode), [mode]);
 
-  // const toggleMode = () => {
-  //   setMode((prevMode) => (prevMode === 'light' ? 'dark' : 'light'));
-  // };
+  const toggleMode = () => {
+    setMode((prevMode) => (prevMode === "light" ? "dark" : "light"));
+  };
   return (
     <>
-    {/* <ThemeProvider theme={theme}> */}
-      <CssBaseline />
-      <AccountMenu />
-      <Intro />
-      <Field />
-      <Skill />
-      <Work />
-      <Project />
-      <Github />
-      <Footer />
-      {/* </ThemeProvider> */}
+      <ThemeProvider theme={theme}>
+        <themeContext.Provider value={{ toggleMode }}>
+          <CssBaseline />
+          <AccountMenu />
+          <Intro />
+          <Field />
+          <Skill />
+          <Work />
+          <Project />
+          <Github />
+          <Footer />
+        </themeContext.Provider>
+      </ThemeProvider>
     </>
   );
 }

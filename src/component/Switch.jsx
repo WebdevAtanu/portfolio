@@ -5,6 +5,7 @@ import FormControlLabel from "@mui/material/FormControlLabel";
 import Switch from "@mui/material/Switch";
 import Stack from "@mui/material/Stack";
 import Typography from "@mui/material/Typography";
+import {themeContext} from '../App';
 
 const MaterialUISwitch = styled(Switch)(({ theme }) => ({
   width: 62,
@@ -63,10 +64,11 @@ const MaterialUISwitch = styled(Switch)(({ theme }) => ({
 }));
 
 export default function ThemeSwitch() {
+  const{toggleMode}=React.useContext(themeContext)
   return (
     <FormGroup>
       <FormControlLabel
-        control={<MaterialUISwitch sx={{ m: 1 }} />}
+        control={<MaterialUISwitch sx={{ m: 1 }} onChange={toggleMode}/>}
       />
     </FormGroup>
   );
