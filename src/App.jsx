@@ -24,7 +24,7 @@ function App() {
   };
   return (
     <>
-    <ThemeProvider theme={theme}>
+    {/* <ThemeProvider theme={theme}> */}
       <CssBaseline />
       <AccountMenu />
       <Intro />
@@ -34,7 +34,7 @@ function App() {
       <Project />
       <Github />
       <Footer />
-      </ThemeProvider>
+      {/* </ThemeProvider> */}
     </>
   );
 }
