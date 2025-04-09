@@ -37,7 +37,7 @@ export default function Work() {
           <p className="lg:w-1/2 w-full leading-relaxed text-gray-500">
             Currently working as a Backend Developer at Ebits Technologies,
             where I specialize in building and maintaining scalable APIs using
-            .NET Core. I collaborate closely with frontend teams, manage
+            .NET Core and Node.js. I collaborate closely with frontend teams, manage
             database operations, and contribute to delivering high-performance,
             production-ready web applications.
           </p>
@@ -45,7 +45,7 @@ export default function Work() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
           <Card
             title="API Development with .NET Core"
-            content="Developed and maintained RESTful APIs using .NET Core to support various web applications, ensuring high performance, scalability, and secure data handling."
+            content="Developed and maintained RESTful APIs using .NET Core and Node.js to support various web applications, ensuring high performance, scalability, and secure data handling."
             icon=<DataObjectIcon />
           />
           <Card

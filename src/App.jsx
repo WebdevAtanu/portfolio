@@ -1,3 +1,4 @@
+import React, { useState, useMemo } from 'react';
 import AccountMenu from "./component/Menu";
 import Intro from "./component/Intro";
 import Field from "./component/Field";
@@ -10,10 +11,21 @@ import "./App.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
 AOS.init();
+import { ThemeProvider, CssBaseline, Button } from '@mui/material';
+import { getTheme } from './component/theme';
 
 function App() {
+  const [mode, setMode] = useState('light');
+
+  const theme = useMemo(() => getTheme(mode), [mode]);
+
+  const toggleMode = () => {
+    setMode((prevMode) => (prevMode === 'light' ? 'dark' : 'light'));
+  };
   return (
     <>
+    <ThemeProvider theme={theme}>
+      <CssBaseline />
       <AccountMenu />
       <Intro />
       <Field />
@@ -22,6 +34,7 @@ function App() {
       <Project />
       <Github />
       <Footer />
+      </ThemeProvider>
     </>
   );
 }

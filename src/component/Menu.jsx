@@ -12,7 +12,7 @@ import WorkIcon from "@mui/icons-material/Work";
 import CoPresentIcon from "@mui/icons-material/CoPresent";
 import WebIcon from "@mui/icons-material/Web";
 import LaptopMacIcon from "@mui/icons-material/LaptopMac";
-import CustomizedSwitches from "./Switch";
+import ThemeSwitch from "./Switch";
 import WidgetsIcon from "@mui/icons-material/Widgets";
 import { green, blue } from "@mui/material/colors";
 import { Link } from "react-scroll";
@@ -68,6 +68,7 @@ export default function AccountMenu() {
             Practice Projects
           </Typography>
         </Link>
+        {/* <ThemeSwitch/> */}
       </div>
       <div className="md:hidden">
         <Tooltip title="Atanu Mondal">
@@ -154,6 +155,7 @@ export default function AccountMenu() {
             Practice Projects
           </MenuItem>
         </Link>
+        {/* <ThemeSwitch/> */}
       </Menu>
     </div>
   );

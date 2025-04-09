@@ -35,7 +35,7 @@ function Field() {
               <div className="h-1 w-20 bg-indigo-500 rounded"></div>
             </div>
             <p className="lg:w-1/2 w-full leading-relaxed text-gray-500">
-              I work as a backend developer specializing in .NET Core at Ebits
+              I work as a backend developer specializing in .NET Core and Node.js at Ebits
               Technologies. My role involves building and maintaining APIs,
               managing databases, and ensuring scalable and secure backend
               systems that power web applications.
@@ -55,7 +55,7 @@ function Field() {
             <Cards
               image={logo}
               title="Database Management (SQL & NoSQL)"
-              content="Proficient in working with relational databases like SQL Server and PostgreSQL, as well as NoSQL databases like MongoDB. Skilled in writing optimized queries, designing efficient schemas, and managing data operations securely and effectively."
+              content="Proficient in working with relational databases like SQL Server and MSSQL, as well as NoSQL databases like MongoDB. Skilled in writing optimized queries, designing efficient schemas, and managing data operations securely and effectively."
             />
           </div>
         </div>

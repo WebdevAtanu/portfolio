@@ -34,7 +34,7 @@ function Skills(props) {
     <Card
       variant="outlined"
       data-aos="fade-up"
-      data-aos-anchor-placement="center-center"
+      data-aos-anchor-placement="center-top"
     >
       <div className="p-2">
         <div className="flex justify-between mb-2">
