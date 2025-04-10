@@ -4,8 +4,11 @@ import CardMedia from "@mui/material/CardMedia";
 import CardContent from "@mui/material/CardContent";
 import logo from "../assets/logo.jpg";
 import { Element } from "react-scroll";
+import clsx from "clsx";
+import { themeContext } from "../App";
 
 function Cards({ title, image, content }) {
+  const { mode } = React.useContext(themeContext);
   return (
     <Card className="w-full" data-aos="zoom-in">
       <h2 className="mb-4 text-lg p-2">{title}</h2>
@@ -16,29 +19,47 @@ function Cards({ title, image, content }) {
         alt="image"
       />
       <CardContent>
-        <p className="text-gray-600">{content}</p>
+        <p
+          className={clsx(
+            "leading-relaxed",
+            mode == "dark" ? " text-gray-300" : null
+          )}
+        >
+          {content}
+        </p>
       </CardContent>
     </Card>
   );
 }
 
 function Field() {
+  const { mode } = React.useContext(themeContext);
   return (
     <Element name="playground">
       <section className="text-gray-600 body-font">
         <div className="container px-5 py-24 mx-auto">
           <div className="flex flex-wrap w-full mb-20">
             <div className="lg:w-1/2 w-full mb-6 lg:mb-0">
-              <h1 className="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">
+              <h1
+                className={clsx(
+                  "sm:text-3xl text-2xl font-medium title-font mb-2",
+                  mode == "dark" ? " text-gray-300" : null
+                )}
+              >
                 My Playground
               </h1>
               <div className="h-1 w-20 bg-indigo-500 rounded"></div>
             </div>
-            <p className="lg:w-1/2 w-full leading-relaxed text-gray-500">
-              I work as a backend developer specializing in .NET Core and Node.js at Ebits
-              Technologies. My role involves building and maintaining APIs,
-              managing databases, and ensuring scalable and secure backend
-              systems that power web applications.
+            <p
+              className={clsx(
+                "lg:w-1/2 w-full leading-relaxed",
+                mode == "dark" ? " text-gray-300" : null
+              )}
+            >
+              I work as a backend developer specializing in .NET Core and
+              Node.js at Ebits Technologies. My role involves building and
+              maintaining APIs, managing databases, and ensuring scalable and
+              secure backend systems that power web applications.
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">

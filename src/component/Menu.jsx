@@ -30,7 +30,7 @@ export default function AccountMenu() {
     <div
       className={`bg-blue-600 p-2 flex justify-end shadow sticky top-0 z-50`}
     >
-      <div className="hidden md:flex gap-4">
+      <div className="hidden md:flex items-center gap-4">
         <Link to="playground" smooth={true} duration={500}>
           <Typography
             className={`text-white hover:bg-white hover:text-blue-600 p-1 rounded transition cursor-pointer`}
@@ -68,7 +68,7 @@ export default function AccountMenu() {
             Practice Projects
           </Typography>
         </Link>
-        <ThemeSwitch/>
+        <ThemeSwitch />
       </div>
       <div className="md:hidden">
         <Tooltip title="Atanu Mondal">
@@ -155,7 +155,9 @@ export default function AccountMenu() {
             Practice Projects
           </MenuItem>
         </Link>
-        <ThemeSwitch/>
+        <div className="px-2">
+          <ThemeSwitch />
+        </div>
       </Menu>
     </div>
   );

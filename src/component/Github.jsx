@@ -1,9 +1,10 @@
-import { useState, useEffect } from "react";
-import GitHubIcon from "@mui/icons-material/GitHub";
+import React, { useState, useEffect } from "react";
 import github from "../assets/github.png";
-
+import clsx from "clsx";
+import { themeContext } from "../App";
 function Github() {
   const [data, setData] = useState(null);
+  const { mode } = React.useContext(themeContext);
 
   useEffect(() => {
     fetch("https://api.github.com/users/WebdevAtanu")
@@ -15,12 +16,22 @@ function Github() {
     <div className="container px-5 py-24 mx-auto">
       <div className="flex flex-wrap w-full mb-20">
         <div className="lg:w-1/2 w-full mb-6 lg:mb-0">
-          <h1 className="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">
+          <h1
+            className={clsx(
+              "sm:text-3xl text-2xl font-medium title-font mb-2",
+              mode == "dark" ? " text-gray-300" : "text-gray-600"
+            )}
+          >
             GitHub Activity
           </h1>
           <div className="h-1 w-20 bg-indigo-500 rounded"></div>
         </div>
-        <p className="lg:w-1/2 w-full leading-relaxed text-gray-500">
+        <p
+          className={clsx(
+            "lg:w-1/2 w-full leading-relaxed",
+            mode == "dark" ? " text-gray-300" : "text-gray-600"
+          )}
+        >
           Actively contributing to a variety of personal and collaborative
           projects on GitHub. My contributions reflect consistent learning and
           growth, with commits across frontend, backend, and full-stack
@@ -44,7 +55,12 @@ function Github() {
               className="w-20 h-20 rounded-full hover:scale-110 transition duration-300"
             />
           </a>
-          <ul className="text-center text-gray-800">
+          <ul
+            className={clsx(
+              "text-center",
+              mode == "dark" ? " text-gray-300" : null
+            )}
+          >
             <li className="text-lg">{data?.name}</li>
             <li className="text-sm0">{data?.public_repos} Repositories</li>
             <div className="flex justify-center gap-4 text-sm mt-2">

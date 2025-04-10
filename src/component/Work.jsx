@@ -3,8 +3,11 @@ import DataObjectIcon from "@mui/icons-material/DataObject";
 import StorageIcon from "@mui/icons-material/Storage";
 import IntegrationInstructionsIcon from "@mui/icons-material/IntegrationInstructions";
 import { Element } from "react-scroll";
+import clsx from "clsx";
+import { themeContext } from "../App";
 
 function Card({ title, content, icon }) {
+  const { mode } = React.useContext(themeContext);
   return (
     <div
       className="px-4 py-12 md:w-full flex outline outline-gray-200 shadow rounded"
@@ -14,32 +17,55 @@ function Card({ title, content, icon }) {
         {icon}
       </div>
       <div className="flex-grow pl-6">
-        <h2 className="text-gray-900 text-lg title-font font-medium mb-2">
+        <h2
+          className={clsx(
+            "text-lg title-font font-medium mb-2",
+            mode == "dark" ? " text-gray-300" : null
+          )}
+        >
           {title}
         </h2>
-        <p className="leading-relaxed text-gray-600">{content}</p>
+        <p
+          className={clsx(
+            "leading-relaxed",
+            mode == "dark" ? " text-gray-400" : null
+          )}
+        >
+          {content}
+        </p>
       </div>
     </div>
   );
 }
 
 export default function Work() {
+  const { mode } = React.useContext(themeContext);
   return (
     <Element name="work">
       <div className="container px-5 py-24 mx-auto">
         <div className="flex flex-wrap w-full mb-20">
           <div className="lg:w-1/2 w-full mb-6 lg:mb-0">
-            <h1 className="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">
+            <h1
+              className={clsx(
+                "sm:text-3xl text-2xl font-medium title-font mb-2",
+                mode == "dark" ? " text-gray-300" : null
+              )}
+            >
               Work Experience
             </h1>
             <div className="h-1 w-20 bg-indigo-500 rounded"></div>
           </div>
-          <p className="lg:w-1/2 w-full leading-relaxed text-gray-500">
+          <p
+            className={clsx(
+              "lg:w-1/2 w-full leading-relaxed",
+              mode == "dark" ? " text-gray-300" : null
+            )}
+          >
             Currently working as a Backend Developer at Ebits Technologies,
             where I specialize in building and maintaining scalable APIs using
-            .NET Core and Node.js. I collaborate closely with frontend teams, manage
-            database operations, and contribute to delivering high-performance,
-            production-ready web applications.
+            .NET Core and Node.js. I collaborate closely with frontend teams,
+            manage database operations, and contribute to delivering
+            high-performance, production-ready web applications.
           </p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4">

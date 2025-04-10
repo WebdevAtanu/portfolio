@@ -27,7 +27,7 @@ function App() {
   return (
     <>
       <ThemeProvider theme={theme}>
-        <themeContext.Provider value={{ toggleMode }}>
+        <themeContext.Provider value={{ toggleMode, mode }}>
           <CssBaseline />
           <AccountMenu />
           <Intro />

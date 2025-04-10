@@ -10,6 +10,8 @@ import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import OpenInNewIcon from "@mui/icons-material/OpenInNew";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import { Element } from "react-scroll";
+import clsx from "clsx";
+import { themeContext } from "../App";
 
 const ExpandMore = styled((props) => {
   const { expand, ...other } = props;
@@ -37,6 +39,7 @@ const ExpandMore = styled((props) => {
 
 function ProjectCard({ title, tech, image, content, description, live, git }) {
   const [expanded, setExpanded] = React.useState(false);
+  const { mode } = React.useContext(themeContext);
 
   const handleExpandClick = () => {
     setExpanded(!expanded);
@@ -45,10 +48,24 @@ function ProjectCard({ title, tech, image, content, description, live, git }) {
   return (
     <Card className="w-full" data-aos="fade-up">
       <h1 className="mb-1 text-lg px-2">{title}</h1>
-      <h4 className="mb-1 text-gray-500 px-2">{tech}</h4>
+      <h4
+        className={clsx(
+          "mb-1 px-2",
+          mode == "dark" ? " text-gray-300" : "text-gray-600"
+        )}
+      >
+        {tech}
+      </h4>
       <CardMedia component="img" height="170" image={image} alt="cover" />
       <CardContent>
-        <h5 className="text-gray-600">{content}</h5>
+        <h5
+          className={clsx(
+            "",
+            mode == "dark" ? " text-gray-300" : "text-gray-600"
+          )}
+        >
+          {content}
+        </h5>
       </CardContent>
       <CardActions disableSpacing>
         <a href={live} target="_blank">
@@ -72,7 +89,14 @@ function ProjectCard({ title, tech, image, content, description, live, git }) {
       </CardActions>
       <Collapse in={expanded} timeout="auto" unmountOnExit>
         <CardContent>
-          <p className="text-gray-600">{description}</p>
+          <p
+            className={clsx(
+              "",
+              mode == "dark" ? " text-gray-300" : "text-gray-600"
+            )}
+          >
+            {description}
+          </p>
         </CardContent>
       </Collapse>
     </Card>
@@ -80,17 +104,28 @@ function ProjectCard({ title, tech, image, content, description, live, git }) {
 }
 
 export default function Project() {
+  const { mode } = React.useContext(themeContext);
   return (
     <Element name="project">
       <div className="container px-5 py-24 mx-auto">
         <div className="flex flex-wrap w-full mb-20">
           <div className="lg:w-1/2 w-full mb-6 lg:mb-0">
-            <h1 className="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">
+            <h1
+              className={clsx(
+                "sm:text-3xl text-2xl font-medium title-font mb-2",
+                mode == "dark" ? " text-gray-300" : null
+              )}
+            >
               Practice Projects
             </h1>
             <div className="h-1 w-20 bg-indigo-500 rounded"></div>
           </div>
-          <p className="lg:w-1/2 w-full leading-relaxed text-gray-500">
+          <p
+            className={clsx(
+              "lg:w-1/2 w-full leading-relaxed",
+              mode == "dark" ? " text-gray-300" : null
+            )}
+          >
             I’ve worked on a variety of web development projects that showcase
             both frontend and backend skills. These include dynamic React-based
             interfaces, RESTful APIs using Node.js, and fully functional

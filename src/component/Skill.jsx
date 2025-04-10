@@ -1,3 +1,4 @@
+import React from "react";
 import Card from "@mui/material/Card";
 import { RiJavascriptFill } from "react-icons/ri";
 import { FaReact } from "react-icons/fa";
@@ -13,6 +14,8 @@ import LinearProgress from "@mui/material/LinearProgress";
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
 import { Element } from "react-scroll";
+import clsx from "clsx";
+import { themeContext } from "../App";
 
 function LinearProgressWithLabel(props) {
   return (
@@ -31,11 +34,7 @@ function LinearProgressWithLabel(props) {
 
 function Skills(props) {
   return (
-    <Card
-      variant="outlined"
-      data-aos="fade-up"
-      data-aos-anchor-placement="center-top"
-    >
+    <Card variant="outlined">
       <div className="p-2">
         <div className="flex justify-between mb-2">
           <p className="text-lg">{props.text}</p>
@@ -47,18 +46,29 @@ function Skills(props) {
   );
 }
 function Skill() {
+  const { mode } = React.useContext(themeContext);
   return (
     <Element name="skill">
       <section className="pt-5 mb-10 lg:h-screen">
         <div className="container px-5 py-24 mx-auto">
           <div className="flex flex-wrap w-full mb-20">
             <div className="lg:w-1/2 w-full mb-6 lg:mb-0">
-              <h1 className="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">
+              <h1
+                className={clsx(
+                  "sm:text-3xl text-2xl font-medium title-font mb-2",
+                  mode == "dark" ? " text-gray-300" : null
+                )}
+              >
                 My Skills
               </h1>
               <div className="h-1 w-20 bg-indigo-500 rounded"></div>
             </div>
-            <p className="lg:w-1/2 w-full leading-relaxed text-gray-500">
+            <p
+              className={clsx(
+                "lg:w-1/2 w-full leading-relaxed",
+                mode == "dark" ? " text-gray-300" : null
+              )}
+            >
               Skilled in building full-stack web applications with a strong
               focus on backend development using .NET Core and Node.js.
               Experienced in creating dynamic UIs with React and Tailwind CSS.
@@ -66,7 +76,10 @@ function Skill() {
               secure, scalable, and efficient systems.
             </p>
           </div>
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 rounded-2xl gap-4">
+          <div
+            className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 rounded-2xl gap-4"
+            data-aos="zoom-in"
+          >
             <Skills
               logo={RiJavascriptFill}
               text="Javascript"
