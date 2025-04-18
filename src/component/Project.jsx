@@ -136,7 +136,7 @@ export default function Project() {
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           <ProjectCard
-            title="Shopper"
+            title="Bookie"
             image="site/ebook/home.png"
             live="https://ebook-mern.vercel.app/"
             git="https://github.com/WebdevAtanu/ebook-mern"
