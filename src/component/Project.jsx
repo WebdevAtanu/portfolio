@@ -142,7 +142,7 @@ export default function Project() {
             git="https://github.com/WebdevAtanu/ebook-mern"
             content="MERN eBook App with Clerk Authentication"
             description="Developed an eBook application using the MERN stack (MongoDB, Express, React, Node.js) integrated with Clerk for user authentication. Users can sign up, log in securely, browse eBooks, and view detailed content. The app offers protected routes, ensuring only authenticated users can access certain features. It provides a smooth and responsive user experience with clean navigation and role-based access."
-            tech="MERN stack, ShadCN UI"
+            tech="MERN stack, Material UI"
           />
 
           <ProjectCard
