@@ -10,6 +10,7 @@ import WorkIcon from "@mui/icons-material/Work";
 import CoPresentIcon from "@mui/icons-material/CoPresent";
 import WebIcon from "@mui/icons-material/Web";
 import LaptopMacIcon from "@mui/icons-material/LaptopMac";
+import CodeIcon from '@mui/icons-material/Code';
 import ThemeSwitch from "./Switch";
 import WidgetsIcon from "@mui/icons-material/Widgets";
 import { blue } from "@mui/material/colors";
@@ -64,6 +65,15 @@ export default function AccountMenu() {
           >
             {" "}
             Practice Projects
+          </Typography>
+        </Link>
+        <Link to="freelance" smooth={true} duration={500}>
+          <Typography
+            className={`text-white hover:bg-white hover:text-blue-600 p-1 rounded transition cursor-pointer`}
+            id="menuText"
+          >
+            {" "}
+            Freelance Demo
           </Typography>
         </Link>
         <ThemeSwitch />
@@ -148,9 +158,17 @@ export default function AccountMenu() {
         <Link to="project" smooth={true} duration={500}>
           <MenuItem onClick={handleClose}>
             <ListItemIcon>
-              <WebIcon fontSize="small" />
+              <CodeIcon fontSize="small" />
             </ListItemIcon>
             Practice Projects
+          </MenuItem>
+        </Link>
+        <Link to="freelance" smooth={true} duration={500}>
+          <MenuItem onClick={handleClose}>
+            <ListItemIcon>
+              <WebIcon fontSize="small" />
+            </ListItemIcon>
+            Freelance Demo
           </MenuItem>
         </Link>
         <div className="px-2">

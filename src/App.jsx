@@ -5,12 +5,13 @@ import Field from "./component/Field";
 import Skill from "./component/Skill";
 import Work from "./component/Work";
 import Project from "./component/Project";
+import Freelance from "./component/Freelance";
 import Github from "./component/Github";
 import Footer from "./component/Footer";
 import "./App.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { ThemeProvider, CssBaseline, Button } from "@mui/material";
+import { ThemeProvider, CssBaseline} from "@mui/material";
 import { getTheme } from "./component/Theme";
 AOS.init();
 
@@ -35,6 +36,7 @@ function App() {
           <Skill />
           <Work />
           <Project />
+          <Freelance />
           <Github />
           <Footer />
         </themeContext.Provider>
