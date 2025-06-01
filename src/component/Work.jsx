@@ -63,7 +63,7 @@ export default function Work() {
           >
             Currently working as a Backend Developer at Ebits Technologies,
             where I specialize in building and maintaining scalable APIs using
-            .NET Core and Node.js. I collaborate closely with frontend teams,
+            .NET Core Web API and Node.js. I collaborate closely with frontend teams,
             manage database operations, and contribute to delivering
             high-performance, production-ready web applications.
           </p>

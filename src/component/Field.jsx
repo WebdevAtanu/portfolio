@@ -56,9 +56,9 @@ function Field() {
                 mode == "dark" ? " text-gray-300" : null
               )}
             >
-              I work as a backend developer specializing in .NET Core and
+              I work as a backend developer specializing in .NET Core Web API and
               Node.js at Ebits Technologies. My role involves building and
-              maintaining APIs, managing databases, and ensuring scalable and
+              maintaining REST APIs, managing databases, and ensuring scalable and
               secure backend systems that power web applications.
             </p>
           </div>
@@ -70,7 +70,7 @@ function Field() {
             />
             <Cards
               image={logo}
-              title="Backend (.NET Core & Node.js)"
+              title="Backend (.NET Core Web API & Node.js)"
               content="Experienced in building robust and scalable backend systems using .NET Core and Node.js. Skilled in creating RESTful APIs, handling database operations with SQL and NoSQL databases, and ensuring secure, high-performance server-side logic."
             />
             <Cards

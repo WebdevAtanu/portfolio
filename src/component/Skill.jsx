@@ -70,7 +70,7 @@ function Skill() {
               )}
             >
               Skilled in building full-stack web applications with a strong
-              focus on backend development using .NET Core and Node.js.
+              focus on backend development using .NET Core Web API and Node.js.
               Experienced in creating dynamic UIs with React and Tailwind CSS.
               Proficient in managing both SQL and NoSQL databases, ensuring
               secure, scalable, and efficient systems.
@@ -131,9 +131,9 @@ function Skill() {
             <Skills logo={RiNextjsFill} text="Next.js" class="" value="50" />
             <Skills
               logo={AiOutlineDotNet}
-              text=".NET Core"
+              text=".NET Core Web API"
               class="text-violet-800"
-              value="30"
+              value="40"
             />
           </div>
         </div>

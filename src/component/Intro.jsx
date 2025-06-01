@@ -33,7 +33,7 @@ function Intro() {
               mode == "dark" ? " text-gray-300" : null
             )}
           >
-            I'm a web developer specializing in the MERN stack, .NET Core, and
+            I'm a web developer specializing in the MERN stack, .NET Core Web API, and
             modern web solutions. I excel at building dynamic, responsive user
             interfaces with React, HTML, and CSS, ensuring seamless user
             experiences. On the backend, I develop robust APIs and scalable
