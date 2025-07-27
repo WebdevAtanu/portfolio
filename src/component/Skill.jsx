@@ -120,20 +120,20 @@ function Skill() {
               logo={SiMysql}
               text="Mysql"
               class="text-blue-500"
-              value="55"
+              value="65"
             />
             <Skills
               logo={SiAppwrite}
               text="Appwrite"
               class="text-pink-600"
-              value="60"
+              value="70"
             />
-            <Skills logo={RiNextjsFill} text="Next.js" class="" value="50" />
+            <Skills logo={RiNextjsFill} text="Next.js" class="" value="85" />
             <Skills
               logo={AiOutlineDotNet}
               text=".NET Core Web API"
               class="text-violet-800"
-              value="40"
+              value="60"
             />
           </div>
         </div>
