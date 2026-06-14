@@ -12,7 +12,7 @@ import WebIcon from "@mui/icons-material/Web";
 import LaptopMacIcon from "@mui/icons-material/LaptopMac";
 import CodeIcon from "@mui/icons-material/Code";
 import ThemeSwitch from "./Switch";
-import WidgetsIcon from "@mui/icons-material/Widgets";
+import MenuIcon from "@mui/icons-material/Menu";
 import { blue } from "@mui/material/colors";
 import { Link } from "react-scroll";
 
@@ -62,7 +62,7 @@ export default function AccountMenu() {
         <ThemeSwitch />
       </div>
       <div className="md:hidden">
-        <Tooltip title="Atanu Mondal">
+        <Tooltip title="Menu">
           <IconButton
             onClick={handleClick}
             size="small"
@@ -71,8 +71,8 @@ export default function AccountMenu() {
             aria-haspopup="true"
             aria-expanded={open ? "true" : undefined}
           >
-            <Avatar sx={{ bgcolor: blue[500] }}>
-              <WidgetsIcon />
+            <Avatar sx={{ bgcolor: blue[800] }}>
+              <MenuIcon />
             </Avatar>
           </IconButton>
         </Tooltip>
