@@ -1,34 +1,19 @@
 import * as React from "react";
-import Card from "@mui/material/Card";
-import CardMedia from "@mui/material/CardMedia";
-import CardContent from "@mui/material/CardContent";
-import logo from "../assets/logo.jpg";
+import CodeIcon from "@mui/icons-material/Code";
+import HubIcon from "@mui/icons-material/Hub";
+import StorageIcon from "@mui/icons-material/Storage";
+import AccountTreeIcon from "@mui/icons-material/AccountTree";
 import { Element } from "react-scroll";
 import clsx from "clsx";
 import { themeContext } from "../App";
 
-function Cards({ title, image, content }) {
-  const { mode } = React.useContext(themeContext);
+function Cards({ title, content, icon }) {
   return (
-    <Card className="w-full" data-aos="zoom-in">
-      <h2 className="mb-4 text-lg p-2">{title}</h2>
-      <CardMedia
-        component="img"
-        className="h-1/3 mb-4"
-        image={image}
-        alt="image"
-      />
-      <CardContent>
-        <p
-          className={clsx(
-            "leading-relaxed",
-            mode == "dark" ? " text-gray-300" : null
-          )}
-        >
-          {content}
-        </p>
-      </CardContent>
-    </Card>
+    <article className="feature-card" data-aos="zoom-in">
+      <div className="feature-icon">{icon}</div>
+      <h2>{title}</h2>
+      <p>{content}</p>
+    </article>
   );
 }
 
@@ -36,46 +21,41 @@ function Field() {
   const { mode } = React.useContext(themeContext);
   return (
     <Element name="playground">
-      <section className="text-gray-600 body-font">
+      <section
+        className={clsx("section-block", mode === "dark" && "surface-dark")}
+      >
         <div className="container px-5 py-24 mx-auto">
-          <div className="flex flex-wrap w-full mb-20">
-            <div className="lg:w-1/2 w-full mb-6 lg:mb-0">
-              <h1
-                className={clsx(
-                  "sm:text-3xl text-2xl font-medium title-font mb-2",
-                  mode == "dark" ? " text-gray-300" : null
-                )}
-              >
-                My Playground
-              </h1>
-              <div className="h-1 w-20 bg-indigo-500 rounded"></div>
+          <div className="section-heading">
+            <div>
+              <p className="eyebrow">What I build</p>
+              <h1>My Playground</h1>
             </div>
-            <p
-              className={clsx(
-                "lg:w-1/2 w-full leading-relaxed",
-                mode == "dark" ? " text-gray-300" : null
-              )}
-            >
-              I work as a backend developer specializing in .NET Core Web API and
-              Node.js at Ebits Technologies. My role involves building and
-              maintaining REST APIs, managing databases, and ensuring scalable and
-              secure backend systems that power web applications.
+            <p>
+              I work as a backend developer specializing in .NET Core Web API
+              and Webforms at Softmed Technologies. My role involves building
+              and maintaining REST APIs, managing databases, and ensuring
+              scalable and secure backend systems that power web applications.
             </p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             <Cards
-              image={logo}
               title="Frontend (React & Modern UI)"
+              icon={<CodeIcon />}
               content="Skilled in building responsive and dynamic web interfaces using React.js, JavaScript, and Tailwind CSS. I focus on creating clean, user-friendly UIs with optimized performance and seamless user experiences."
             />
             <Cards
-              image={logo}
               title="Backend (.NET Core Web API & Node.js)"
+              icon={<HubIcon />}
               content="Experienced in building robust and scalable backend systems using .NET Core and Node.js. Skilled in creating RESTful APIs, handling database operations with SQL and NoSQL databases, and ensuring secure, high-performance server-side logic."
             />
             <Cards
-              image={logo}
+              title="Full Stack (Next.js & MVC)"
+              icon={<AccountTreeIcon />}
+              content="Proficient in full-stack development with experience in Next.js for server-side rendering and MVC architecture for structured application design. I build end-to-end web applications that integrate frontend interfaces with backend APIs and databases effectively."
+            />
+            <Cards
               title="Database Management (SQL & NoSQL)"
+              icon={<StorageIcon />}
               content="Proficient in working with relational databases like SQL Server and MSSQL, as well as NoSQL databases like MongoDB. Skilled in writing optimized queries, designing efficient schemas, and managing data operations securely and effectively."
             />
           </div>

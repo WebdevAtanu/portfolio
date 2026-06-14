@@ -1,74 +1,44 @@
 import React from "react";
-import Card from "@mui/material/Card";
 import { RiJavascriptFill } from "react-icons/ri";
 import { FaReact } from "react-icons/fa";
 import { RiTailwindCssFill } from "react-icons/ri";
 import { FaNodeJs } from "react-icons/fa6";
-import { SiExpress } from "react-icons/si";
 import { DiMongodb } from "react-icons/di";
-import { SiMysql } from "react-icons/si";
+import { DiMsqlServer } from "react-icons/di";
 import { RiNextjsFill } from "react-icons/ri";
-import { SiAppwrite } from "react-icons/si";
 import { AiOutlineDotNet } from "react-icons/ai";
-import LinearProgress from "@mui/material/LinearProgress";
-import Typography from "@mui/material/Typography";
-import Box from "@mui/material/Box";
 import { Element } from "react-scroll";
 import clsx from "clsx";
 import { themeContext } from "../App";
 
-function LinearProgressWithLabel(props) {
-  return (
-    <Box sx={{ display: "flex", alignItems: "center" }}>
-      <Box sx={{ width: "100%", mr: 1 }}>
-        <LinearProgress variant="determinate" {...props} />
-      </Box>
-      <Box sx={{ minWidth: 35 }}>
-        <Typography variant="body2" sx={{ color: "text.secondary" }}>
-          {`${Math.round(props.value)}%`}
-        </Typography>
-      </Box>
-    </Box>
-  );
-}
-
 function Skills(props) {
   return (
-    <Card variant="outlined">
-      <div className="p-2">
-        <div className="flex justify-between mb-2">
-          <p className="text-lg">{props.text}</p>
-          <props.logo className={`${props.class} text-lg`} />
-        </div>
-        <LinearProgressWithLabel value={props.value} />
+    <article className="skill-pill">
+      <div className="flex items-center justify-between gap-3">
+        <p>{props.text}</p>
+        <props.logo className={`${props.className} text-xl`} />
       </div>
-    </Card>
+      <div className="text-mute-500 text-sm mb-1 mt-1">{props.description}</div>
+      <div className="skill-meter" aria-label={`${props.text} ${props.value}%`}>
+        <span style={{ width: `${props.value}%` }}></span>
+      </div>
+    </article>
   );
 }
 function Skill() {
   const { mode } = React.useContext(themeContext);
   return (
     <Element name="skill">
-      <section className="pt-5 mb-10 lg:h-screen">
-        <div className="container px-5 py-24 mx-auto">
-          <div className="flex flex-wrap w-full mb-20">
-            <div className="lg:w-1/2 w-full mb-6 lg:mb-0">
-              <h1
-                className={clsx(
-                  "sm:text-3xl text-2xl font-medium title-font mb-2",
-                  mode == "dark" ? " text-gray-300" : null
-                )}
-              >
-                My Skills
-              </h1>
-              <div className="h-1 w-20 bg-indigo-500 rounded"></div>
+      <section
+        className={clsx("section-block", mode === "dark" && "surface-dark")}
+      >
+        <div className="container px-5 py-26 mx-auto">
+          <div className="section-heading">
+            <div>
+              <p className="eyebrow">Toolkit</p>
+              <h1>My Skills</h1>
             </div>
-            <p
-              className={clsx(
-                "lg:w-1/2 w-full leading-relaxed",
-                mode == "dark" ? " text-gray-300" : null
-              )}
-            >
+            <p>
               Skilled in building full-stack web applications with a strong
               focus on backend development using .NET Core Web API and Node.js.
               Experienced in creating dynamic UIs with React and Tailwind CSS.
@@ -77,63 +47,63 @@ function Skill() {
             </p>
           </div>
           <div
-            className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 rounded-2xl gap-4"
+            className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4"
             data-aos="zoom-in"
           >
             <Skills
+              text="JavaScript"
               logo={RiJavascriptFill}
-              text="Javascript"
-              class="text-yellow-500"
-              value="70"
+              value={90}
+              description="Building interactive web applications with modern JavaScript and ES6+ features."
             />
+
             <Skills
+              text="React"
               logo={FaReact}
-              text="React.js"
-              class="text-blue-600"
-              value="80"
+              value={90}
+              description="Creating responsive and reusable user interfaces using React and its ecosystem."
             />
+
             <Skills
+              text="Tailwind CSS"
               logo={RiTailwindCssFill}
-              text="TailwindCSS"
-              class="text-sky-500"
-              value="90"
+              value={85}
+              description="Designing modern, responsive layouts quickly with utility-first CSS."
             />
+
             <Skills
-              logo={FaNodeJs}
               text="Node.js"
-              class="text-green-700"
-              value="65"
+              logo={FaNodeJs}
+              value={85}
+              description="Developing scalable backend services, APIs, and server-side applications."
             />
+
             <Skills
-              logo={SiExpress}
-              text="Express"
-              class="text-xl"
-              value="75"
-            />
-            <Skills
-              logo={DiMongodb}
               text="MongoDB"
-              class="text-green-500"
-              value="60"
+              logo={DiMongodb}
+              value={80}
+              description="Managing flexible NoSQL databases for modern web applications."
             />
+
             <Skills
-              logo={SiMysql}
-              text="Mysql"
-              class="text-blue-500"
-              value="65"
+              text="SQL Server"
+              logo={DiMsqlServer}
+              value={85}
+              description="Designing databases, writing optimized queries, and ensuring data integrity."
             />
+
             <Skills
-              logo={SiAppwrite}
-              text="Appwrite"
-              class="text-pink-600"
-              value="70"
+              text="Next.js"
+              logo={RiNextjsFill}
+              value={75}
+              description="Building performant React applications with server-side rendering and routing."
             />
-            <Skills logo={RiNextjsFill} text="Next.js" class="" value="85" />
+
             <Skills
+              text=".NET Core"
               logo={AiOutlineDotNet}
-              text=".NET Core Web API"
-              class="text-violet-800"
-              value="60"
+              value={90}
+              description="Developing secure, enterprise-grade APIs and backend systems using .NET Core."
             />
           </div>
         </div>

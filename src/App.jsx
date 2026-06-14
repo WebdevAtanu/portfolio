@@ -11,8 +11,9 @@ import Footer from "./component/Footer";
 import "./App.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { ThemeProvider, CssBaseline} from "@mui/material";
+import { ThemeProvider, CssBaseline } from "@mui/material";
 import { getTheme } from "./component/Theme";
+import clsx from "clsx";
 AOS.init();
 
 export const themeContext = createContext(null);
@@ -30,15 +31,17 @@ function App() {
       <ThemeProvider theme={theme}>
         <themeContext.Provider value={{ toggleMode, mode }}>
           <CssBaseline />
-          <AccountMenu />
-          <Intro />
-          <Field />
-          <Skill />
-          <Work />
-          <Project />
-          <Freelance />
-          <Github />
-          <Footer />
+          <div className={clsx("app-shell", mode === "dark" && "surface-dark")}>
+            <AccountMenu />
+            <Intro />
+            <Field />
+            <Skill />
+            <Work />
+            <Project />
+            <Freelance />
+            <Github />
+            <Footer />
+          </div>
         </themeContext.Provider>
       </ThemeProvider>
     </>

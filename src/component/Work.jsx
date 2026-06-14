@@ -1,91 +1,117 @@
 import * as React from "react";
-import DataObjectIcon from "@mui/icons-material/DataObject";
+import BusinessCenterIcon from "@mui/icons-material/BusinessCenter";
+import CodeIcon from "@mui/icons-material/Code";
 import StorageIcon from "@mui/icons-material/Storage";
-import IntegrationInstructionsIcon from "@mui/icons-material/IntegrationInstructions";
 import { Element } from "react-scroll";
 import clsx from "clsx";
 import { themeContext } from "../App";
 
-function Card({ title, content, icon }) {
-  const { mode } = React.useContext(themeContext);
+const experiences = [
+  {
+    company: "Softmed Technologies",
+    role: "Backend Developer",
+    duration: "2026 - Present",
+    icon: BusinessCenterIcon,
+    description:
+      "Building scalable APIs and enterprise applications using .NET Core Web API, WebForms, SQL Server, and modern backend architecture patterns.",
+    technologies: [
+      ".NET Core",
+      "SQL Server",
+      "REST API",
+      "LINQ",
+      "Entity Framework",
+    ],
+  },
+  {
+    company: "Ebits Technologies",
+    role: "Backend Developer",
+    duration: "2025 - 2026",
+    icon: BusinessCenterIcon,
+    description:
+      "Contributed to backend development, database management, API integrations, and collaborated with frontend teams to deliver production-ready applications.",
+    technologies: [
+      "Node.js",
+      "Express",
+      "SQL",
+      "API Development",
+      "JavaScript",
+    ],
+  },
+];
+
+function HighlightCard({ item }) {
+  const Icon = item.icon;
+
   return (
-    <div
-      className="px-4 py-12 md:w-full flex outline outline-gray-200 shadow rounded"
-      data-aos="zoom-in"
-    >
-      <div className="w-12 h-12 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4 flex-shrink-0">
-        {icon}
+    <article className="work-highlight" data-aos="fade-up">
+      <div className="feature-icon">
+        <Icon />
       </div>
-      <div className="flex-grow pl-6">
-        <h2
-          className={clsx(
-            "text-lg title-font font-medium mb-2",
-            mode == "dark" ? " text-gray-300" : null
-          )}
-        >
-          {title}
-        </h2>
-        <p
-          className={clsx(
-            "leading-relaxed",
-            mode == "dark" ? " text-gray-400" : null
-          )}
-        >
-          {content}
-        </p>
+      <strong>{item.value}</strong>
+      <span>{item.label}</span>
+    </article>
+  );
+}
+
+function ExperienceCard({ experience }) {
+  const Icon = experience.icon;
+
+  return (
+    <article className="experience-card" data-aos="fade-up">
+      <div className="experience-marker">
+        <Icon />
       </div>
-    </div>
+      <div className="experience-content">
+        <div className="experience-head">
+          <div>
+            <p className="eyebrow">{experience.company}</p>
+            <h2>{experience.role}</h2>
+          </div>
+          <span>{experience.duration}</span>
+        </div>
+        <p>{experience.description}</p>
+        <div className="experience-tags">
+          {experience.technologies.map((tech) => (
+            <span key={tech}>{tech}</span>
+          ))}
+        </div>
+      </div>
+    </article>
   );
 }
 
 export default function Work() {
   const { mode } = React.useContext(themeContext);
+
   return (
     <Element name="work">
-      <div className="container px-5 py-24 mx-auto">
-        <div className="flex flex-wrap w-full mb-20">
-          <div className="lg:w-1/2 w-full mb-6 lg:mb-0">
-            <h1
-              className={clsx(
-                "sm:text-3xl text-2xl font-medium title-font mb-2",
-                mode == "dark" ? " text-gray-300" : null
-              )}
-            >
-              Work Experience
-            </h1>
-            <div className="h-1 w-20 bg-indigo-500 rounded"></div>
+      <section
+        className={clsx("section-block", mode === "dark" && "surface-dark")}
+      >
+        <div className="container px-5 py-24 mx-auto">
+          <div className="section-heading">
+            <div>
+              <p className="eyebrow">Career Journey</p>
+              <h1>Work Experience</h1>
+            </div>
+            <p>
+              My professional journey as a Backend Developer, building scalable
+              APIs, optimizing databases, and delivering production-ready
+              applications using modern technologies like .NET Core, Node.js,
+              SQL Server, and React.
+            </p>
           </div>
-          <p
-            className={clsx(
-              "lg:w-1/2 w-full leading-relaxed",
-              mode == "dark" ? " text-gray-300" : null
-            )}
-          >
-            Currently working as a Backend Developer at Ebits Technologies,
-            where I specialize in building and maintaining scalable APIs using
-            .NET Core Web API and Node.js. I collaborate closely with frontend teams,
-            manage database operations, and contribute to delivering
-            high-performance, production-ready web applications.
-          </p>
+
+          <div className="experience-timeline">
+            {experiences.map((experience) => (
+              <ExperienceCard
+                key={`${experience.company}-${experience.duration}`}
+                experience={experience}
+              />
+            ))}
+          </div>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-          <Card
-            title="API Development with .NET Core"
-            content="Developed and maintained RESTful APIs using .NET Core and Node.js to support various web applications, ensuring high performance, scalability, and secure data handling."
-            icon=<DataObjectIcon />
-          />
-          <Card
-            title="Database Design & Management"
-            content="Worked extensively with relational databases like SQL Server, creating optimized schemas, writing complex queries, and managing data migrations to maintain data integrity and performance."
-            icon=<StorageIcon />
-          />
-          <Card
-            title="Collaborating with Frontend Teams"
-            content="Collaborated with frontend developers to integrate APIs smoothly, debug issues, and ensure consistent data flow between the backend and user interface for a seamless user experience."
-            icon=<IntegrationInstructionsIcon />
-          />
-        </div>
-      </div>
+      </section>
     </Element>
   );
 }

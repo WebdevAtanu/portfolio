@@ -10,7 +10,7 @@ import WorkIcon from "@mui/icons-material/Work";
 import CoPresentIcon from "@mui/icons-material/CoPresent";
 import WebIcon from "@mui/icons-material/Web";
 import LaptopMacIcon from "@mui/icons-material/LaptopMac";
-import CodeIcon from '@mui/icons-material/Code';
+import CodeIcon from "@mui/icons-material/Code";
 import ThemeSwitch from "./Switch";
 import WidgetsIcon from "@mui/icons-material/Widgets";
 import { blue } from "@mui/material/colors";
@@ -26,54 +26,37 @@ export default function AccountMenu() {
     setAnchorEl(null);
   };
   return (
-    <div
-      className={`bg-blue-600 p-2 flex justify-end shadow sticky top-0 z-50`}
-    >
-      <div className="hidden md:flex items-center gap-4">
+    <div className="site-nav sticky top-0 z-50">
+      <Link to="intro" smooth={true} duration={500}>
+        <button className="brand-mark" type="button" aria-label="Go to intro">
+          AM
+        </button>
+      </Link>
+      <div className="hidden md:flex items-center gap-2">
         <Link to="playground" smooth={true} duration={500}>
-          <Typography
-            className={`text-white hover:bg-white hover:text-blue-600 p-1 rounded transition cursor-pointer`}
-            id="menuText"
-          >
-            {" "}
-            My Playground
+          <Typography className="nav-link" id="menuText">
+            Playground
           </Typography>
         </Link>
 
         <Link to="skill" smooth={true} duration={500}>
-          <Typography
-            className={`text-white hover:bg-white hover:text-blue-600 p-1 rounded transition cursor-pointer`}
-            id="menuText"
-          >
-            {" "}
-            My Skills
+          <Typography className="nav-link" id="menuText">
+            Skills
           </Typography>
         </Link>
         <Link to="work" smooth={true} duration={500}>
-          <Typography
-            className={`text-white hover:bg-white hover:text-blue-600 p-1 rounded transition cursor-pointer`}
-            id="menuText"
-          >
-            {" "}
-            Work Experience
+          <Typography className="nav-link" id="menuText">
+            Experience
           </Typography>
         </Link>
         <Link to="project" smooth={true} duration={500}>
-          <Typography
-            className={`text-white hover:bg-white hover:text-blue-600 p-1 rounded transition cursor-pointer`}
-            id="menuText"
-          >
-            {" "}
-            Practice Projects
+          <Typography className="nav-link" id="menuText">
+            Projects
           </Typography>
         </Link>
         <Link to="freelance" smooth={true} duration={500}>
-          <Typography
-            className={`text-white hover:bg-white hover:text-blue-600 p-1 rounded transition cursor-pointer`}
-            id="menuText"
-          >
-            {" "}
-            Freelance Demo
+          <Typography className="nav-link" id="menuText">
+            Freelance
           </Typography>
         </Link>
         <ThemeSwitch />
